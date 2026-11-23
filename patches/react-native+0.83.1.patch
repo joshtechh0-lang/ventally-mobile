@@ -1,0 +1,24 @@
+diff --git a/node_modules/react-native/unstable-internals-do-not-use/index.js b/node_modules/react-native/unstable-internals-do-not-use/index.js
+new file mode 100644
+index 0000000..c18b5b0
+--- /dev/null
++++ b/node_modules/react-native/unstable-internals-do-not-use/index.js
+@@ -0,0 +1,7 @@
++// Shim: react-native/unstable-internals-do-not-use
++// expo-asset 58.x references this module which does not exist in RN 0.83.
++// Re-export AssetSourceResolver as a named export to satisfy the import.
++'use strict';
++
++const AssetSourceResolver = require('../Libraries/Image/AssetSourceResolver').default;
++module.exports = { AssetSourceResolver };
+diff --git a/node_modules/react-native/unstable-internals-do-not-use/package.json b/node_modules/react-native/unstable-internals-do-not-use/package.json
+new file mode 100644
+index 0000000..c42904c
+--- /dev/null
++++ b/node_modules/react-native/unstable-internals-do-not-use/package.json
+@@ -0,0 +1,5 @@
++{
++  "name": "react-native-unstable-internals-shim",
++  "version": "0.0.1",
++  "main": "index.js"
++}

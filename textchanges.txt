@@ -1,0 +1,815 @@
+Keep title
+
+Balanced Support
+
+⸻
+
+Keep price
+
+$64.99 USD
+
+⸻
+
+Replace description
+
+Regular users, alternating between text and voice, weekly support
+→
+For regular support and ongoing use
+
+⸻
+
+Keep features
+
+300 messages
+60 voice minutes
+Emotional wellness tools included
+
+⸻
+
+Button
+
+Get Started (keep)
+----
+SCREEN — LIGHT SUPPORT
+
+Keep title
+
+Light Support
+
+⸻
+
+Keep price
+
+$34.99 USD
+
+⸻
+
+Replace description
+
+Casual users, first-timers, situational stress
+→
+For occasional support needs
+
+⸻
+
+Update features (format only)
+
+150 messages
+30 voice minutes
+Emotional wellness tools included
+
+⸻
+
+Button
+
+Get Started (keep)
+----
+Keep title
+
+Free Trial
+
+⸻
+
+Replace description
+
+Try Ventally first
+→
+Explore the experience first
+
+⸻
+
+Update section title
+
+This plan includes → Includes
+
+⸻
+
+Keep features
+
+30 messages
+10 voice minutes
+Emotional wellness tools included
+----
+Keep title
+
+You’re Subscribed
+
+⸻
+
+Replace description
+
+You now have full access to your plan benefits
+→
+Your plan is now active
+
+⸻
+
+Update section title
+
+Your plan includes → Includes
+
+⸻
+
+Update features
+
+Unlimited messaging → Unlimited messages
+
+Priority listener matching → Priority session availability
+
+Reduced call rates → Reduced voice rates
+
+Access to wellness check-ins → Wellness check-ins included
+
+⸻
+
+Keep
+
+Change Subscription
+
+⸻
+
+Keep renewal text
+
+Your subscription renews on (date)
+
+⸻
+
+Button
+
+Let’s Start → Continue
+
+⸻
+
+Keep
+
+Cancel Subscription
+----
+Change description
+
+Only pay for the time you use
+→
+Flexible usage based access
+
+⸻
+
+Keep title
+
+Pay As You Go
+
+⸻
+
+Update section title
+
+Your plan includes → Includes
+
+⸻
+
+Update pricing lines (more neutral)
+
+$1.75 / voice minute → Voice minutes $1.75 each
+$0.35 / message → Messages $0.35 each
+
+⸻
+
+Keep
+
+No subscription required
+----
+Change title
+
+Top-Up Reminder → Balance Reminder
+
+⸻
+
+Replace description
+
+You’re running low on funds
+Add credits to stay connected
+→
+Your balance is low
+Add funds to continue
+
+⸻
+
+Change button
+
+Add Credits → Add Funds
+----
+Keep title
+
+Payment Successful
+
+⸻
+
+Replace description
+
+Your payment is confirmed
+Your venting access is renewed
+→
+Your payment is confirmed
+Your access has been updated
+
+⸻
+
+Button
+
+Done (keep)
+----
+Change title (optional but safer)
+
+Payment Reminder → Setup Required
+
+⸻
+
+Replace description
+
+Add a payment method to start a vent session
+→
+Add a payment method to continue
+
+⸻
+
+Button
+
+Add Payment Method (keep)
+
+⸻
+
+Fix wording (important)
+
+Do it Later → Do It Later
+---
+Change title
+
+Almost There… → Still Preparing…
+
+⸻
+
+Replace description
+
+Trying again to quickly connect you with an available listener
+→
+Retrying your session, please wait
+
+⸻
+
+Buttons
+
+Try Again
+Close
+
+---
+Finding Support… → Preparing Your Session…
+
+⸻
+
+Replace description
+
+Trying to quickly connect you with a listener
+→
+Setting up your session, please wait
+
+⸻
+
+Buttons
+
+Try Again
+Close
+--
+Listener Declined → Session Not Available
+
+⸻
+
+Replace description
+
+The listener is unavailable. Please try again
+→
+This session could not be started. Please try again.
+
+⸻
+
+Buttons
+
+Try Again
+Close
+---
+Change title
+
+No Response → Session Not Connected
+
+⸻
+
+Replace description
+
+The listener did not respond in time. Please try again
+→
+The session could not be completed. Please try again
+
+⸻
+
+Buttons
+
+Try Again
+Close
+-----
+Change title
+
+Retrying Match → Retrying Session
+
+⸻
+
+Replace description
+
+We are attempting to reconnect you
+→
+We are attempting to continue your session
+
+⸻
+
+Buttons
+
+Try Again
+Close
+-----
+Change title
+
+No Listener Available → No Sessions Available
+
+⸻
+
+Replace description
+
+No listeners are free right now. Please try again shortly
+→
+No sessions are available right now. Please try again shortly
+
+⸻
+
+Buttons
+
+Try Again (keep)
+Try Chat Instead → Try Messages Instead
+Close (keep)
+---
+Change title
+
+No Payout Yet → No Transfers Yet
+
+⸻
+
+Replace description
+
+Lorem ipsum…
+→
+Your transfer history will appear here
+
+⸻
+
+Optional add
+
+Transfers are processed securely through your account
+---
+Change title
+
+Payouts → Transfers
+
+⸻
+
+Keep list items
+
+$400
+Today 11:18 pm
+
+(no change needed)
+
+⸻
+
+Remove all “payout” language
+
+Do not use the word Payout anywhere
+---
+Keep title
+
+Connect Bank
+
+⸻
+
+Button (keep)
+
+Continue
+
+⸻
+
+Update description
+
+Bank sync by Plaid
+Your banking information is secure and encrypted by Stripe
+→
+Secure bank connection via Plaid
+Your information is encrypted and processed securely by Stripe
+----
+Change title
+
+Payout Method → Transfer Method
+
+⸻
+
+Update description
+
+Get paid automatically to your linked bank account
+→
+Funds are transferred to your linked bank account
+
+⸻
+
+Keep
+
+Bank Account
+----
+Change title
+
+Earnings → Balance
+
+⸻
+
+Change button
+
+Withdraw Earnings → Withdraw Funds
+
+⸻
+
+Change labels
+
+Pending Earnings → Pending Balance
+Available for Payout → Available Balance
+
+⸻
+
+Remove all “earnings” language
+
+Do not use the word Earnings anywhere
+--
+Title: venter chat -> Chat Session
+---
+SCREEN 7 — PAST SESSIONS (FINAL)
+
+Change tab labels
+Call → Voice
+Chat → Messages
+
+⸻
+
+Change session labels
+Venter Call → Voice Session
+Venter Chat → Message Session
+
+⸻
+
+Remove all “call” language
+Do not use the word Call anywhere on this screen
+
+⸻
+
+Remove “venter” reference
+Venter → remove completely
+
+⸻
+
+Update preview text (right screen)
+How can I help you → How can this session support you
+Hello, how can I support you → How can this session support you
+Hi, how are you → Session started
+----
+SCREEN 7 — PAST SESSIONS (FINAL)
+
+Change tab labels
+Call → Voice
+Chat → Messages
+
+⸻
+
+Change session labels
+Venter Call → Voice Session
+Venter Chat → Message Session
+
+⸻
+
+Remove all “call” language
+Do not use the word Call anywhere on this screen
+
+⸻
+
+Remove “venter” reference
+Venter → remove completely
+
+⸻
+
+Update preview text (right screen)
+How can I help you → How can this session support you
+Hello, how can I support you → How can this session support you
+Hi, how are you → Session started
+-----
+SCREEN 7 — PAST SESSIONS
+
+Change tab labels
+Call → Voice
+Chat → Messages
+
+⸻
+
+Change session labels
+Venter Call → Voice Session
+Venter Chat or Message → Message Session
+
+⸻
+
+Remove all “call” language
+Do not use the word Call anywhere on this screen
+
+⸻
+
+Keep title
+Past Sessions
+
+⸻
+
+Optional add under title
+Guided, moderated session history
+
+⸻
+
+Empty state text
+Replace lorem ipsum with:
+No past sessions yet
+Your session history will appear here
+----
+ Change
+	•	Payout → Balance
+
+⸻
+
+Change
+	•	Your Sessions → Session History
+
+⸻
+
+Change (bottom nav)
+	•	Requests → Sessions
+
+⸻
+
+Add (Edit Profile screen only)
+
+Under title:
+
+Used to personalize your experience
+-----
+SCREEN 2 — RATING (FILLED / SUBMIT STATE)
+
+Replace title
+	•	Rate This Call → Rate Your Session
+
+⸻
+
+Replace description
+	•	How was your experience supporting this person today?
+→ How did this session support you?
+
+⸻
+
+Optional subtle line
+
+Add under description:
+Guided, moderated experience
+
+⸻
+
+Buttons (keep same)
+
+Submit
+----
+SCREEN 1 — RATING (EMPTY STATE)
+
+Replace title
+	•	Rate This Call → Rate Your Session
+
+⸻
+
+Replace description
+	•	How was your experience supporting this person today?
+→ How did this session support you?
+
+⸻
+
+Optional subtle line
+
+Add under description:
+Guided, moderated experience
+
+⸻
+
+Buttons (keep same)
+
+Skip
+
+
+-----
+Keep title
+
+End Session?
+
+⸻
+
+Add subtext (important)
+
+This will close your current support session.
+
+⸻
+
+Buttons (keep same)
+
+No
+Yes
+
+⸻
+
+FINAL SCREEN 3 TEXT
+
+End Session?
+
+This will close your current support session.
+
+No   Yes
+---
+Replace title
+	•	“Call Disconnected” → Session Ended
+
+⸻
+
+Replace description
+
+We’re sorry your session ended unexpectedly, please try again
+→
+Your session ended unexpectedly. Please try again.
+
+⸻
+
+Buttons (keep same)
+	•	Try Again
+	•	Close
+
+⸻
+
+FINAL SCREEN 2 TEXT
+
+Session Ended
+
+Your session ended unexpectedly. Please try again.
+
+Try Again
+Close
+---
+ CALL SCREEN FIX CHECKLIST
+
+Replace all “call” language
+	•	Change “Incoming call” → “Support request”
+	•	Do not use the word call anywhere on this screen
+
+⸻
+
+Replace action buttons
+	•	Change “Accept” → “Join” or “Start”
+	•	Change “Decline” → “Dismiss” or “Not now”
+
+⸻
+
+Add structure context (required)
+	•	Add under title: “Guided, moderated support session”
+
+⸻
+
+Update connection state
+	•	Change “Connecting…” → “Preparing your session…” or “Connecting to support…”
+
+⸻
+
+Add safety indicator (small text)
+	•	Add: “Guided and monitored for safety”
+Brittania Brown
+20 hours ago
+Requests
+Guided, moderated support sessions
+
+Voice Session Request
+Join   Dismiss
+
+Message Session Request
+Join   Dismiss  
+----
+ CALL SCREEN FIX CHECKLIST
+
+Replace all “call” language
+	•	Change “Incoming call” → “Support request”
+	•	Do not use the word call anywhere on this screen
+
+⸻
+
+Replace action buttons
+	•	Change “Accept” → “Join” or “Start”
+	•	Change “Decline” → “Dismiss” or “Not now”
+
+⸻
+
+Add structure context (required)
+	•	Add under title: “Guided, moderated support session”
+
+⸻
+
+Update connection state
+	•	Change “Connecting…” → “Preparing your session…” or “Connecting to support…”
+
+⸻
+
+Add safety indicator (small text)
+	•	Add: “Guided and monitored for safety”
+    ---
+    CALL SCREEN FIX CHECKLIST
+
+Replace all “call” language
+	•	Change “Incoming call” → “Support request”
+	•	Do not use the word call anywhere on this screen
+
+⸻
+
+Replace action buttons
+	•	Change “Accept” → “Join” or “Start”
+	•	Change “Decline” → “Dismiss” or “Not now”
+
+⸻
+
+Add structure context (required)
+	•	Add under title: “Guided, moderated support session”
+
+⸻
+
+Update connection state
+	•	Change “Connecting…” → “Preparing your session…” or “Connecting to support…”
+
+⸻
+
+Add safety indicator (small text)
+	•	Add: “Guided and monitored for safety”
+
+
+--
+CALL SCREEN FIX CHECKLIST
+
+Replace all “call” language
+	•	Change “Incoming call” → “Support request”
+	•	Do not use the word call anywhere on this screen
+
+⸻
+
+Replace action buttons
+	•	Change “Accept” → “Join” or “Start”
+	•	Change “Decline” → “Dismiss” or “Not now”
+
+⸻
+
+Add structure context (required)
+	•	Add under title: “Guided, moderated support session”
+
+⸻
+
+Update connection state
+	•	Change “Connecting…” → “Preparing your session…” or “Connecting to support…”
+
+⸻
+
+Add safety indicator (small text)
+	•	Add: “Guided and monitored for safety”
+
+
+---
+Title:
+A Few Optional Questions
+
+Body:
+We ask a few optional questions to better understand what feels supportive to you.
+
+Add this line:
+Your responses help guide a structured, moderated experience.
+
+Your answers help us:
+	•	Tailor your support experience to what feels right for you
+	•	Respect identity, culture, and values
+	•	Reduce assumptions about your support preferences
+
+You’re always in control you can skip any questions and nothing you share changes your access to Ventally.
+
+Your information is private and never shared with other users.
+
+Optional footer line:
+Designed for respectful, guideline based use
+---
+ 

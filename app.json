@@ -1,0 +1,26 @@
+{
+  "name": "Ventally",
+  "displayName": "Ventally",
+  "extra": {
+    "eas": {
+      "projectId": "a336188d-575c-42d0-8edf-ad2eaa15738a"
+    }
+  },
+  "expo": {
+    "name": "Ventally",
+    "slug": "elevate-x",
+    "extra": {
+      "eas": {
+        "projectId": "a336188d-575c-42d0-8edf-ad2eaa15738a"
+      }
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-2329497752967659~1179710445"
+        }
+      ]
+    ]
+  }
+}

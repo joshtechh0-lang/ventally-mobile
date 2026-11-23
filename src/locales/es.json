@@ -1,0 +1,2574 @@
+{
+  "Common": {
+    "accept": "Aceptar",
+    "continue": "Continuar",
+    "cancel": "Cancelar",
+    "okay": "Vale",
+    "getStarted": "Empezar",
+    "start": "Iniciar",
+    "yes": "Sí",
+    "no": "No",
+    "success": "Éxito",
+    "error": "Error",
+    "confirmAction": "Confirmar acción",
+    "areYouSure": "¿Estás seguro de que quieres continuar?",
+    "operationSuccess": "Operación completada correctamente",
+    "done": "Hecho",
+    "errors": {
+      "fetchingData": "Error al obtener datos"
+    },
+    "failed": "Error",
+    "permissionsRequired": "Se requiere al menos 1 permiso",
+    "time": {
+      "justNow": "ahora mismo",
+      "minutesAgo": "min. atrás"
+    },
+    "fillRequiredFields": "Por favor rellena todos los campos requeridos",
+    "summaryRequired": "El resumen es necesario",
+    "noData": "Sin datos",
+    "pleaseUploadDocument": "Por favor, cargue un documento",
+    "signatureRequired": "N",
+    "emailRequired": "El correo electrónico es requerido",
+    "documentRequired": "Documento necesario",
+    "decline": "Cancelar",
+    "somethingWentWrong": "Algo salió mal",
+    "pleaseCompleteAllFields": "Por favor, rellene todos los campos",
+    "createdAt": "Creado en ",
+    "invalidEmail": "Introduzca una dirección de correo electrónico válida",
+    "search": "Buscar",
+    "ok": "OK",
+    "skip": "Omitir",
+    "next": "Siguiente",
+    "passwordValidationError": "La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un carácter especial",
+    "update": "Actualiza",
+    "reportConcern": "Informar una inquietud",
+    "submit": "Enviar",
+    "unknown": "Desconocido",
+    "days": [
+      "Dom",
+      "Lun",
+      "Mar",
+      "Mie",
+      "Jue",
+      "Vie",
+      "Sáb"
+    ],
+    "months": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "de abril de",
+      "de mayo de",
+      "de junio de",
+      "Julio",
+      "August",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "December"
+    ]
+  },
+  "OnBoarding": {
+    "appName": "Ventally",
+    "quote": "\"A veces las conversaciones más honestas\npasan cuando nadie\nconoce tu nombre.\"",
+    "fetchingData": "Cargando datos...",
+    "voiceRules": "Tu voz. Tus reglas.",
+    "stayAnonymous": "mantente en el anonimato, mantente conectado",
+    "getStarted": "Empezar",
+    "enterSafeSpace": "Introduzca un espacio seguro",
+    "testimonial1Quote": "Finalmente me sentí escuchado sin ser juzgado. Esto cambió todo para mí.",
+    "testimonial1Name": "Venter Anónimo",
+    "testimonial2Quote": "Ser una Guía de Apoyo ha sido una de las cosas más gratificantes que he hecho.",
+    "testimonial2Name": "Guía de Apoyo, 3 meses",
+    "supportGuideLink": "¿Quieres ser una Guía de Apoyo? Aplica aquí →",
+    "joinPeople": "🔒 Únete a más de 12.000 personas que reciben apoyo anónimo",
+    "anonymous": "🔒 Anónimo",
+    "trainedListeners": "🎧 Oyentes capacitados",
+    "noRealName": "✓ Sin nombre real"
+  },
+  "SignUp": {
+    "title": "Registrarse",
+    "emailOrPhone": "Correo electrónico",
+    "password": "Contraseña",
+    "passwordHint": "Al menos 8 caracteres",
+    "howWillYouUse": "Rol",
+    "createAccount": "Crear cuenta",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "logIn": "Iniciar sesión",
+    "continueWith": "O continuar con",
+    "selectUsage": "Selecciona una opción",
+    "usageOptions": {
+      "listener": "Oyente",
+      "venter": "vientre de músculo esquelético",
+      "wantToListen": "Quiero escuchar",
+      "wantToVent": "Quiero desahogarme"
+    }
+  },
+  "LogIn": {
+    "title": "Iniciar sesión",
+    "emailOrPhone": "Correo o teléfono",
+    "password": "Contraseña",
+    "rememberMe": "Recordarme",
+    "forgotPassword": "Olvidé mi contraseña",
+    "logIn": "Iniciar sesión",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "signUp": "Registrarse",
+    "continueWith": "O continuar con",
+    "biometric": "O "
+  },
+  "MicrophoneRequest": {
+    "title": "Acceso al Micrófono\nNecesario",
+    "description": "Permite el acceso al micrófono para que tu Guía de Apoyo pueda escucharte claramente.",
+    "buttonText": "Permitir",
+    "privacyText": "Tu audio es privado y encriptado.",
+    "skip": "Omitir por ahora",
+    "openSettings": "Abrir Configuración"
+  },
+  "SpeakerRequest": {
+    "title": "Acceso al Altavoz\nNecesario",
+    "description": "Permite el acceso al altavoz para escuchar claramente a tu Guía de Apoyo.",
+    "buttonText": "Permitir",
+    "privacyText": "El audio de tu altavoz es privado y encriptado.",
+    "skip": "Omitir por ahora"
+  },
+  "BiometricEnable": {
+    "title": "Activar biometría",
+    "turnOn": "Activar",
+    "notNow": "Ahora no",
+    "successMessage": "Biometría activada correctamente",
+    "errorMessage": "Se produjo un error",
+    "notAvailable": "Sensor biométrico no disponible",
+    "biometricThumbOption": "Biométrico (opción de pulgar)"
+  },
+  "LanguageSelection": {
+    "greeting": "Hola",
+    "subtitle": "Selecciona tu idioma preferido",
+    "languages": {
+      "english": "Inglés",
+      "portuguese": "Portugués",
+      "french": "Français",
+      "spanish": "Español"
+    }
+  },
+  "TermsAndConditions": {
+    "title": "Términos y Condiciones",
+    "purpose": "Propósito",
+    "purposeText": "• Ventally hace cumplir las políticas de la comunidad a través de una estructura de aplicación clara para proteger la seguridad del usuario.",
+    "enforcementSteps": "Pasos de aplicación",
+    "firstOffense": "• Primera infracción: advertencia formal y recordatorio de políticas.",
+    "secondOffense": "• Segunda infracción: Suspensión temporal (7-30 días).",
+    "thirdOffense": "• Tercera infracción: Eliminación permanente y prohibición de la plataforma.",
+    "severeViolations": "Infracciones graves",
+    "severeViolationsText1": "• Remoción inmediata y permanente y remisión a las fuerzas del orden.",
+    "severeViolationsText2": "• Ventally se reserva el derecho de eludir los pasos en casos extremos de acoso, amenazas o abuso.",
+    "transparency": "Transparencia",
+    "transparencyText": "• Ventally puede publicar estadísticas anónimas sobre las acciones de cumplimiento para promover la rendición de cuentas y la confianza.",
+    "safetyPolicyTitle": "Política de seguridad y crisis de Ventally",
+    "safetyPurpose": "Propósito",
+    "safetyPurposeText": "• Ventally no es terapia, pero se compromete a proteger a los usuarios en situaciones de crisis, como autolesiones, riesgo de suicidio o amenazas de violencia.",
+    "crisisProtocol": "Protocolo de Crisis",
+    "crisisProtocol1": "• Las Guías de soporte deben escalar inmediatamente si un usuario revela autolesiones o pensamientos suicidas.",
+    "crisisProtocol2": "• Las Guías de Apoyo deben finalizar las sesiones si se revela violencia, amenazas o abuso, e informar a los moderadores.",
+    "crisisProtocol3": "• Los moderadores pueden proporcionar información de referencia como 988 (Suicide & Crisis Lifeline) o 211 Connecticut.",
+    "limitations": "Limitaciones",
+    "limitationsText": "• Ventally es una plataforma de apoyo entre pares, no un sustituto de la terapia autorizada o los servicios de emergencia.",
+    "confidentialityPolicyTitle": "Política de confidencialidad e intercambio de información de Ventally",
+    "confidentialityPurpose": "Propósito",
+    "confidentialityPurposeText": "• Ventally refuerza su modelo anónimo al prohibir el intercambio de información personal, de sesión o de identificación fuera de la plataforma.",
+    "prohibitedConduct": "Conductas prohibidas",
+    "prohibitedConduct1": "• Grabar o divulgar cualquier parte de un chat o sesión de voz.",
+    "prohibitedConduct2": "• Compartir información personal de otro usuario o Guía de soporte sin consentimiento.",
+    "prohibitedConduct3": "• Usar los detalles de la sesión para acoso, chantaje o explotación.",
+    "repercussions": "Repercusiones",
+    "repercussionsText": "• Cualquier violación de la confidencialidad dará lugar a la eliminación inmediata y permanente y a posibles acciones legales.",
+    "bullyingPolicyTitle": "Política de acoso y abuso de Ventally",
+    "bullyingPurpose": "Propósito",
+    "bullyingPurposeText": "• Ventally mantiene una política de tolerancia cero para el acoso, la intimidación y el abuso.",
+    "bullyingProhibitedConduct": "Conductas prohibidas",
+    "bullyingProhibitedConduct1": "• Abuso verbal, insultos o acoso dirigido en chats o sesiones de voz.",
+    "bullyingProhibitedConduct2": "• Amenazar, acechar o intimidar a otros usuarios.",
+    "bullyingProhibitedConduct3": "• Acoso grupal, intimidación coordinada o ataques repetidos a personas.",
+    "bullyingReporting": "Notificación",
+    "bullyingReporting1": "• Los usuarios pueden denunciar el acoso o el abuso a través de la función de denuncia en la aplicación.",
+    "bullyingReporting2": "• Los guías de soporte deben escalar los incidentes inmediatamente a los moderadores.",
+    "bullyingRepercussions": "Repercusiones",
+    "bullyingRepercussions1": "• Las infracciones pueden resultar en advertencias, suspensión temporal o prohibición permanente.",
+    "bullyingRepercussions2": "• Los casos graves pueden remitirse a la policía.",
+    "antiDiscriminationPolicyTitle": "Política contra la discriminación de Ventally",
+    "antiDiscriminationPurpose": "Propósito",
+    "antiDiscriminationPurpose1": "• Ventally prohíbe todas las formas de discriminación de conformidad con el Título VII de la Ley de Derechos Civiles y la ley de Derechos Humanos de Connecticut.",
+    "antiDiscriminationPurpose2": "• Todos los usuarios y Guías de Soporte tienen derecho a la igualdad de trato en todas las interacciones en la plataforma.",
+    "antiDiscriminationProhibitedConduct": "Conductas prohibidas",
+    "antiDiscriminationProhibitedConduct1": "• Discriminación por motivos de raza, etnia, religión, sexo, orientación sexual, identidad de género, discapacidad o nacionalidad.",
+    "antiDiscriminationProhibitedConduct2": "• Uso de insultos, comentarios despectivos o discursos de odio.",
+    "antiDiscriminationProhibitedConduct3": "• Comportamiento excluyente o degradante dirigido a características protegidas.",
+    "antiDiscriminationRepercussions": "Repercusiones",
+    "antiDiscriminationRepercussionsText": "• Cualquier conducta discriminatoria dará lugar a una investigación inmediata y puede dar lugar a la suspensión o la expulsión permanente.",
+    "codeOfConductTitle": "Código de Conducta de Ventally",
+    "codeOfConductPurpose": "Propósito",
+    "codeOfConductPurpose1": "• El Código de Conducta de Ventally establece expectativas claras de comportamiento para garantizar un entorno seguro, respetuoso y de apoyo.",
+    "codeOfConductPurpose2": "• Todos los usuarios y guías de soporte deben seguir este Código como condición de participación.",
+    "standardsOfBehavior": "Normas de Comportamiento",
+    "standardRespect": "• Respeto: Tratar a todos los usuarios y Guías de Apoyo con dignidad y empatía.",
+    "standardNoHarassment": "• Sin acoso: el acoso sexual, la intimidación o la coerción están estrictamente prohibidos.",
+    "standardNoHateSpeech": "• Sin discurso de odio: no se tolera la discriminación ni los comentarios despectivos basados en la raza, el género, la orientación sexual, la religión, la discapacidad o la nacionalidad.",
+    "standardNoExploitation": "• Sin explotación: No solicite dinero, favores o interacciones personales inapropiadas.",
+    "standardNoThreats": "• Sin amenazas: el lenguaje amenazante o la incitación a la violencia resultarán en la expulsión inmediata.",
+    "standardConfidentiality": "• Confidencialidad: Respete la privacidad de los demás; no comparta los detalles de la sesión fuera de Ventally.",
+    "reportingMisconduct": "Reporte de Mala Conducta",
+    "reportingMisconduct1": "• Los usuarios pueden denunciar conductas indebidas en cualquier momento utilizando la función «Denunciar» de la aplicación o poniéndose en contacto con el servicio de asistencia de Ventally.",
+    "reportingMisconduct2": "• Todos los informes se revisarán con prontitud y se tratarán de forma confidencial.",
+    "reportingMisconduct3": "• Las Guías de soporte deben finalizar cualquier sesión en la que se produzcan infracciones y escalar los informes de inmediato.",
+    "repercussionsForViolations": "Repercusiones por infracciones",
+    "repercussionsZeroTolerance": "• Ventally aplica un enfoque de tolerancia cero a la mala conducta.",
+    "repercussionsFirstOffense": "• Primera infracción: Advertencia y recordatorio de políticas.",
+    "repercussionsSecondOffense": "• Segunda infracción: Suspensión temporal (7-30 días).",
+    "repercussionsThirdOffense": "• Tercera Infracción: Prohibición permanente y remoción de la plataforma.",
+    "repercussionsSevereViolations": "• Infracciones graves: eliminación inmediata, prohibición permanente y remisión a las autoridades cuando corresponda.",
+    "communityCommitmentTitle": "Compromiso comunitario",
+    "communityCommitmentIntro": "• Al usar Ventally, todos los usuarios aceptan:",
+    "communityCommitment1": "Tratar a los demás con dignidad y respeto",
+    "communityCommitment2": "• Utilizar Ventally únicamente para su propósito previsto: sesión de soporte anónima.",
+    "communityCommitment3": "• Nunca utilice la plataforma para solicitar actividad sexual o participar en acoso. El acoso nunca será tolerado. Los usuarios que se involucren en acoso sexual serán prohibidos y eliminados de inmediato para proteger a la comunidad.",
+    "sexualHarassmentPolicyTitle": "Política contra el acoso sexual",
+    "sexualHarassmentPurpose": "Propósito",
+    "sexualHarassmentPurpose1": "• Ventally se compromete a mantener un entorno seguro, respetuoso e inclusivo para todos los usuarios y guías de soporte.",
+    "sexualHarassmentPurpose2": "• En cumplimiento con el Título VII de la Ley de Derechos Civiles de 1964 (ley federal) y la Ley de Prácticas Justas de Empleo de Connecticut (CFEPA, Conn. Gen. Stat. § 46a-60), Ventally prohíbe todas las formas de acoso sexual.",
+    "definitionOfSexualHarassment": "Definición de acoso sexual",
+    "sexualHarassmentDefinition": "• El acoso sexual incluye cualquier avance sexual no deseado, solicitud de favores sexuales o conducta verbal, escrita o digital de naturaleza sexual que cree un ambiente intimidante, hostil u ofensivo, o interfiera con la capacidad de otra persona para usar Ventally de manera segura.",
+    "examplesProhibitedConduct": "Algunos ejemplos de conductas prohibidas:",
+    "sexualHarassmentExample1": "• Chistes sexuales, insinuaciones o comentarios explícitos durante las interacciones de texto o voz.",
+    "sexualHarassmentExample2": "• Insinuaciones o solicitudes sexuales no deseadas durante las sesiones anónimas.",
+    "sexualHarassmentExample3": "• Enviar o solicitar contenido sexualmente explícito (texto, audio, emojis o medios).",
+    "sexualHarassmentExample4": "• Coacción, intimidación o presión a otro participante por comportamiento sexual.",
+    "sexualHarassmentExample5": "• Represalias contra un usuario o Guía de soporte por rechazar el acoso o presentar una denuncia.",
+    "scopeTitle": "Alcance",
+    "scopeText": "• Esta política se aplica a todos los usuarios de Ventally y a las Guías de soporte en todas las funciones, incluidas.",
+    "scopeVoice": "• Sesiones de voz (llamadas anónimas).",
+    "scopeTextSessions": "• Sesiones de texto (chats).",
+    "scopeInApp": "• Comunicaciones en la aplicación (cualquier forma de mensajes, indicaciones o respuestas).",
+    "reportingHarassment": "Denunciar el Acoso",
+    "reportingHarassment1": "• Los usuarios pueden denunciar el acoso a través de un botón \"Denunciar\" en la aplicación o poniéndose en contacto con el soporte de Ventally.",
+    "reportingHarassment2": "• Se requiere que los Guías de Apoyo terminen las sesiones inmediatamente si ocurre acoso y presenten un informe.",
+    "reportingHarassment3": "• Todos los informes serán investigados de forma confidencial y sin demora por el equipo de seguridad de Ventally.",
+    "sexualHarassmentRepercussions": "Repercusiones por infracciones",
+    "sexualHarassmentZeroTolerance": "• Ventally aplica una política de tolerancia cero para el acoso sexual.",
+    "sexualHarassmentFirstOffense": "• Primera ofensa: advertencia formal y recordatorio de las \"pautas de la comunidad\".",
+    "sexualHarassmentSecondOffense": "• Segunda infracción: Suspensión temporal (7–30 días).",
+    "sexualHarassmentThirdOffense": "• Tercera Infracción: Prohibición permanente y remoción de la plataforma.",
+    "sexualHarassmentSevereViolations": "• Violaciones graves: remoción permanente inmediata y remisión a la policía, incluso bajo los estatutos de acoso de Connecticut (por ejemplo, Conn. Gen. Stat. §53a-183 Acoso en segundo grado).",
+    "privacyTitle": "PRIVACIDAD",
+    "privacyEffectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "privacyContact": "Contacto: info@ventally.co",
+    "privacyIntro": "Ventally (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger su privacidad y mantener su información personal segura. Esta política explica lo que recopilamos, por qué lo recopilamos y cómo lo usamos y protegemos. Al utilizar nuestro sitio web, aplicación o servicios, aceptas esta Política de privacidad.",
+    "informationWeCollect": "1. Información Que Recopilamos",
+    "informationWeCollectIntro": "Google recopila el tipo de información que se indica a continuación.",
+    "informationYouProvide": "Información que usted proporciona.",
+    "informationYouProvide1": "• Detalles de la cuenta (nombre, correo electrónico, número de teléfono si se proporciona)",
+    "informationYouProvide2": "• Información de suscripción/pago (procesada de forma segura por nuestro proveedor de pagos; nunca almacenamos los datos completos de la tarjeta)",
+    "informationYouProvide3": "• Información de perfil para la coincidencia de la Guía de soporte/venter (rango de edad, preferencia de idioma, disponibilidad, datos demográficos)",
+    "informationYouProvide4": "• Comunicaciones (mensajes, comentarios, solicitudes de atención al cliente)",
+    "informationCollectedAutomatically": "Informaciones recogidas automáticamente",
+    "informationCollectedAutomatically1": "• Detalles del dispositivo (dirección IP, sistema operativo, tipo de navegador)",
+    "informationCollectedAutomatically2": "• Datos de uso de la aplicación (páginas visitadas, funciones utilizadas, tiempos de sesión)",
+    "informationCollectedAutomatically3": "• Cookies y tecnologías similares (ver Secciones 8)",
+    "specialCategories": "c. Categorías especiales",
+    "specialCategoriesText": "Si elige compartir información confidencial (por ejemplo, problemas de salud o bienestar mental) durante las sesiones, esto se procesa únicamente para proporcionar nuestros servicios y nunca se utiliza para publicidad.",
+    "howWeUseYourInformation": "2. Cómo usamos su información ",
+    "howWeUseYourInformationIntro": "Utilizaremos su información para:",
+    "howWeUse1": "• Proporcionar y mejorar nuestros servicios",
+    "howWeUse2": "• Emparejarlo con guías de soporte o ventiladores adecuados",
+    "howWeUse3": "• Procesar pagos y gestionar suscripciones",
+    "howWeUse4": "• Responder a sus consultas y solicitudes de asistencia",
+    "howWeUse5": "• Hacer cumplir nuestros Términos de uso y políticas de seguridad",
+    "howWeUse6": "• Detectar y prevenir el fraude, el abuso o las amenazas a la seguridad",
+    "howWeUse7": "Cumplir con las obligaciones legales",
+    "legalBasesForProcessing": "3. Bases legales para el procesamiento (usuarios de la UE/Reino Unido)",
+    "legalBasesIntro": "Procesamos su información en función de:",
+    "legalBases1": "• Necesidad del contrato (para prestar el servicio que solicita)",
+    "legalBases2": "• Intereses legítimos (para mejorar nuestra plataforma y garantizar la seguridad)",
+    "legalBases3": "• Consentimiento (cuando sea necesario, como marketing o ciertos tipos de datos)",
+    "legalBases4": "• Cumplimiento legal (cuando lo exija la ley)",
+    "howWeShareYourInformation": "4. ¿Cómo compartirmos su información?",
+    "howWeShareIntro": "No vendemos su iniformación personal. ",
+    "howWeShare1": "• Proveedores de servicios (por ejemplo, procesadores de pagos, proveedores de alojamiento, herramientas de atención al cliente) bajo estrictos acuerdos de confidencialidad",
+    "howWeShare2": "• Autoridades legales cuando lo exija la ley o para proteger la seguridad",
+    "howWeShare3": "• Sucesores en el negocio (por ejemplo, en una fusión o adquisición, con notificación a usted)",
+    "internationalDataTransfers": "5. Transferencias internacionales de datos",
+    "internationalDataTransfers1": "Operamos a nivel mundial. Tu información puede procesarse en países fuera del tuyo, como EE. UU., Canadá, Reino Unido y Australia.",
+    "internationalDataTransfers2": "Utilizamos salvaguardas como las Cláusulas Contractuales Estándar (SCC) cuando es necesario.",
+    "dataRetention": "6. Conservación de datos",
+    "dataRetention1": "Conservamos su información solo durante el tiempo que sea necesario para los fines descritos en esta política o según lo exija la ley.",
+    "dataRetention2": "Los datos de la cuenta se eliminan dentro de los 90 días posteriores a una solicitud de eliminación verificada, excepto cuando la retención sea legalmente obligatoria.",
+    "yourRights": "7. Tus derechos",
+    "yourRightsIntro": "Dependiendo de su ubicación, es posible que tenga derecho a:",
+    "yourRights1": "• Acceder a una copia de sus datos",
+    "yourRights2": "Corrija cualquier información inexacta.",
+    "yourRights3": "• Eliminar sus datos (\"derecho al olvido\")",
+    "yourRights4": "Restringir u objetar el procesamiento&#160;",
+    "yourRights5": "Retirar el consentimiento en cualquier momento.",
+    "yourRights6": " Portabilidad de datos",
+    "yourRightsContact": "Las solicitudes se pueden enviar a info@ventally.co. Responderemos dentro de los plazos requeridos por la ley.",
+    "cookiesAndTracking": "8. Cookies y seguimiento",
+    "cookiesAndTrackingText": "Utilizamos cookies y tecnologías similares para operar nuestro sitio, mejorar el rendimiento y analizar el uso. Puede ajustar la configuración de cookies en su navegador.",
+    "securityMeasures": "Medidas de seguridad.",
+    "securityMeasuresText": "Utilizamos el cifrado, el almacenamiento seguro y los controles de acceso para proteger tus datos. Sin embargo, ningún método de transmisión a través de Internet es 100% seguro.",
+    "childrensPrivacy": "10. Privacidad de menores",
+    "childrensPrivacyText": "Ventally no es para usuarios menores de 18 años. No recopilamos a sabiendas datos personales de menores de edad. Si cree que un menor ha proporcionado datos, póngase en contacto con nosotros para que los eliminemos.",
+    "thirdPartyLinks": "Enlaces de terceros",
+    "thirdPartyLinksText": "Nuestro sitio o aplicación puede contener enlaces a otros sitios web. No somos responsables de sus prácticas de privacidad.",
+    "changesToThisPolicy": "Cambios en esta Política",
+    "changesToThisPolicyText": "Es posible que actualicemos esta política de vez en cuando. Las actualizaciones se publicarán aquí con una fecha de vigencia revisada.",
+    "contactUs": "13. Contáctenos",
+    "contactUsIntro": "Si tiene preguntas o inquietudes sobre esta Política de privacidad o sobre cómo se manejan sus datos, comuníquese con:",
+    "contactUsTeam": "Equipo de privacidad de Ventally",
+    "contactUsEmail": "Correo electrónico: info@ventally.co"
+  },
+  "OptionalQuestions": {
+    "title": "Algunas Preguntas Opcionales",
+    "introText": "Hacemos algunas preguntas opcionales para comprender mejor quién eres y qué sientes que te apoya.",
+    "sectionHeader": "Tu respuesta nos ayuda a:",
+    "bullet1": "Match you with a listener who gets it and understands your perspective.",
+    "bullet2": "Sea consciente de la identidad, la cultura y los valores.",
+    "bullet3": "Evite las suposiciones sobre cómo se ve el apoyo para usted.",
+    "infoText1": "Siempre tienes el control: puedes omitir cualquier pregunta y nada de lo que compartas cambiará tu acceso a Ventally.",
+    "infoText2": "Tu información es privada y nunca se comparte con otros usuarios.",
+    "continue": "Continuar",
+    "skipAll": "Omitir Todo",
+    "quickQuestions": "Algunas preguntas rápidas — unos 60 segundos"
+  },
+  "QuestionStep": {
+    "stepOf": "Paso {{step}} de {{total}}",
+    "continue": "Continuar",
+    "skip": "Omitir"
+  },
+  "GenderIdentity": {
+    "title": "Identidad de Género",
+    "man": "Man",
+    "woman": "Mujer",
+    "nonBinary": "No binario",
+    "genderNonConforming": "Gender non-conforming",
+    "questioning": "Cuestionando",
+    "preferNotToSay": "Prefiero no decir"
+  },
+  "RacialIdentity": {
+    "title": "Identidad Racial",
+    "black": "Negro",
+    "white": "Blanco",
+    "asian": "Asiática",
+    "nativeIndian": "Indio nativo",
+    "pacificIslander": "Isleño del Pacífico",
+    "middleEastern": "Del Oriente Medio",
+    "northAfrican": "Norte africano",
+    "multiracial": "Multirracial",
+    "other": "Otros"
+  },
+  "Ethnicity": {
+    "title": "Identidad étnica",
+    "africanDiaspora": "Diáspora africana: ",
+    "caribbean": "Caribe",
+    "northAfrican": "Norte africano",
+    "hispanic": "Hispano",
+    "pacificIslander": "Isleño del Pacífico",
+    "middleEastern": "Del Oriente Medio",
+    "asian": "Asiática",
+    "indigenous": "Indígena",
+    "european": "Europeo",
+    "other": "Otros",
+    "preferNotToSay": "Prefiero no decirlo",
+    "multiple": "Múltiple"
+  },
+  "AgeGroup": {
+    "title": "Grupo de Edad",
+    "age18to24": "18 - 24",
+    "age25to34": "De 25 a 34 años",
+    "age35to44": "35 - 44",
+    "age45to54": "45 - 54",
+    "age55to64": "55 - 64",
+    "age65Plus": "65+",
+    "preferNotToSay": "Prefiero no decirlo"
+  },
+  "LGBTQIdentity": {
+    "title": "Identidad LGBTQ",
+    "gay": "Gay",
+    "lesbian": "Lesbiana",
+    "bisexual": "Bisexual",
+    "pansexual": "Pansexual",
+    "asexual": "Asexual",
+    "queer": "«Queer»",
+    "questioning": "Cuestionamiento",
+    "straightHeterosexual": "Straight / Heterosexual",
+    "preferNotToSay": "Prefiero no decirlo"
+  },
+  "SpecialTopics": {
+    "title": "Temas Especiales",
+    "mentalHealth": "Salud mental",
+    "lifeIdentity": "Vida e identidad",
+    "relationships": "Relaciones",
+    "healthMedical": "Salud y Medicina",
+    "workFinances": "Trabajo y finanzas"
+  },
+  "FaithOrBelief": {
+    "title": "Fe o Creencia",
+    "christian": "Christian",
+    "muslim": "Islam",
+    "sikh": "Sijismo",
+    "hindu": "Hinduismo",
+    "buddhist": "Budismo",
+    "jewish": "Judaísmo",
+    "noReligion": "Sin religión",
+    "spiritualNotReligious": "Spiritual (not religious)",
+    "other": "Otros",
+    "preferNotToSay": "Prefiero no decirlo"
+  },
+  "ChoosePlan": {
+    "title": "Elige Tu Plan",
+    "monthly": "Mensual",
+    "annual": "Anual",
+    "payAsYouGo": "Pago por Uso",
+    "payAsYouGoDescription": "Paga solo cuando decidas chatear o llamar.",
+    "basicPlan": "Apoyo Ligero",
+    "basicPlanDescription": "Para necesidades de apoyo ocasionales",
+    "standardPlan": "Apoyo Equilibrado",
+    "standardPlanDescription": "Para apoyo regular y uso continuo",
+    "highSupport": "Apoyo Alto",
+    "highSupportDescription": "Para soporte extendido y uso frecuente",
+    "consistentCare": "Cuidado Constante",
+    "consistentCareDescription": "Para soporte constante y uso continuo",
+    "freeTier": "Nivel Gratuito",
+    "freeTierDescription": "10 minutos incluidos. $0.10 por minuto adicional",
+    "learnMore": "Saber más",
+    "promotions": "Promociones",
+    "addPromoCode": "Añadir Código Promo",
+    "continue": "Continuar",
+    "free": "Gratis",
+    "usd": "USD",
+    "perYear": "por año",
+    "mostPopular": "Más Popular",
+    "seeAdvancedPlans": "Ver planes avanzados",
+    "seeBasicPlans": "Ver planes básicos",
+    "includedMessagesMonthly": "Mensaje de Texto",
+    "includedMessagesAnnual": "textos por mes",
+    "savePercent": "Ahorra 20%",
+    "highSupportOverage": "0,10 por minuto adicional",
+    "selectPlan": "Por favor, seleccione un plan",
+    "noPlansDescription": "Sin planes disponibles",
+    "freeTierOverage": "0,10 por minuto adicional",
+    "consistentCareOverage": "0,10 por minuto adicional",
+    "noPlans": "No hay planes",
+    "consistentCareMessages": "600 mensajes incluidos",
+    "freeTierMessages": "30 mensajes incluidos",
+    "standardPlanMessages": "300 mensajes incluidos",
+    "highSupportMessages": "1200 mensajes incluidos",
+    "basicPlanOverage": "0,10 por minuto adicional",
+    "basicPlanMessages": "150 mensajes incluidos",
+    "standardPlanOverage": "0,10 por minuto adicional",
+    "cancelAnytime": "✓ Cancela cuando quieras",
+    "noHiddenFees": "✓ Sin cargos ocultos",
+    "secure": "✓ Seguro"
+  },
+  "BasicPlanDetails": {
+    "title": "Detalles del Plan",
+    "sectionHeading": "Incluye",
+    "yourPlanIncludes": "Incluye",
+    "includedMinutes": "Minutos Incluidos",
+    "overageRate": "Tarifa por Exceso",
+    "supportLevel": "Nivel de Soporte",
+    "minutes": "minutos",
+    "perMin": "por min",
+    "included": "incluido",
+    "voiceMinute": "minuto de voz",
+    "noSubscriptionRequired": "No se requiere suscripción",
+    "basic": {
+      "description": "Para necesidades de apoyo ocasionales",
+      "features": [
+        "150 mensajes",
+        "30 minutos de voz",
+        "Herramientas de bienestar emocional incluidas"
+      ]
+    },
+    "standard": {
+      "description": "Para apoyo regular y uso continuo",
+      "features": [
+        "300 mensajes",
+        "60 minutos de voz",
+        "Herramientas de bienestar emocional incluidas"
+      ]
+    },
+    "highSupport": {
+      "description": "Para soporte extendido y uso frecuente",
+      "features": [
+        "1200 mensajes",
+        "240 minutos de voz",
+        "Herramientas de bienestar emocional incluidas"
+      ]
+    },
+    "consistentCare": {
+      "description": "Para soporte constante y uso continuo",
+      "features": [
+        "600 mensajes",
+        "120 minutos de voz",
+        "Herramientas de bienestar emocional incluidas"
+      ]
+    },
+    "payAsYouGo": {
+      "description": "Acceso flexible basado en el uso",
+      "features": [
+        "Minutos de voz $1.75 cada uno",
+        "Mensajes $0.35 cada uno",
+        "Acceso a todos los oyentes disponibles",
+        "Sin cuotas mensuales ni anuales",
+        "Seguro y confidencial"
+      ]
+    },
+    "free": {
+      "description": "Explora la experiencia primero",
+      "features": [
+        "30 mensajes",
+        "10 minutos de voz",
+        "Herramientas de bienestar emocional incluidas"
+      ]
+    }
+  },
+  "PaymentMethods": {
+    "title": "Modos de pago",
+    "creditDebitCard": "Tarjeta de crédito / débito",
+    "creditCard": "Tarjeta de Crédito",
+    "paypal": "PayPal",
+    "applePay": "Apple Pay",
+    "samsungPay": "Samsung Pay",
+    "continue": "Continuar",
+    "addPaymentMethod": "Añadir Método de Pago"
+  },
+  "PaymentMethodSaved": {
+    "title": "Método de pago guardado",
+    "message": "Tu método de pago ya está guardado."
+  },
+  "SubscriptionSuccess": {
+    "title": "¡Estás Suscrito!",
+    "subtitle": "Tu plan ahora está activo",
+    "benefitsTitle": "Incluye",
+    "benefit1": "Mensajes ilimitados",
+    "benefit2": "Disponibilidad de sesión prioritaria",
+    "benefit3": "Tarifas de voz reducidas",
+    "benefit4": "Controles de bienestar incluidos",
+    "changeSubscription": "Cambiar Suscripción",
+    "renewalDate": "Tu suscripción se renueva el {{date}}",
+    "letsStart": "Empecemos",
+    "backToCall": "Volver a Voz",
+    "backToChat": "Volver a Mensaje",
+    "cancelSubscription": "Cancelar Suscripción",
+    "subscriptionCancelledTitle": "Suscripción Cancelada",
+    "subscriptionCancelledMessage": "Tu suscripción ha sido cancelada.",
+    "continue": "Continuar",
+    "subscriptionRenewedTitle": "Suscripción Renovada",
+    "subscriptionRenewedMessage": "Tu suscripción ha sido renovada. El acceso continúa.",
+    "renewalFailedTitle": "Renovación Fallida",
+    "renewalFailedMessage": "No pudimos procesar tu renovación. Por favor, actualiza tu método de pago para continuar el acceso.",
+    "updatePaymentMethod": "Actualizar Método de Pago",
+    "tryAgain": "Intentar de Nuevo",
+    "close": "Cerrar",
+    "cancelConfirmationMessage": "¿Estás seguro de que quieres cancelar tu suscripción?"
+  },
+  "SubscriptionDetails": {
+    "title": "Detalles de Suscripción",
+    "premiumTitle": "Ventally Premium",
+    "premiumSubtitle": "Acceso a funciones premium",
+    "manageSubscription": "Gestionar Suscripción",
+    "detailsTitle": "Detalles de Suscripción",
+    "nextBillingDate": "Próxima fecha de facturación:",
+    "billingDateValue": "Dic 05",
+    "monthlyPlan": "Plan mensual:",
+    "planValue": "$20.00",
+    "fundsUsed": "Fondos utilizados:",
+    "fundsValue": "$50.00",
+    "cancelSubscription": "Cancelar Suscripción",
+    "choosePlan": "Elegir Plan",
+    "cancelledMessage": "Tu suscripción se canceló exitosamente.",
+    "cancelConfirmationMessage": "¿Estás seguro de que deseas cancelar tu suscripción? Perderás el acceso a las funciones premium al final de tu ciclo de facturación.",
+    "freePlanMessage": "Actualmente estás en el plan gratuito. Actualiza para desbloquear las funciones premium.",
+    "noActiveSubscription": "Sin Suscripción Activa",
+    "upgradeMessage": "Actualiza para acceder a las funciones premium",
+    "cancelSuccess": "Suscripción cancelada exitosamente",
+    "cancelled": "Suscripción Cancelada",
+    "freePlan": "Plan Gratuito"
+  },
+  "AddPaymentMethod": {
+    "title": "AÑADIR MÉTODOS DE PAGO",
+    "cardHolderName": "Nombre del titular de la tarjeta",
+    "cardNumber": "Número de tarjeta",
+    "expiryDate": "Fecha de vencimiento",
+    "securityCode": "Código de seguridad",
+    "billingAddress": "Dirección de facturación",
+    "city": "Ciudad",
+    "state": "Provincia",
+    "zipCode": "Código postal",
+    "setAsDefault": "Seleccionar como método de pago por defecto",
+    "addPaymentMethod": "Añadir Método de Pago",
+    "errors": {
+      "cardHolderNameRequired": "El nombre del titular de la tarjeta es obligatorio",
+      "cardNumberRequired": "El número de tarjeta es obligatorio",
+      "cardNumberInvalid": "El número de tarjeta debe tener 16 dígitos",
+      "expiryDateRequired": "Se requiere fecha de caducidad.",
+      "expiryDateInvalid": "La fecha de caducidad no es válida o ha caducado",
+      "securityCodeRequired": "El código de seguridad es obligatorio",
+      "securityCodeInvalid": "El código de seguridad debe tener 3-4 dígitos",
+      "billingAddressRequired": "Dirección de facturación es requerida",
+      "cityRequired": "El campo de ciudad es obligatorio",
+      "stateRequired": "El estado es necesario",
+      "zipCodeRequired": "El código postal es obligatorio",
+      "zipCodeInvalid": "El código postal debe tener 5 dígitos"
+    }
+  },
+  "ListenerTraining": {
+    "title": "Capacitación de Oyentes",
+    "subtitle": "Escuchar con cuidado: su papel, responsabilidades y límites en Ventally",
+    "expertise": "Experiencia",
+    "emotionalIntelligence": "Inteligencia emocional",
+    "activeListening": "Escucha activa",
+    "courseOverview": "Descripción general del Curso",
+    "courseDescription": "This course teaches you to listen with empathy, support others safely, and hold space without judgment - while maintaining healthy boundaries. At Ventally, we believe in the healing power of being seen and heard.",
+    "hours": "Horas",
+    "modules": "Módulos",
+    "missionTitle": "La misión de Ventally y su función",
+    "missionDescription": "Ventally empowers emotional support through empathetic listening and meaningful human connection.",
+    "legalTitle": "Límites legales y éticos",
+    "confidentialityTitle": "Confidencialidad y datos",
+    "communicationTitle": "Habilidades de comunicación y mantenerse presente",
+    "distressedTitle": "Apoyar a los ventiladores angustiados",
+    "redFlagsTitle": "Señales de alerta y protocolos de escalada",
+    "selfCareTitle": "Self-Care for Listeners",
+    "continue": "Continuar",
+    "agreeAllTerms": "Acepta todos los términos y condiciones para continuar.",
+    "complianceIntro": "POLÍTICA DE CUMPLIMIENTO Y CONDUCTA DEL OYENTE\nCapacitación obligatoria y acuerdo vinculante\n\nEsta capacitación constituye un requisito de cumplimiento obligatorio y un acuerdo operativo vinculante para todas las Guías de soporte de Ventally.\n\nAl registrarse, incorporarse o interactuar con inversores en esta plataforma, usted reconoce que está operando dentro de un entorno de sesión de apoyo controlado que implica la exposición a revelaciones psicológicas sensibles, lenguaje de crisis, ideación suicida, informes de abuso y violencia emocional.",
+    "complianceAgreement": "Reconozco que esta capacitación constituye un acuerdo de cumplimiento vinculante.",
+    "complianceTitle": "Política de cumplimiento y conducta",
+    "complianceModules": [
+      {
+        "id": "module1",
+        "title": "Platform Mission and Scope of Support Guide Role",
+        "content": "Ventally operates as a structured support session platform designed to provide individuals with a confidential space to express emotional distress without diagnosis, treatment, or clinical intervention.\n\nSupport Guides serve as peer support session providers only.\n\nSupport Guides are authorized to:\n• Provide empathetic listening\n• Offer emotional validation\n• Maintain supportive presence\n• Encourage professional resources when appropriate\n\nSupport Guides are not authorized to provide any form of mental health treatment, intervention, or guidance beyond support session.\n\nSupport Guides are not functioning as therapists, psychologists, psychiatrists, counselors, crisis responders, or licensed social workers within the scope of this platform.\n\nSupport Guides are not responsible for ventor mental health outcomes, emotional stabilization, crisis resolution, or behavioral change.",
+        "checkboxLabel": "I acknowledge and accept the defined scope limitations of my role."
+      },
+      {
+        "id": "module2",
+        "title": "Legal and Ethical Practice Boundaries",
+        "content": "Support Guides are strictly prohibited from engaging in clinical, diagnostic, or medical conduct while operating on the platform.\n\nProhibited conduct includes but is not limited to:\n• Providing therapy or counseling\n• Diagnosing psychological disorders\n• Labeling mental health conditions\n• Suggesting medications\n• Advising medication discontinuation\n• Offering treatment plans\n• Recommending coping interventions as treatment\n• Interpreting psychiatric symptoms\n• Providing medical or psychological opinions\n\nEven informal statements that imply diagnosis or treatment constitute policy violations.\n\nUnauthorized clinical guidance creates risk of psychological harm, treatment interference, and legal liability exposure.",
+        "checkboxLabel": "I acknowledge that clinical guidance of any kind is prohibited."
+      },
+      {
+        "id": "module3",
+        "title": "Confidentiality and Data Protection Compliance",
+        "content": "Confidentiality is a mandatory and legally binding requirement of Support Guide participation.\n\nAll Support Guides enter into a confidentiality agreement prior to engaging with users.\n\nSupport Guides are strictly prohibited from:\n• Capturing screenshots\n• Recording audio sessions\n• Saving chat transcripts\n• Copying user messages\n• Sharing session content externally\n• Discussing ventor disclosures with third parties\n• Publishing anonymized content\n• Attempting to identify users\n• Contacting users outside the platform\n\nConfidentiality applies across all personal, professional, and digital environments without exception.\n\nViolation of confidentiality will result in permanent removal and may result in legal escalation depending on severity.",
+        "checkboxLabel": "I acknowledge and agree to all confidentiality and data protection requirements."
+      },
+      {
+        "id": "module4",
+        "title": "Communication Conduct and Interaction Standards",
+        "content": "Support Guides are required to demonstrate emotionally competent, non directive communication at all times.\n\nSupport Guides must utilize:\n• Active listening\n• Emotional validation\n• Reflective paraphrasing\n• Tone neutrality\n\nSupport Guides must not:\n• Provide unsolicited advice\n• Minimize emotional disclosures\n• Redirect conversations toward personal experiences\n• Offer solutions in place of validation\n\nSupport Guides are required to maintain emotional neutrality while supporting ventor expression.",
+        "checkboxLabel": "I acknowledge the required communication conduct standards."
+      },
+      {
+        "id": "module5",
+        "title": "Management of Emotional Distress Presentations",
+        "content": "Ventors may present in heightened emotional states, including but not limited to panic, grief, trauma expression, and emotional destabilization.\n\nSupport Guides are authorized to:\n• Maintain calm presence\n• Validate distress\n• Encourage external support resources\n\nSupport Guides are not authorized to:\n• Stabilize psychological crises\n• Provide mental health intervention\n• Deliver coping treatment\n• Assume responsibility for emotional outcomes",
+        "checkboxLabel": "I acknowledge the limits of my responsibility when supporting distressed ventors."
+      },
+      {
+        "id": "module6",
+        "title": "Crisis Escalation & 988",
+        "content": "Ventally enforces a zero tolerance policy regarding failure to escalate suicidal risk.\n\nIf a ventor expresses suicidal ideation, intent to self harm, or statements indicating they do not wish to live, Support Guides are required to take immediate escalation action.\n\nThis includes:\n• Referring the ventor to the 988 Suicide and Crisis Lifeline\n• Encouraging connection to emergency support services\n• Utilizing the in app report and escalation tools\n• Safely disengaging from the session if necessary\n\nSuicidal language may include, but is not limited to:\n• “I don’t want to be here anymore.”\n• “I’m thinking about ending my life.”\n• “I have a plan.”\n• “Everyone would be better off without me.”\n• “I don’t see the point in living.”\n\nAny statement indicating self harm risk must be treated as a crisis escalation event.\n\nENFORCEMENT STANDARD\nFailure to escalate suicidal risk is considered a severe violation of Support Guide safety policy.\nIf a Support Guide fails to refer to 988, continues the session without referral, attempts independent crisis management, ignores disclosures, or fails to report the interaction, the Support Guide will be subject to immediate permanent removal from the platform.\nRemoval is final and non appealable.",
+        "checkboxLabel": "I acknowledge and accept the crisis escalation enforcement policy."
+      },
+      {
+        "id": "module7",
+        "title": "Professional Boundary Enforcement",
+        "content": "Support Guides are prohibited from engaging in personal, romantic, or off platform relationships with ventors.\n\nProhibited conduct includes:\n• Flirtation\n• Romantic dialogue\n• Meetup arrangements\n• Exchange of personal contact information\n• Social media connections\n• Off platform communication\n\nBoundary violations compromise user safety and platform integrity.",
+        "checkboxLabel": "I acknowledge and agree to all professional boundary requirements."
+      },
+      {
+        "id": "module8",
+        "title": "Support Guide Psychological Fitness and Burnout Responsibility",
+        "content": "Support Guides are responsible for monitoring their emotional capacity to engage safely.\n\nSupport Guides must:\n• Limit session volume\n• Take restorative breaks\n• Pause engagement when overwhelmed\n\nSupport Guides experiencing emotional fatigue must disengage rather than continue impaired listening.",
+        "checkboxLabel": "I acknowledge my responsibility to maintain psychological fitness while serving as a Support Guide."
+      },
+      {
+        "id": "final",
+        "title": "Final Binding Compliance Confirmation",
+        "content": "By proceeding, you certify that you have read, understood, and agreed to all platform policies, including confidentiality, escalation, conduct, and scope limitations.\n\nYou acknowledge that violations may result in immediate and permanent removal from the Ventally platform.",
+        "checkboxLabel": "I certify full compliance and agreement with all Support Guide policies."
+      }
+    ],
+    "resumeLater": "Reanudar más tarde — el progreso se guarda"
+  },
+  "ListenerTermsAndConditions": {
+    "title": "Terms & Polices",
+    "liabilityWaiver": "Ventally Listener Liability Waiver",
+    "paymentTerms": "Reconocimiento de los términos de pago de Ventally",
+    "listenerAgreement": "Ventally Listener Agreement",
+    "nda": "Ventally Listener Non-Disclosure Agreement (NDA)",
+    "codeOfConduct": "Ventally Listener Code Of Conduct",
+    "nameLabel": "Nombre:",
+    "namePlaceholder": "Introduzca su nombre completo",
+    "signatureLabel": "Añada Su Firma",
+    "signaturePlaceholder": "Pulsa aquí para añadir tu firma digital",
+    "continue": "Continuar",
+    "stepIndicator": "Paso 4 de 5 — Acuerdo Legal",
+    "almostDone": "¡Casi listo!",
+    "liabilitySummary": "Participas voluntariamente como proveedor de apoyo entre pares, no como clínico.",
+    "paymentSummary": "Las ganancias se procesan semanalmente. Se aplica un umbral mínimo de sesión.",
+    "agreementSummary": "Todas las conversaciones de usuarios son estrictamente confidenciales.",
+    "ndaSummary": "Aceptas no divulgar información de usuarios fuera de la plataforma.",
+    "conductSummary": "Mantén empatía, profesionalismo y límites en todo momento.",
+    "agreeAll": "He leído y acepto todos los términos y políticas de Ventally Support Guide.",
+    "agreeAndContinue": "Aceptar y continuar →"
+  },
+  "ListenerLiabilityWaiver": {
+    "title": "Exención de Responsabilidad del Oyente de Ventally",
+    "effectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "introText1": "Al participar como Guía de Apoyo en Ventally, reconoce y acepta los siguientes términos.",
+    "introText2": "Por favor lea este documento cuidadosamente antes de continuar.",
+    "continue": "Aceptar y continuar",
+    "signatures": {
+      "title": "Firmas",
+      "text": "Al aceptar, confirma haber leído y comprendido esta exención."
+    },
+    "sections": [
+      {
+        "title": "1. PARTICIPACIÓN VOLUNTARIA Y ASUNCIÓN DE RIESGO",
+        "bullets": [
+          "Participa voluntariamente como Guía de Apoyo y acepta todos los riesgos asociados con esta participación."
+        ]
+      },
+      {
+        "title": "2. AUSENCIA DE RELACIÓN TERAPEUTA-PACIENTE",
+        "bullets": [
+          "El servicio de apoyo entre pares no constituye terapia profesional ni asesoramiento médico."
+        ]
+      },
+      {
+        "title": "3. LIMITACIÓN DE RESPONSABILIDAD",
+        "bullets": [
+          "Ventally no será responsable de los daños derivados de su participación como Guía de Apoyo."
+        ]
+      },
+      {
+        "title": "4. INDEMNIZACIÓN",
+        "bullets": [
+          "Acepta indemnizar a Ventally contra cualquier reclamación derivada de su conducta como Guía de Apoyo."
+        ]
+      },
+      {
+        "title": "5. SALUD Y SEGURIDAD",
+        "bullets": [
+          "Usted es responsable de su propio bienestar mental y físico durante las sesiones."
+        ]
+      },
+      {
+        "title": "6. REPORTE DE CRISIS",
+        "bullets": [
+          "Debe seguir los protocolos de Ventally para reportar cualquier situación de crisis que involucre a usuarios."
+        ]
+      },
+      {
+        "title": "7. AUSENCIA DE GARANTÍA",
+        "bullets": [
+          "Ventally no garantiza resultados específicos para usted o los usuarios a quienes apoya."
+        ]
+      },
+      {
+        "title": "8. MODIFICACIONES",
+        "bullets": [
+          "Ventally puede modificar esta exención en cualquier momento con aviso razonable."
+        ]
+      },
+      {
+        "title": "9. DIVISIBILIDAD",
+        "bullets": [
+          "Si alguna disposición es inválida, el resto de la exención permanece vigente."
+        ]
+      },
+      {
+        "title": "10. RECONOCIMIENTO",
+        "bullets": [
+          "Reconoce haber leído, comprendido y aceptado todos los términos de esta exención."
+        ]
+      },
+      {
+        "title": "11. LEY APLICABLE",
+        "bullets": [
+          "Esta exención se rige por las leyes del Estado de Connecticut."
+        ]
+      },
+      {
+        "title": "12. ACUERDO COMPLETO",
+        "bullets": [
+          "Este documento constituye el acuerdo completo de exención entre las partes."
+        ]
+      }
+    ]
+  },
+  "ListenerAgreement": {
+    "title": "Acuerdo de Guía de Apoyo de Ventally",
+    "effectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "introText1": "Este Acuerdo de Guía de Apoyo se celebra entre Ventally LLC ('Ventally') y el Guía de Apoyo ('el Oyente').",
+    "continue": "Aceptar y continuar",
+    "signatures": {
+      "title": "Firmas",
+      "text": "Al aceptar, confirma haber leído y aceptado los términos."
+    },
+    "sections": [
+      {
+        "title": "1. ROL Y ALCANCE DEL COMPROMISO",
+        "bullets": [
+          "El Guía de Apoyo se compromete a proporcionar apoyo emocional entre pares a los usuarios de la plataforma Ventally de manera profesional y empática."
+        ]
+      },
+      {
+        "title": "2. ESTADO DE CONTRATISTA INDEPENDIENTE",
+        "bullets": [
+          "El Guía de Apoyo es un contratista independiente y no un empleado, agente o socio de Ventally."
+        ]
+      },
+      {
+        "title": "3. NORMAS DE CONDUCTA",
+        "bullets": [
+          "El Guía de Apoyo debe mantener altos estándares de profesionalismo, empatía y respeto hacia todos los usuarios."
+        ]
+      },
+      {
+        "title": "4. CONFIDENCIALIDAD",
+        "bullets": [
+          "El Guía de Apoyo debe mantener la estricta confidencialidad de toda la información de los usuarios y las sesiones."
+        ]
+      },
+      {
+        "title": "5. COMPENSACIÓN",
+        "bullets": [
+          "El Guía de Apoyo será compensado de acuerdo con la estructura tarifaria de Ventally para las sesiones completadas."
+        ]
+      },
+      {
+        "title": "6. DURACIÓN Y TERMINACIÓN",
+        "bullets": [
+          "Este acuerdo permanece vigente hasta su terminación por cualquiera de las partes con aviso razonable."
+        ]
+      },
+      {
+        "title": "7. PROPIEDAD INTELECTUAL",
+        "bullets": [
+          "Todo contenido creado dentro de la plataforma Ventally permanece propiedad exclusiva de Ventally."
+        ]
+      },
+      {
+        "title": "8. LIMITACIÓN DE RESPONSABILIDAD",
+        "bullets": [
+          "Ventally no será responsable de daños indirectos, incidentales o consecuentes derivados del uso de la plataforma."
+        ]
+      },
+      {
+        "title": "9. CONDUCTA PROHIBIDA",
+        "bullets": [
+          "El Guía de Apoyo no debe participar en comportamientos no profesionales, discriminatorios o perjudiciales hacia los usuarios."
+        ]
+      },
+      {
+        "title": "10. CUMPLIMIENTO DE POLÍTICAS",
+        "bullets": [
+          "El Guía de Apoyo debe cumplir con todas las políticas y directrices de Ventally según se actualicen periódicamente."
+        ]
+      },
+      {
+        "title": "11. LEY APLICABLE",
+        "bullets": [
+          "Este acuerdo se rige por las leyes del Estado de Connecticut."
+        ]
+      },
+      {
+        "title": "12. ACUERDO COMPLETO",
+        "bullets": [
+          "Este acuerdo constituye el acuerdo completo entre las partes y reemplaza todos los acuerdos anteriores."
+        ]
+      }
+    ]
+  },
+  "PaymentTermsAcknowledgment": {
+    "title": "Reconocimiento de Términos de Pago del Oyente de Ventally",
+    "effectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "introText1": "Este documento describe los términos de pago para los Guías de Apoyo en la plataforma Ventally.",
+    "introText2": "Por favor lea cuidadosamente antes de aceptar.",
+    "continue": "Aceptar y continuar",
+    "signatures": {
+      "title": "Firmas",
+      "text": "Al aceptar, confirma haber leído y comprendido estos términos de pago."
+    },
+    "sections": [
+      {
+        "title": "1. ESTADO DE CONTRATISTA INDEPENDIENTE",
+        "bullets": [
+          "Es un contratista independiente y no un empleado de Ventally. Es responsable de sus propios impuestos y obligaciones legales."
+        ]
+      },
+      {
+        "title": "2. ESTRUCTURA DE COMPENSACIÓN",
+        "bullets": [
+          "Será compensado según la tarifa por sesión acordada, sujeto a las políticas de pago de Ventally."
+        ]
+      },
+      {
+        "title": "3. CALENDARIO DE PAGOS",
+        "bullets": [
+          "Los pagos se procesan semanalmente para las sesiones completadas durante la semana anterior."
+        ]
+      },
+      {
+        "title": "4. UMBRAL MÍNIMO",
+        "bullets": [
+          "Puede aplicarse un umbral mínimo de sesión antes de que las ganancias sean elegibles para retiro."
+        ]
+      },
+      {
+        "title": "5. MÉTODOS DE PAGO",
+        "bullets": [
+          "Ventally ofrece varios métodos de pago. Es responsable de proporcionar información de pago precisa."
+        ]
+      },
+      {
+        "title": "6. RETENCIONES Y DEDUCCIONES",
+        "bullets": [
+          "Ventally puede deducir comisiones de plataforma u otros montos aplicables de sus ganancias."
+        ]
+      },
+      {
+        "title": "7. DISPUTAS DE PAGO",
+        "bullets": [
+          "Cualquier disputa de pago debe reportarse a Ventally dentro de los 30 días de la transacción."
+        ]
+      },
+      {
+        "title": "8. MODIFICACIONES DE TÉRMINOS",
+        "bullets": [
+          "Ventally puede modificar los términos de pago con aviso razonable."
+        ]
+      },
+      {
+        "title": "9. CUMPLIMIENTO FISCAL",
+        "bullets": [
+          "Es el único responsable de declarar y pagar todos los impuestos aplicables sobre sus ganancias."
+        ]
+      },
+      {
+        "title": "10. ACUERDO COMPLETO",
+        "bullets": [
+          "Este documento constituye el acuerdo completo de pago entre las partes."
+        ]
+      }
+    ]
+  },
+  "ListenerNDA": {
+    "title": "Acuerdo de No Divulgación de Ventally para Oyentes",
+    "effectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "introText1": "Este Acuerdo de No Divulgación ('NDA') se celebra entre Ventally Limited Liability Company ('Ventally' o 'la Empresa') y el Guía de Apoyo ('el Oyente').",
+    "continue": "Aceptar y continuar",
+    "signatures": {
+      "title": "Firmas",
+      "text": "Al aceptar este acuerdo, confirma que ha leído, comprendido y aceptado los términos de este Acuerdo de No Divulgación."
+    },
+    "sections": [
+      {
+        "title": "1. PROPÓSITO",
+        "bullets": [
+          "• El propósito de este NDA es proteger la confidencialidad, integridad y privacidad de los datos de los usuarios, información comercial propietaria y propiedad intelectual a la que el Guía de Apoyo puede acceder durante su compromiso con Ventally."
+        ]
+      },
+      {
+        "title": "2. DEFINICIÓN DE INFORMACIÓN CONFIDENCIAL",
+        "bullets": [
+          "'Información Confidencial' significa toda información no pública, propietaria, sensible o comercialmente valiosa divulgada por Ventally al Guía de Apoyo, incluyendo pero no limitado a:",
+          "Arquitectura de la plataforma, algoritmos, sistemas internos y flujos de trabajo;",
+          "Módulos de capacitación del Guía de Apoyo, documentación interna y scripts propietarios;",
+          "Información personal del usuario, incluyendo nombres, datos de contacto y divulgaciones de salud mental;",
+          "Infraestructura técnica, sistemas backend, código fuente, software, APIs;",
+          "Planes de negocios, estrategias de desarrollo de productos y datos financieros;",
+          "Información expresamente marcada como 'confidencial'."
+        ]
+      },
+      {
+        "title": "3. EXCLUSIONES DE INFORMACIÓN CONFIDENCIAL",
+        "bullets": [
+          "La Información Confidencial no incluirá información que: (a) estaba legalmente en posesión del Guía de Apoyo antes de la divulgación por Ventally; (b) se vuelve públicamente disponible sin acto incorrecto del Guía de Apoyo; (c) es divulgada por un tercero legalmente autorizado; (d) es desarrollada independientemente sin uso de Información Confidencial."
+        ]
+      },
+      {
+        "title": "4. OBLIGACIONES DEL OYENTE",
+        "bullets": [
+          "El Guía de Apoyo mantendrá estricta confidencialidad de toda Información Confidencial y no la divulgará a terceros sin consentimiento escrito previo de Ventally.",
+          "El Guía de Apoyo usará la Información Confidencial únicamente para realizar sus responsabilidades designadas como Guía de Apoyo en la plataforma.",
+          "El Guía de Apoyo implementará salvaguardas físicas, técnicas y administrativas razonables para proteger la Información Confidencial.",
+          "Al terminar este Acuerdo, el Guía de Apoyo devolverá todos los materiales que contengan Información Confidencial o certificará su destrucción permanente.",
+          "El Guía de Apoyo notificará inmediatamente a Ventally sobre cualquier acceso no autorizado a la Información Confidencial."
+        ]
+      },
+      {
+        "title": "5. CONFIDENCIALIDAD DE DATOS DE USUARIOS",
+        "bullets": [
+          "El Guía de Apoyo reconoce expresamente que todos los datos relacionados con usuarios e información de identificación personal compartida en la plataforma Ventally están sujetos a estricta confidencialidad y leyes de protección de datos."
+        ]
+      },
+      {
+        "title": "6. PROCESADORES EXTERNOS",
+        "bullets": [
+          "El Guía de Apoyo reconoce que Ventally puede usar procesadores externos de confianza para apoyar la funcionalidad de la plataforma y acepta no transmitir datos de la plataforma a terceros sin consentimiento previo de Ventally."
+        ]
+      },
+      {
+        "title": "7. CUMPLIMIENTO INTERNACIONAL Y CONTROL DE EXPORTACIONES",
+        "bullets": [
+          "El Guía de Apoyo cumplirá con todas las leyes aplicables de privacidad de datos, seguridad de la información y control de exportaciones en su jurisdicción respectiva."
+        ]
+      },
+      {
+        "title": "8. OBLIGACIONES FIDUCIARIAS",
+        "bullets": [
+          "El Guía de Apoyo ejercerá el mayor grado de cuidado y profesionalismo al manejar Información Confidencial, actuando de manera consistente con los deberes fiduciarios de confianza, lealtad y discreción hacia Ventally."
+        ]
+      },
+      {
+        "title": "9. TÉRMINO Y SUPERVIVENCIA",
+        "bullets": [
+          "Este Acuerdo entrará en vigencia en la Fecha de Vigencia y permanecerá en efecto durante la duración del compromiso del Guía de Apoyo con Ventally. La obligación de confidencialidad sobrevivirá por tres (3) años."
+        ]
+      },
+      {
+        "title": "10. SIN LICENCIA NI TRANSFERENCIA DE PROPIEDAD INTELECTUAL",
+        "bullets": [
+          "No se otorga ninguna licencia o derecho de uso de la propiedad intelectual de Ventally al Guía de Apoyo bajo este Acuerdo, excepto según sea necesario para el desempeño de sus funciones autorizadas."
+        ]
+      },
+      {
+        "title": "11. REMEDIOS Y APLICACIÓN",
+        "bullets": [
+          "En caso de incumplimiento de este Acuerdo, Ventally tendrá derecho a medidas cautelares, cumplimiento específico y otros recursos equitativos además de daños monetarios."
+        ]
+      },
+      {
+        "title": "12. DIVISIBILIDAD",
+        "bullets": [
+          "Si alguna disposición de este Acuerdo es inválida o inaplicable, será modificada en la medida mínima necesaria para hacerla aplicable, y el resto del Acuerdo permanecerá en plena vigencia."
+        ]
+      },
+      {
+        "title": "13. LEY APLICABLE Y RESOLUCIÓN DE DISPUTAS",
+        "bullets": [
+          "Este Acuerdo se regirá por las leyes del Estado de Connecticut. Cualquier disputa se someterá a arbitraje vinculante ante un árbitro único en el Condado de New Haven, Connecticut."
+        ]
+      },
+      {
+        "title": "14. ACUERDO COMPLETO",
+        "bullets": [
+          "Este Acuerdo constituye el acuerdo completo entre las Partes con respecto a su objeto y reemplaza todos los acuerdos o entendimientos anteriores."
+        ]
+      }
+    ]
+  },
+  "ListenerCodeOfConduct": {
+    "title": "Código de Conducta del Oyente de Ventally",
+    "effectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "introText1": "Como Guía de Apoyo en Ventally, se compromete a cumplir con las siguientes normas de conducta.",
+    "continue": "Aceptar y continuar",
+    "signatures": {
+      "title": "Firmas",
+      "text": "Al aceptar, se compromete a cumplir con este Código de Conducta."
+    },
+    "sections": [
+      {
+        "title": "1. PROFESIONALISMO E INTEGRIDAD",
+        "bullets": [
+          "• Mantener comportamiento profesional en todo momento",
+          "• Actuar con honestidad e integridad en todas las interacciones",
+          "• Respetar la dignidad y el valor de cada usuario"
+        ]
+      },
+      {
+        "title": "2. CONFIDENCIALIDAD",
+        "bullets": [
+          "• Proteger la privacidad de todos los usuarios",
+          "• Nunca divulgar información de sesión a terceros",
+          "• Respetar todas las leyes de protección de datos aplicables"
+        ]
+      },
+      {
+        "title": "3. LÍMITES PROFESIONALES",
+        "bullets": [
+          "• Mantener límites apropiados con los usuarios",
+          "• Evitar relaciones personales con usuarios fuera de la plataforma",
+          "• Reportar cualquier comportamiento inapropiado a Ventally"
+        ]
+      },
+      {
+        "title": "4. COMPETENCIA Y FORMACIÓN",
+        "bullets": [
+          "• Completar toda la formación requerida por Ventally",
+          "• Mantener las habilidades necesarias para brindar apoyo efectivo",
+          "• Participar en programas de desarrollo profesional"
+        ]
+      },
+      {
+        "title": "5. PROTOCOLOS DE CRISIS",
+        "bullets": [
+          "• Seguir los protocolos de crisis de Ventally",
+          "• Dirigir a usuarios en crisis hacia recursos profesionales",
+          "• Reportar inmediatamente las situaciones de emergencia"
+        ]
+      },
+      {
+        "title": "6. NO DISCRIMINACIÓN",
+        "bullets": [
+          "• Tratar a todos los usuarios con respeto independientemente de su origen",
+          "• Evitar comportamientos discriminatorios o perjudiciales",
+          "• Respetar la diversidad y la inclusión"
+        ]
+      },
+      {
+        "title": "7. USO DE LA PLATAFORMA",
+        "bullets": [
+          "• Usar la plataforma únicamente para los fines previstos",
+          "• No abusar de las funciones de la plataforma",
+          "• Reportar problemas técnicos a Ventally"
+        ]
+      },
+      {
+        "title": "8. COMUNICACIÓN",
+        "bullets": [
+          "• Comunicarse clara y respetuosamente",
+          "• Responder prontamente a los mensajes de los usuarios",
+          "• Mantener un tono empático y de apoyo"
+        ]
+      },
+      {
+        "title": "9. RESPONSABILIDAD",
+        "bullets": [
+          "• Asumir responsabilidad por sus acciones y decisiones",
+          "• Reconocer errores y aprender de ellos",
+          "• Respetar las decisiones de Ventally sobre políticas de la plataforma"
+        ]
+      },
+      {
+        "title": "10. CUMPLIMIENTO LEGAL",
+        "bullets": [
+          "• Respetar todas las leyes y reglamentos aplicables",
+          "• Reportar cualquier actividad ilegal o antiética",
+          "• Cooperar con investigaciones legales si es necesario"
+        ]
+      },
+      {
+        "title": "11. CONSECUENCIAS DE LAS VIOLACIONES",
+        "bullets": [
+          "• Las violaciones pueden resultar en suspensión o terminación",
+          "• Las violaciones graves pueden ser reportadas a las autoridades",
+          "• Ventally se reserva el derecho de tomar las medidas apropiadas"
+        ]
+      }
+    ]
+  },
+  "ListenerVerification": {
+    "title": "Verificación",
+    "description": "To keep Ventally safe and trusted, we review listener profiles before approval. This process is secure, confidential, and designed to protect everyone on the platform.",
+    "uploadTitle": "Subir documentos de verificación",
+    "uploadSubtitle": "(Documento de identidad o materiales requeridos)",
+    "uploadButton": "Cargar archivos",
+    "uploading": "Cargando...",
+    "info1": "Nuestro equipo ha revisado tu solicitud",
+    "info2": "La verificación suele tardar entre 24 y 48 horas",
+    "info3": "Recibirás una notificación una vez que se apruebe",
+    "info4": "Los documentos que has subido se eliminarán de forma permanente después de la verificación",
+    "submit": "Enviar",
+    "pickDocument": "Subir un Documento",
+    "chooseMethod": "Elija un método",
+    "chooseFromGallery": "Seleccionar de la galería",
+    "selectSource": "Seleccionar fuente del documento",
+    "footertext": "Todas las cargas se cifran y eliminan una vez \n la verificación está completa.",
+    "chooseFromFiles": "Elegir entre archivos",
+    "pickImage": "Cargar imagen"
+  },
+  "VerificationInProgress": {
+    "title": "Verificación en curso",
+    "description": "Tus documentos de verificación han sido enviados y están siendo revisados por nuestro equipo. Serás notificado una vez que tu solicitud sea aprobada.",
+    "logOut": "Cerrar sesión",
+    "waitForApproval": "Wait for Approval"
+  },
+  "VerificationVerified": {
+    "title": "Enhorabuena, estás verificado.",
+    "description": "Tu solicitud ha sido revisada y aprobada. Ahora puedes comenzar a aceptar sesiones de apoyo en la plataforma.",
+    "letsStart": "Comencemos",
+    "logOut": "Cerrar sesión"
+  },
+  "ResetPassword": {
+    "title": "Restablecer tu contraseña",
+    "subtitle": "Introduce tu correo o número de teléfono",
+    "emailOrPhone": "Correo",
+    "sendOTP": "Enviar código"
+  },
+  "EmailVerification": {
+    "title": "Verificación de correo",
+    "subtitle": "Hemos enviado un código a {{email}}",
+    "didntReceive": "¿No recibiste el código?",
+    "resend": "Reenviar",
+    "verifyAccount": "Verificar cuenta",
+    "otpSent": "OTP enviado correctamente",
+    "didntReceiveCode": "¿No recibiste el código?",
+    "infoTextEmail": "Los correos de verificación pueden tardar unos minutos. Revise su carpeta de Spam. Su código será válido por 1 hora.",
+    "notReceiving": "📧 ¿No recibe el correo?",
+    "checkSpam": "• Revise su carpeta de Spam o Correo no deseado",
+    "waitAndResend": "• Espere 5 minutos y vuelva a intentarlo",
+    "contactSupport": "• Contacte al soporte en info@ventally.co",
+    "verifySMS": "📱 O verifique por SMS",
+    "sendSMS": "Enviar",
+    "smsSent": "¡SMS enviado! Revise su teléfono.",
+    "deliveryNotice": "Los correos de verificación pueden tardar unos minutos en llegar. Por favor revise su carpeta de Spam. Su código será válido por 1 hora y se pueden solicitar nuevos códigos después de 5 minutos."
+  },
+  "PhoneVerification": {
+    "title": "Verificación de teléfono",
+    "subtitle": "Hemos enviado un código al {{phone}}",
+    "didntReceive": "¿No recibiste el código?",
+    "resend": "Reenviar",
+    "verifyAccount": "Verificar cuenta"
+  },
+  "CreateNewPassword": {
+    "title": "Crear nueva contraseña",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "passwordHint": "Al menos 8 caracteres",
+    "update": "Actualizar"
+  },
+  "ResetSuccessful": {
+    "title": "Restablecimiento correcto",
+    "description": "Tu contraseña se ha restablecido",
+    "continue": "Continuar"
+  },
+  "AdminLogin": {
+    "title": "Inicio de sesión del administrador",
+    "enterEmail": "Introduce tu correo electrónico",
+    "enterPassword": "Ingrese la contraseña",
+    "forgotPassword": "Olvidé mi Contraseña ",
+    "login": "Iniciar sesión",
+    "securityText": "Datos protegidos con cifrado AES-256"
+  },
+  "VenterHome": {
+    "greeting": "Hola {{name}},",
+    "subtitle": "Tómate un momento para reflexionar",
+    "reflectionPlaceholder": "¿Qué te trajo aquí hoy? Tómate un momento para capturar tus pensamientos...",
+    "letsVent": "Desahógate",
+    "call": "Llamada",
+    "chat": "Chat",
+    "moodCheckIn": "Control del Estado de Ánimo",
+    "reflections": "Reflexiones",
+    "seeAll": "Ver Todo",
+    "moodOverTime": "Tus Tendencias",
+    "moods": {
+      "happy": "Feliz",
+      "neutral": "Neutro",
+      "sad": "Triste",
+      "anxious": "Ansioso",
+      "mad": "Enojado"
+    },
+    "reflectionCard": {
+      "sampleText": "Me sentí orgulloso de mí mismo por buscar apoyo.",
+      "sampleDate": "05 de Diciembre"
+    },
+    "streakCard": {
+      "happyStreak": "Has estado feliz por {{days}} días",
+      "sadStreak": "Has estado triste por {{days}} días",
+      "neutralStreak": "Has estado neutral por {{days}} días",
+      "anxiousStreak": "Has estado ansioso por {{days}} días",
+      "madStreak": "Has estado enojado por {{days}} días",
+      "totalHappyDays": "Estuviste feliz por {{days}} días",
+      "totalHappyDays_one": "Estuviste feliz por {{days}} día",
+      "totalHappyDays_other": "Estuviste feliz por {{days}} días"
+    },
+    "reflectionDetailTitle": "Tu Reflexión",
+    "editReflection": "Editar Reflexión",
+    "saveReflection": "Guardar Reflexión",
+    "addReflection": "Añadir Reflexión",
+    "addReflectionSubtitle": "Tómate un momento para capturar tus pensamientos",
+    "reflectionPrompt": "¿Qué tienes en mente hoy?",
+    "yourReflections": "Tus Reflexiones",
+    "recentReflections": "Reflexiones Recientes",
+    "noReflections": "Aún no hay reflexiones. ¡Empieza añadiendo tu primera reflexión!",
+    "reflectionSuccess": {
+      "title": "¡Reflexión Guardada!",
+      "message": "Tu reflexión se ha guardado correctamente"
+    },
+    "delete": "Sí",
+    "deleteReflection": "Confirmación de borrado",
+    "yourReflection": "Tu Reflexión",
+    "cancel": "No",
+    "noReflectionsDescription": "Comienza añadiendo tu primera reflexión para hacer un seguimiento de tu viaje.",
+    "deleteReflectionDescription": "¿Estás seguro de que deseas eliminar esta reflexión?",
+    "guidedFirstAction": "¡Bienvenido! Empieza aquí",
+    "startTracking": "Comienza a registrar — anota tu primer estado de ánimo",
+    "reflectionPromptDesc": "Selecciona cómo te sientes abajo",
+    "supportAvailable247": "El soporte está disponible las 24 horas del día, los 7 días de la semana",
+    "availableBalance": "Tu saldo disponible",
+    "voiceMinutesRemaining": "minutos de voz restantes",
+    "textsRemaining": "mensajes restantes",
+    "noBalance": "No tienes minutos de voz ni mensajes disponibles. Agrega más para empezar a conectarte.",
+    "addMinutesAndTexts": "Agregar minutos y mensajes",
+    "connectNowVoice": "Conectar Ahora — Voz",
+    "connectNowChat": "Conectar Ahora — Chat",
+    "reflectionStarter1": "Lo que me trajo aquí hoy...",
+    "reflectionStarter2": "Algo que siento ahora mismo...",
+    "reflectionStarter3": "Una cosa en mi mente..."
+  },
+  "VenterSettings": {
+    "title": "Configuración",
+    "options": {
+      "generalSettings": {
+        "title": "Ajustes Generales",
+        "subtitle": "Actualiza tu información"
+      },
+      "privacy": {
+        "title": "Privacidad y Seguridad",
+        "subtitle": "Gestiona tus preferencias de privacidad"
+      },
+      "notifications": {
+        "title": "Notificaciones",
+        "subtitle": "Controla tus ajustes de notificaciones"
+      },
+      "payment": {
+        "title": "Métodos de Pago",
+        "subtitle": "Gestiona tus opciones de pago"
+      },
+      "language": {
+        "title": "Idioma",
+        "subtitle": "Cambia tu idioma preferido"
+      },
+      "help": {
+        "title": "Ayuda y Soporte",
+        "subtitle": "Obtén ayuda y contacta con soporte"
+      },
+      "about": {
+        "title": "Acerca de",
+        "subtitle": "Versión de la app e información legal"
+      },
+      "changeAccountType": {
+        "title": "Cambiar Tipo de Cuenta"
+      },
+      "darkTheme": {
+        "title": "Tema Oscuro"
+      }
+    }
+  },
+  "GeneralSettings": {
+    "title": "Ajustes Generales",
+    "changeBackground": "Cambiar Fondo",
+    "submitFeedback": "Enviar Comentarios"
+  },
+  "ChangeBackground": {
+    "title": "Cambiar Fondo",
+    "description": "Elige un fondo para tu chat",
+    "current": "Actual",
+    "setAsCurrent": "Establecer como Actual",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "deleteAlertTitle": "Eliminar fondo",
+    "deleteAlertMessage": "¿Seguro de que deseas eliminar esto?",
+    "addBackground": "Agregar Fondo"
+  },
+  "VenterOthers": {
+    "title": "Otros",
+    "options": {
+      "moodHistory": {
+        "title": "Historial de Ánimo",
+        "subtitle": "Ver tu historial de seguimiento de ánimo"
+      },
+      "sessionHistory": {
+        "title": "Historial de Sesiones",
+        "subtitle": "Revisa tus conversaciones pasadas"
+      },
+      "wellness": {
+        "title": "Recursos de Bienestar",
+        "subtitle": "Accede a recursos de salud mental"
+      },
+      "guidelines": {
+        "title": "Guías de la Comunidad",
+        "subtitle": "Lee nuestros estándares comunitarios"
+      },
+      "feedback": {
+        "title": "Comentarios",
+        "subtitle": "Comparte tus pensamientos con nosotros"
+      },
+      "refer": {
+        "title": "Referir a un Amigo",
+        "subtitle": "Invita a otros a unirse a Ventally"
+      },
+      "journey": {
+        "title": "Tu Viaje",
+        "subtitle": "Sigue tu progreso"
+      },
+      "recovery": {
+        "title": "Tu Recuperación",
+        "subtitle": "Accede a tus recursos de recuperación"
+      },
+      "reflections": {
+        "title": "Tus Reflexiones",
+        "subtitle": "Revisa tus reflexiones pasadas"
+      },
+      "profile": {
+        "title": "Tu Perfil",
+        "subtitle": "Gestiona la configuración de tu cuenta"
+      },
+      "mood": {
+        "title": "Tu Estado de Ánimo",
+        "subtitle": "Ver tu historial de seguimiento de ánimo"
+      }
+    }
+  },
+  "VenterMessages": {
+    "title": "Mensajes",
+    "subtitle": "Tus conversaciones aparecerán aquí",
+    "startChat": {
+      "title": "Iniciar un Chat",
+      "subtitle": "Conéctate con un oyente ahora"
+    },
+    "recentChat": "Historial",
+    "viewAll": "Ver Todo",
+    "chatEntry": {
+      "name": "Sesión de Mensaje",
+      "lastMessage": "Sesión iniciada",
+      "minutesAgo": "hace {{minutes}} min",
+      "hoursAgo": "hace {{hours}} h",
+      "noMessages": "Sin mensajes aún",
+      "active": "Activo"
+    },
+    "noChats": "Todavía no hay chats...",
+    "noChatsDescription": "Aún no hay sesiones\nInicie una sesión de texto para comenzar su viaje de soporte"
+  },
+  "VenterFindingListener": {
+    "title": "Preparando tu sesión...",
+    "chatTitle": "Preparando tu sesión...",
+    "description": "Configurando tu sesión, por favor espera",
+    "buttonText": "Volver a Inicio",
+    "timeoutTitle": "Sesión No Disponible",
+    "timeoutMessage": "No hay sesiones disponibles. Por favor intenta de nuevo más tarde",
+    "privacyText": "Tu audio es privado y encriptado",
+    "chatPrivacyText": "Tus mensajes son privados y encriptados",
+    "sessionStarted": {
+      "title": "Sesión Iniciada",
+      "subtitle": "Estás en vivo"
+    }
+  },
+  "ReportScreen": {
+    "title": "Reportar",
+    "reportingListener": "Informando sobre el Listener",
+    "reasonDisruptive": "Comportamiento disruptivo",
+    "reasonBullying": "Acoso u hostigamiento",
+    "reasonDanger": "Peligro para sí mismo u otros",
+    "reasonInappropriate": "Respuesta inapropiada o insegura",
+    "submitButton": "Enviar un Informe",
+    "successTitle": "Informe Enviado",
+    "successMessage": "Tu informe ha sido enviado correctamente y está en revisión. Gracias por ayudar a mantener Ventally seguro.",
+    "doneButton": "Hecho",
+    "exit": "Salir",
+    "wasThatUseFulTitle": "¿Te ha resultado útil?",
+    "temporaryRestrictionTitle": "Restricción temporal",
+    "blockUserButton": "Bloque",
+    "sessionEndedMessage": "Tu sesión ha finalizado de forma inesperada. Inténtalo de nuevo.",
+    "blockUserMessage": "¿Desea bloquear a este usuario?",
+    "temporaryRestrictionMessage": "Hemos restringido tu cuenta temporalmente debido a que se han detectado infracciones de la política.",
+    "sessionEndedTitle": "Sesión Terminada",
+    "contactSupport": "Contacte con el servicio de asistencia técnica",
+    "blockUserTitle": "Bloquear"
+  },
+  "ChatHeader": {
+    "report": "Reportar",
+    "endChat": "Finalizar Chat",
+    "crisis": "Conflicto"
+  },
+  "CrisisWarning": {
+    "titleLine1": "Ventally es para desahogo",
+    "titleLine2": "emocional, no para soporte",
+    "titleLine3": "de crisis",
+    "acknowledgment": "Entiendo que Ventally no puede ayudar con emergencias.",
+    "agreeContinue": "Aceptar y Continuar",
+    "emergencyProtocolTitle": "Protocolo de Emergencia Activado",
+    "emergencyProtocolMessage": "Detectamos signos de angustia. Por favor, contacta con un servicio de emergencia o con tu persona de confianza inmediatamente.",
+    "contact988": "Contactar con 988",
+    "chat988": "Chatear con 988",
+    "safeTitle": "Queremos que estés a salvo.",
+    "safeMessage": "Nos preocupamos por tu protección y seguridad general.",
+    "crisisEscalationTitle": "Escalada de Crisis",
+    "crisisEscalationMessage": "Parece que podrías necesitar apoyo inmediato. Ventally no es un servicio de crisis o emergencia. Por favor, contacta con el 988",
+    "sessionEndedTitle": "Tu sesión ha finalizado por seguridad",
+    "sessionEndedMessage": "Tu sesión ha finalizado para mantenerte a salvo. Ventally no puede atender situaciones de crisis",
+    "sessionEndedReflectTitle": "Sesión Finalizada.",
+    "sessionEndedReflectMessage": "¿Cómo te sientes después de desahogarte? Toca para reflexionar.",
+    "okay": "Vale",
+    "notCrisisTitleLine1": "Ventally no es un Servicio",
+    "notCrisisTitleLine2": "de Crisis o Emergencia",
+    "notCrisisBody": "Si estás en peligro o piensas en hacerte daño, por favor contacta con ",
+    "notCrisis988": "Esta no es una línea de crisis 988",
+    "continue": "Continuar",
+    "immediateHelpTitle": "Ayuda Inmediata Recomendada",
+    "immediateHelpMessage": "Hemos detectado signos de angustia. Por favor, conéctate con profesionales capacitados en crisis que pueden ofrecer apoyo inmediato.",
+    "support988Number": "988",
+    "support988TitleLine1": "Mereces apoyo",
+    "support988TitleLine2": "inmediato.",
+    "support988Subtext": "Un profesional capacitado en crisis está disponible 24/7.",
+    "imSafe": "Estoy a salvo",
+    "ok": "Regular"
+  },
+  "NeedMoreSupport": {
+    "title": "¿Necesitas más apoyo?",
+    "emergencySupport": "Líneas de apoyo de emergencia",
+    "imSafe": "Estoy a salvo"
+  },
+  "VenterChat": {
+    "title": "Sesión de Mensaje",
+    "subtitle": "Seguro y Anónimo",
+    "inputPlaceholder": "Escribe un mensaje...",
+    "send": "Enviar",
+    "crisisButton": "Conflicto",
+    "endSessionTitle": "¿Finalizar Sesión?",
+    "endSessionMessage": "Esto cerrará tu sesión de apoyo actual.",
+    "endSessionNo": "No",
+    "endSessionYes": "Sí",
+    "lowCreditWarning": {
+      "title": "Recordatorio de Saldo",
+      "description": "Tu saldo es bajo\nAgrega fondos para continuar",
+      "button": "Agregar Fondos"
+    },
+    "recentChats": {
+      "title": "Chats Recientes",
+      "noChats": "No hay chats aún",
+      "noChatsDescription": "Inicia un chat con un oyente para comenzar tu viaje.",
+      "chatEntry": {
+        "name": "Sesión de Mensaje",
+        "lastMessage": "Sesión iniciada",
+        "minutesAgo": "hace {{minutes}} min"
+      }
+    },
+    "messages": {
+      "timestamp1": "SÁBADO A LAS 12:34",
+      "outgoing1": "Hola, Justin. ¿Cómo estás?",
+      "outgoing3": "¿Cómo puedo usar Ventally?",
+      "incoming2": "¡Sí! Avísame en qué puedo ayudarte",
+      "incoming1": "Hola Moni estoy bien",
+      "outgoing2": "Bueno, eso es todo.",
+      "timestamp2": "SÁBADO A LAS 12:35"
+    }
+  },
+  "SessionRating": {
+    "title": "¿Cómo fue tu sesión?",
+    "ratingHelpful": "Útil",
+    "ratingAwesome": "Genial",
+    "ratingGood": "Buena",
+    "ratingOkay": "Regular",
+    "ratingHorrible": "Horrible",
+    "reportIssue": "Informar de un problema",
+    "tipHeading": "Di gracias con una pequeña propina",
+    "tipAmount1": "$1",
+    "tipAmount25": "$25",
+    "tipAmount50": "$50",
+    "sendTip": "Enviar Propina",
+    "skip": "Omitir",
+    "continue": "Continuar",
+    "tipsDisclaimer": "Las propinas van directamente a tu listener.",
+    "tipSent": "Propina enviada exitosamente",
+    "apologyMessage": "Sentimos mucho que esta sesión no haya cumplido tus expectativas. Agradecemos tus comentarios",
+    "moodCheckTitle": "¿Cómo te sientes ahora?",
+    "moodCheckSubtitle": "Estamos aquí para ti. Tómate un momento para registrarte contigo mismo.",
+    "feedbackPlaceholder": "Escribir...",
+    "feedbackLabel": "¿Algo que quieras compartir?",
+    "helpfulRatingLabel": "¿Qué tan útil fue esta conversación?",
+    "submit": "Enviar",
+    "thankYouTitle": "Gracias"
+  },
+  "VenterCall": {
+    "startCall": "Iniciar Sesión",
+    "startCallCard": {
+      "title": "Iniciar una Llamada",
+      "subtitle": "Conéctate con un oyente ahora"
+    },
+    "recentCall": "Historial",
+    "viewAll": "Ver Todo",
+    "callEntry": {
+      "name": "Sesión de Voz",
+      "lastCall": "Sesión finalizada",
+      "minutesAgo": "hace {{minutes}} min"
+    },
+    "allCallsTitle": "Todas las Sesiones",
+    "noRecentCalls": "Sin sesiones recientes",
+    "noRecentCallsDescription": "Inicia una sesión para comenzar.",
+    "title": "¿Listo para empezar?",
+    "subtitle": "Comience su sesión con una guía de soporte"
+  },
+  "VenterNoCredit": {
+    "title": "Sin Saldo",
+    "description": "Añade fondos o elige un plan para continuar.",
+    "addCredit": "Añadir Fondos",
+    "upgradePlan": "Mejorar Plan"
+  },
+  "VenterMySubscription": {
+    "title": "Mi Suscripción",
+    "currentBilling": "Plan Actual",
+    "planName": "Plan",
+    "planNameValue": "Pago por uso",
+    "endsIn": "Se Renueva el",
+    "endsInValue": "DD/MM/AAAA",
+    "manage": "Gestionar Plan",
+    "subscription": "Suscripción",
+    "choosePlan": "Elegir Plan"
+  },
+  "VenterAddCredit": {
+    "title": "Agregar Fondos",
+    "selectAmount": "Seleccionar Cantidad",
+    "choosePaymentMethod": "Elegir Método de Pago",
+    "confirm": "Confirmar",
+    "paymentSuccessTitle": "Pago Exitoso",
+    "paymentSuccessMessage": "Tu pago está confirmado. Tu saldo ha sido actualizado.",
+    "fundsAddedTitle": "Fondos Agregados",
+    "fundsAddedMessage": "Tu nuevo saldo es de ${{balance}}",
+    "paymentFailedTitle": "Pago Fallido",
+    "paymentFailedMessage": "No se pudo procesar tu pago. Por favor, inténtalo de nuevo o actualiza tu método de pago.",
+    "tryAgain": "Intentar de Nuevo",
+    "close": "Cerrar"
+  },
+  "VenterWallet": {
+    "title": "Billetera",
+    "availableBalance": "Saldo Disponible",
+    "addFunds": "Añadir Fondos",
+    "recentTransactions": "Transacciones Recientes",
+    "transactions": {
+      "callSession": "Sesión de Llamada - {{duration}} min",
+      "fundsAdded": "Fondos Añadidos",
+      "chatSession": "Sesión de Chat - {{duration}} min"
+    },
+    "noTransactions": "Sin transacciones",
+    "viewAll": "Ver todo",
+    "noTransactionsDescription": "No se encontró ninguna transacción."
+  },
+  "VenterMoodLog": {
+    "title": "Registro de Ánimo",
+    "subtitle": "¿Cómo te sientes hoy?",
+    "whatsGoingOn": "¿Qué está pasando?",
+    "notes": "Notas",
+    "notesPlaceholder": "Añade cualquier pensamiento o detalle adicional...",
+    "logMood": "Registrar Ánimo",
+    "cancel": "Cancelar",
+    "categories": {
+      "work": "Trabajo",
+      "family": "Familia",
+      "health": "Salud",
+      "unknown": "Desconocido"
+    },
+    "success": {
+      "title": "Ánimo Registrado",
+      "message": "Has registrado tu ánimo con éxito.",
+      "done": "Hecho",
+      "updated": "Actualizado con éxito",
+      "logged": "Estado de ánimo registrado correctamente"
+    },
+    "editTitle": "Editar registro de estado de ánimo",
+    "errors": {
+      "selectMoodAndCategory": "Selecciona un estado de ánimo y una categoría"
+    },
+    "updateMoodLog": "Actualizar registro de estado de ánimo"
+  },
+  "Navigation": {
+    "tabs": {
+      "home": "Inicio",
+      "messages": "Mensajes",
+      "call": "Voz",
+      "wallet": "Billetera",
+      "settings": "Ajustes",
+      "others": "Otros",
+      "requests": "Solicitudes",
+      "profile": "Perfil",
+      "users": "Usuario",
+      "subAdmins": "Subadministradores",
+      "reports": "Reportes",
+      "paymentMethod": "Método de pago"
+    }
+  },
+  "Admin": {
+    "home": {
+      "welcome": "¡Bienvenido!",
+      "adminStore": "Tienda Admin",
+      "overview": "Resumen",
+      "activeUsers": "Usuarios Activos",
+      "monthlySessions": "Sesiones Mensuales",
+      "newSignups": "Nuevos Registros",
+      "listenerOnlineMinutes": "Minutos Online de Listener",
+      "userProgress": "Progreso de Usuario (Ratio de Compromiso)",
+      "sessionTraffic": "Tráfico de sesión"
+    },
+    "users": {
+      "card": {
+        "role": "Rol",
+        "minutes": "Minutos",
+        "both": "Ambos",
+        "sessions": "Sesiones"
+      },
+      "searchPlaceholder": "Buscar colaboradores...",
+      "tabs": {
+        "listeners": "SOPORTE GUIAS",
+        "venters": "Venters"
+      },
+      "title": "Usuarios"
+    },
+    "userDetail": {
+      "listenerBadge": "Oyente",
+      "stats": {
+        "totalSessions": "Total de sesiones",
+        "totalPayout": "Ingresos Totales",
+        "totalMinutes": "Minutos Totales"
+      },
+      "venterBadge": "vientre de músculo esquelético",
+      "exportSuccess": {
+        "subtitle": "Sus datos de usuario se han exportado correctamente.",
+        "title": "Exportación completada"
+      },
+      "title": " Detail de usuario",
+      "exportCsv": "Exportar CSV",
+      "listenerInfo": "apoyar, orientar ,",
+      "exportPdf": "Exportar a PDF"
+    },
+    "success": {
+      "permissionsUpdated": "Permisos actualizados con éxito",
+      "issueClosed": "Problema cerrado",
+      "adminUpdatedMessage": "Los permisos de subadministrador se han actualizado",
+      "adminCreatedMessage": "La cuenta de subadministrador se ha creado correctamente",
+      "adminDeleted": "Usuario eliminado por el administrador",
+      "adminDeletedMessage": "Se ha eliminado la cuenta de subadministrador",
+      "adminUpdated": "Usuario actualizado por el administrador",
+      "adminCreated": "Admin creado ",
+      "issueClosedMessage": "Has cerrado la solicitud de moderación"
+    },
+    "moderation": {
+      "reportDetail": {
+        "description": "Descripción",
+        "reportedBy": "Reportado por",
+        "date": "Fecha",
+        "issue": "Emisión",
+        "service": "Servicio",
+        "viewChatDetail": "Ver detalles del chat",
+        "reportedTo": "Reportado a",
+        "title": "Informe detallado",
+        "takeAction": "Actuar"
+      },
+      "reportedBy": "Informado por: {{email}}",
+      "title": "Moderación",
+      "action": {
+        "selectAction": "Selecciona la acción",
+        "description": "Envíe la acción apropiada en función del problema.",
+        "noAction": "Ninguna acción",
+        "closeIssue": "Cerrar problema",
+        "adminNotesPlaceholder": "Escriba aquí las notas...",
+        "title": "Acción",
+        "adminNotes": "Notas de Administrador",
+        "warning": "Advertencia",
+        "deleteUser": "Borrar usuario",
+        "tempSuspend": "Suspensión temporal"
+      },
+      "reportedTo": "Informado a: {{email}}",
+      "chat": {
+        "title": "Venter Chat"
+      },
+      "reportId": "Documento: Documento:",
+      "pending": "Pendiente",
+      "result": "Resultado: Resultado:",
+      "resolved": "Resuelto",
+      "searchPlaceholder": "Buscar informes"
+    },
+    "review": {
+      "reject": "Rechazar",
+      "approvedMessage": "Has aprobado la solicitud de verificación de la Guía de asistencia",
+      "userDeleted": "Usuario eliminado",
+      "userDeletedMessage": "eliminó el usuario",
+      "userSuspended": "XXX",
+      "action": "Acción",
+      "approved": "Approved",
+      "delete": "Eliminar",
+      "rejectionDescription": "Has rechazado la solicitud de verificación de la Guía de asistencia",
+      "approve": "Aprobar",
+      "suspendMessage": "Has suspendido la solicitud de verificación de la Guía de asistencia",
+      "title": "Análisis",
+      "suspend": "Suspender",
+      "verificationDocs": "Documentos de verificación",
+      "userSuspendedMessage": "Has suspendido al usuario"
+    },
+    "subAdmins": {
+      "searchPlaceholder": "Buscar subadministradores...",
+      "title": "Subadministradores",
+      "addSubAdmin": "Añadir subadministrador",
+      "card": {
+        "permissions": "Permisos"
+      },
+      "emptyStateMessage": "Crea tu primer subadministrador para delegar responsabilidades",
+      "emptyState": "No se han encontrado subadministradores"
+    },
+    "permissions": {
+      "title": "Seleccionar Permisos",
+      "deselectAll": "Deseleccionar todo",
+      "edit": "Editar",
+      "view": "Visualización",
+      "selectAll": "Seleccionar todo",
+      "accessAdminPanel": "Acceder al panel de administración",
+      "delete": "Eliminar",
+      "suspend": "Suspender",
+      "save": "Guardar permisos"
+    },
+    "Security": {
+      "verification": {
+        "phoneTitle": "Verificación del Teléfono",
+        "emailTitle": "Verificación del Correo Electrónico",
+        "phoneSubtitle": "Hemos enviado un código a tu teléfono",
+        "button": "Verificar cuenta",
+        "resend": "Volver a enviar",
+        "emailSubtitle": "Hemos enviado un código a {{email}}.",
+        "didntReceive": "¿No ha recibido el código?"
+      },
+      "resetPasswordScreen": {
+        "title": "Restablecer contraseña",
+        "confirmPassword": "Confirme nueva contraseña",
+        "button": "Actualizar contraseña",
+        "oldPassword": "Antigua contraseña",
+        "newPassword": "Nueva contraseña"
+      },
+      "changeEmail": {
+        "button": "Obtener código",
+        "title": "Cambia el Correo Electr&oacute;nico",
+        "newEmail": "Nuevo correo electrónico",
+        "currentEmail": "Correo electrónico actual",
+        "subtitle": "Cambiar su dirección de correo electrónico"
+      },
+      "success": {
+        "emailSubtitle": "Tu email ha sido cambiado con éxito",
+        "passwordReset": "Restablecimiento de contraseña",
+        "emailChanged": "Cambio de correo electrónico.",
+        "passwordSubtitle": "Su correo electrónico se ha restablecido"
+      },
+      "changeEmailPhone": "Cambiar correo electrónico o teléfono",
+      "twoFactorAuth": "Two Factor Authentication",
+      "title": "Seguridad",
+      "enableBiometrics": "Activar identificación biométrica",
+      "resetPassword": "Restablecer contraseña"
+    },
+    "rolesPermissions": {
+      "profile": {
+        "edit": "Editar",
+        "title": "Administrar perfil",
+        "delete": "Eliminar",
+        "suspend": "Suspender",
+        "permissions": "Permisos",
+        "accessAdminPanel": "Acceder al panel de administración",
+        "view": "Visualización"
+      },
+      "success": {
+        "adminRemoved": "Administrador eliminado",
+        "roleUpdate": "Actualización de roles",
+        "adminRemovedSub": "Las cuentas de subadministrador seleccionadas se han eliminado de la plataforma.",
+        "roleUpdateSub": "Los permisos de subadministrador se han actualizado correctamente."
+      },
+      "changeRole": "Cambiar Rol",
+      "remove": "Eliminar",
+      "update": "Actualiza",
+      "searchPlaceholder": "Search ...",
+      "title": "Roles y permisos"
+    },
+    "financialStats": {
+      "revenueSources": {
+        "title": "Fuentes de ingresos",
+        "revenue": "Ingresos"
+      },
+      "cards": {
+        "netRevenue": "Ingresos netos",
+        "seeAnalytics": "Ver análisis",
+        "revenueIncrease": "Los ingresos por ventas aumentaron un {{percentage}}% en {{period}}",
+        "update": "Actualiza"
+      },
+      "paymentHistory": {
+        "title": "historial de pago"
+      },
+      "taskProgress": {
+        "filter": "30 dias",
+        "title": "Progreso de la tarea"
+      },
+      "title": "ADMON."
+    },
+    "exportsIntegrations": {
+      "title": "Exportaciones e integraciones",
+      "totalSessions": "Total de sesiones",
+      "searchPlaceholder": "Search ...",
+      "totalMinutes": "Minutos Totales",
+      "minutes": "Minutos: {{count}}",
+      "exported": "Exported",
+      "sessions": "Sesiones: {{count}}",
+      "totalPayout": "Ingresos Totales"
+    },
+    "subAdminProfile": {
+      "permissions": "Permisos",
+      "editPermissions": "Editar permisos",
+      "deleteConfirmation": "¿Estás seguro de que quieres eliminar este registro?",
+      "title": "Administrar perfil",
+      "pass": "Pasa",
+      "update": "Actualiza",
+      "deleteMessage": "Esta acción no se puede deshacer",
+      "email": "Correo electrónico",
+      "delete": "Eliminar subadministrador",
+      "id": "ID"
+    },
+    "settings": {
+      "options": {
+        "crisisConfig": "Crisis config",
+        "language": "Lenguaje",
+        "rolesPermissions": "Roles y Permisos",
+        "logout": "Cerrar sesión",
+        "account": "Cuenta",
+        "notifications": "Notificaciones",
+        "exportsIntegrations": "Exportaciones e integraciones",
+        "paymentHistory": "historial de pago",
+        "security": "Seguridad",
+        "financialStats": "Estadísticas financieras"
+      },
+      "title": "Ajustes de administración"
+    },
+    "addSubAdmin": {
+      "title": "Añadir subadministrador",
+      "passwordPlaceholder": "Fije la contraseña",
+      "selectPermissions": "Seleccionar Permisos",
+      "permissionsSelected": "{{count}} permisos seleccionados",
+      "email": "Dirección de correo electrónico",
+      "create": "Crear",
+      "emailPlaceholder": "Ingrese la dirección de correo",
+      "password": "Contraseña"
+    },
+    "status": {
+      "active": "Activo",
+      "pending": "Pendiente"
+    },
+    "listenerRequests": {
+      "title": "Solicitudes de guía de soporte",
+      "approve": "Aprobar",
+      "pending": "Pendiente",
+      "review": "Análisis",
+      "noRequests": "No se han encontrado solicitudes pendientes.",
+      "reject": "Rechazar"
+    },
+    "crisisManagement": {
+      "searchPlaceholder": "Search ...",
+      "crisisChat": "Chat de crisis",
+      "title": "Crisis Conf",
+      "callBy": "Sesión por: {{email}}",
+      "id": "Documento: Documento:",
+      "crisisCall": "Sesión de crisis"
+    }
+  },
+  "Listener": {
+    "home": {
+      "title": "Inicio de Listener",
+      "subtitle": "Este es el panel principal de listener.",
+      "available": "Disponible",
+      "earningsThisMonth": "Saldo disponible",
+      "incomingRequests": "Solicitudes Entrantes",
+      "chatSession": "Sesión de Chat",
+      "callSession": "Sesión de Llamada",
+      "minutesAgo": "hace {{minutes}} min"
+    },
+    "requests": {
+      "title": "Solicitudes",
+      "subtitle": "Las solicitudes de desahogo aparecerán aquí.",
+      "noRequestsSubtitle": "No hay solicitudes en este momento",
+      "noRequests": "No hay solicitudes de sesión"
+    },
+    "wallet": {
+      "title": "Billetera",
+      "subtitle": "Billetera y pagos para listeners.",
+      "availableBalance": "Saldo disponible",
+      "pendingBalance": "Saldo pendiente",
+      "totalEarnings": "Total histórico",
+      "activityBreakdown": "Actividad reciente",
+      "payoutMethod": "Método de pago",
+      "addPayoutMethod": "Añadir método de pago",
+      "withdraw": "Retirar",
+      "withdrawAmount": "Monto a Retirar",
+      "withdrawEarnings": "Retirar fondos",
+      "pendingEarnings": "Saldo pendiente",
+      "availableForPayout": "Disponible para Retiro",
+      "noBalance": "No tienes suficiente saldo para retirar",
+      "withdrawError": "Por favor ingresa un monto válido",
+      "exceedsBalance": "El monto excede tu saldo disponible",
+      "withdrawSuccess": "Solicitud de retiro enviada exitosamente"
+    },
+    "profile": {
+      "title": "Perfil",
+      "subtitle": "Gestiona tu perfil y preferencias.",
+      "personalInfo": "Perfil",
+      "payout": "Pago",
+      "yourSessions": "Tus Sesiones",
+      "deleteAccount": "Eliminar cuenta",
+      "deleteConfirm": "Esta acción es permanente. ¿Estás seguro de que quieres eliminar tu cuenta?"
+    },
+    "settings": {
+      "title": "Ajustes",
+      "subtitle": "Configura los ajustes de la app de listener."
+    },
+    "payout": {
+      "title": "Método de Pago",
+      "subtitle": "Añade tu método de retiro.",
+      "debitCard": "Tarjeta de Débito (Próximamente)",
+      "debitCardDesc": "Los retiros instantáneos a tu tarjeta de débito estarán disponibles en una futura actualización.",
+      "bankAccount": "Cuenta Bancaria",
+      "bankAccountDesc": "Las transferencias se envían automáticamente a tu cuenta bancaria vinculada. Todas las transferencias se procesan de forma segura a través de Stripe.",
+      "footer": "Las transferencias pueden tardar de 1-3 días hábiles dependiendo de tu banco."
+    },
+    "linkBank": {
+      "title": "Conectar banco",
+      "footer": "Conexión bancaria segura a través de Plaid.\nStripe encripta y procesa su información de forma segura."
+    }
+  },
+  "Wallet": {
+    "title": "Billetera",
+    "addFunds": "Añadir Fondos",
+    "paymentMethods": "Métodos de Pago",
+    "transactions": "Billing Information",
+    "sessionCharges": "Uso",
+    "fundAdditions": "Fondos Añadidos",
+    "refunds": "Reembolsos",
+    "subscriptionCharge": "Cargo de Plan",
+    "selectAmount": "Seleccionar Cantidad",
+    "confirm": "Confirmar",
+    "fundsAddedSuccessTitle": "Fondos Añadidos",
+    "fundsAddedSuccessMessage": "{{amount}} ha sido añadido a tu saldo.",
+    "purchaseFailedTitle": "Pago Fallido",
+    "purchaseFailedMessage": "No pudimos procesar su pago. Por favor, inténtalo de nuevo o usa un método de pago diferente.",
+    "tryAgain": "Intentar de Nuevo",
+    "okay": "Vale",
+    "addPaymentMethod": "Añadir Método de Pago",
+    "changePaymentMethod": "Cambiar Método de Pago",
+    "usage": "Cargo por Uso"
+  },
+  "Profile": {
+    "personalInfo": "Información Personal",
+    "choosePlan": "Elegir Plan",
+    "payout": "Pago",
+    "terms": "Términos de Uso",
+    "privacy": "Política de Privacidad",
+    "logout": "Cerrar sesión",
+    "deleteAccount": "Eliminar cuenta",
+    "logoutConfirmTitle": "Cerrar sesión",
+    "logoutConfirmMessage": "¿Estás seguro de que quieres cerrar sesión?",
+    "yourSessions": "Tus Sesiones",
+    "title": "Perfil",
+    "deleteConfirm": "Esta acción es permanente. ¿Seguro que quieres eliminar tu cuenta?",
+    "subtitle": "administrar tu perfil y las preferencias;",
+    "editProfile": "Editar perfil"
+  },
+  "SessionsHistory": {
+    "title": "Tus Sesiones",
+    "call": "Sesión de Voz",
+    "chat": "Chat",
+    "emptyState": "No se encontraron sesiones",
+    "emptyStateDescription": "Tu historial de sesiones aparecerá aquí después de tu primera conexión con un Guía de Apoyo.",
+    "subtitle": "Historial de sesiones guiado y moderado"
+  },
+  "VenterRecovery": {
+    "logProgress": {
+      "success": "Recuperación registrada exitosamente",
+      "viewBadges": "Ver insignias",
+      "achievement": "¡Logro desbloqueado!",
+      "placeholder": "Reflexionemos sobre nuestro día",
+      "saveEntry": "&amp; Guardar entrada",
+      "streakMessage": "No has registrado nada hoy.",
+      "logactivity": "Reportes",
+      "streakTitle": "¡Sigue teniendo éxito! ",
+      "ok": "OK",
+      "track": "Mantener el rumbo",
+      "close": "Cerrar",
+      "question": "¿Cómo fue tu recuperación? \n hoy?",
+      "achievementMessage": "¡Has iniciado sesión {{days}} {{dayLabel}} seguidos! Sigan con el gran trabajo.",
+      "setback": "Tuve un contratiempo",
+      "notes": "Notas"
+    },
+    "dashboard": {
+      "stats": {
+        "achievements": "Logros",
+        "jan25": "25 de enero",
+        "end": "Fin",
+        "feelingGood": "Me siento bien.",
+        "achievementsCount": "03",
+        "reflections": "Reflexiones",
+        "sampleEntries": [
+          {
+            "date": "Apr 24, 2025",
+            "status": "Feeling optimistic"
+          },
+          {
+            "date": "Apr 25, 2025",
+            "status": "Tough day, but stayed sober"
+          }
+        ]
+      },
+      "noentries": "Comience a registrar su viaje de recuperación para ver su progreso aquí.",
+      "daysSober": "Días sobrio",
+      "logProgress": "REGISTRAR PROGRESO",
+      "title": "SU RECUPERACIÓN",
+      "recentEntries": "Entradas recientes."
+    },
+    "details": {
+      "restartAt": "Reiniciado a las",
+      "sober": "Sobrio",
+      "noNotes": "NO CONSTA NINGUNA ANOTACION",
+      "editLog": "Editar Registro",
+      "sampleDate": "Jueves 4 de abril -",
+      "title": "Detalles de recuperación",
+      "sampleNote": "La reunión fue un desafío, pero me resistí al antojo."
+    },
+    "editLog": {
+      "successTrack": "¡Seguimiento de sobriedad actualizado!",
+      "successSetback": "Recaída registrada. Sigue adelante, ya lo tienes.",
+      "title": "Editar objetivos de recuperación",
+      "updateLog": "Registro de Actualización",
+      "placeholderSetback": "¿Qué te llevó a usarlo hoy?",
+      "notes": "Notas",
+      "question": "¿Cómo fue tu recuperación? \n hoy?",
+      "placeholderTrack": "Como te sientes?"
+    },
+    "progressSummary": {
+      "viewDetails": "Ver detalles",
+      "title": "Resumen del Progreso"
+    },
+    "calendar": {
+      "title": "Calendario de recuperación"
+    }
+  },
+  "ActiveCall": {
+    "subtitle": "Sesión de apoyo guiada y moderada",
+    "safetyText": "Guiado y monitoreado por seguridad",
+    "outgoingCall": "Solicitud de apoyo",
+    "connecting": "Preparando tu sesión...",
+    "mute": "Silenciar",
+    "muted": "Silenciado",
+    "end": "Finalizar",
+    "crisis": "Conflicto",
+    "tapToReturn": "Toca para regresar",
+    "accept": "Unirse",
+    "decline": "Descartar",
+    "incoming": "Solicitud de apoyo",
+    "outgoing": "Solicitud de apoyo",
+    "speakerOff": "Auricular",
+    "speakerOn": "Ponente"
+  },
+  "EditProfile": {
+    "title": "Editar Perfil",
+    "gender": "Identidad de género",
+    "culturalBackground": "Identidad racial",
+    "ethnicity": "Etnicidad",
+    "ageGroup": "Grupo de edad",
+    "lgbtq": "Identidad LGBTQ+",
+    "faith": "Fe o Creencia",
+    "specialTopics": "Temas especiales",
+    "optionalQuestionsTitle": "Algunas Preguntas Opcionales",
+    "optionalQuestionsSubtitle": "Usadas para personalizar tu experiencia",
+    "optionalQuestionsBody1": "Hacemos algunas preguntas opcionales para entender mejor qué te resulta de apoyo.\n\nTus respuestas guían una experiencia estructurada y moderada.\n\nTus respuestas nos ayudan a:\n• Adaptar tu experiencia de apoyo a lo que sientas adecuado\n• Respetar la identidad, cultura y valores\n• Reducir suposiciones sobre tus preferencias de apoyo\n\nSiempre tienes el control de omitir cualquier pregunta y nada de lo que compartas cambia tu acceso a Ventally.",
+    "optionalQuestionsBody2": "Tu información es privada y nunca se comparte con otros usuarios.",
+    "optionalQuestionsFooter": "Diseñado para un uso respetuoso y basado en pautas"
+  },
+  "ListenerRating": {
+    "title": "Califica Tu Sesión",
+    "subtitle": "¿Cómo te apoyó esta sesión?",
+    "guidedSub": "Experiencia guiada y moderada",
+    "rating": "Calificación",
+    "ratingHelpful": "Útil",
+    "skip": "Omitir",
+    "submit": "Enviar",
+    "earningsLogged": "Sesión registrada",
+    "earningsLoggedSub": "Esta sesión de apoyo ha sido registrada en tu cuenta"
+  },
+  "Payout": {
+    "emptyTitle": "Aún No Hay Transferencias",
+    "emptyDescription": "Tu historial de transferencias aparecerá aquí\nLas transferencias se procesan de forma segura a través de tu cuenta"
+  },
+  "Security": {
+    "changeEmailOrPhone": "Cambiar correo electrónico o teléfono",
+    "twoFactorDisabledSuccess": "Autenticación de doble factor deshabilitada",
+    "changePassword": "Cambiar contraseña",
+    "title": "Seguridad",
+    "twoFactorEnabled": "Autenticación de dos factores activada",
+    "twoFactor": "Two Factor Authentication",
+    "changeEmail": "Cambiar dirección de correo electrónico",
+    "twoFactorEnabledSuccess": "Autenticación de doble factor habilitada",
+    "enableBiometrics": "Activar identificación biométrica",
+    "changePhone": "Cambiar Teléfono",
+    "resetPassword": "Restablecer contraseña"
+  },
+  "VenterAddFunds": {
+    "noPlansDescription": "No hay paquetes de recarga disponibles en este momento.",
+    "descVoice": "Continúa tu sesión de soporte de voz",
+    "minutes": "minutos",
+    "title": "UN POQUITO MÁS DE TIEMPO",
+    "noPlans": "No hay paquetes disponibles",
+    "subtitle": "Añade más tiempo de sesión para continuar",
+    "selectPlan": "Por favor seleccione un",
+    "descBoost": "Tiempo de sesión adicional y mensajes",
+    "descChat": "Continúa tu sesión de soporte por chat",
+    "continue": "Continuar",
+    "messages": "mensajes"
+  },
+  "VenterJourney": {
+    "stats": {
+      "days": "días",
+      "calls": "Llamadas",
+      "recoveryLog": "Registro de Recuperación",
+      "chatsStarted": "Sesión iniciada",
+      "moodEntries": "Entradas de estado de ánimo registradas",
+      "callsStarted": "Sesión iniciada",
+      "chats": "Chats",
+      "entries": "entradas"
+    },
+    "moodTrends": {
+      "tabs": {
+        "7days": "7 días",
+        "custom": "Personalizado",
+        "30days": "30 dias"
+      },
+      "moodOverTime": "Estado de ánimo a lo largo del tiempo",
+      "title": "Tu estado de ánimo",
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "placeholder": "aaaa/mm/dd",
+      "trendBreakdown": "Desglose de tendencias"
+    },
+    "viewTrends": "Ver tendencias",
+    "moodVariation": {
+      "moderate": "Moderada",
+      "variationLevel": "Nivel de variación:",
+      "title": "Variación del estado de ánimo"
+    },
+    "title": "Su camino a la audición"
+  },
+  "VenterYourMood": {
+    "todaysMood": "El estado de ánimo de hoy",
+    "recentMoods": "Estados de ánimo recientes",
+    "moodHistory": "Historial del estado de ánimo",
+    "title": "Tu estado de ánimo"
+  },
+  "VenterPaymentCheck": {
+    "insufficientMessage": "Necesitas 10 para esta sesión. Añade fondos a tu monedero para continuar.",
+    "continue": "Continuar",
+    "insufficientTitle": "Saldo insuficiente",
+    "yourBalance": "Cartera",
+    "chatCost": "Chat",
+    "addFunds": "Añadir fondos",
+    "title": "Pago de la sesión",
+    "callCost": "Coste de la sesión de voz"
+  },
+  "Feedback": {
+    "placeholder": "Añadir comentarios",
+    "description": "Tus comentarios nos ayudan a mejorar el espacio que estamos creando para ti. Cuéntanos qué funciona y qué podemos hacer mejor.",
+    "title": "Comentarios",
+    "submit": "Enviar",
+    "successTitle": "Feedback enviado",
+    "successMessage": "Se han enviado sus comentarios."
+  },
+  "Policies": {
+    "commonIntro": "Ventally (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger su privacidad y mantener su información personal segura. Esta política explica lo que recopilamos, por qué lo recopilamos y cómo lo usamos y protegemos. Al utilizar nuestro sitio web, aplicación o servicios, aceptas esta política.",
+    "terms": {
+      "title": "Términos de uso"
+    },
+    "guidelines": {
+      "title": "Pautas de la Guía de asistencia"
+    },
+    "section2Title": "2. Cómo usamos su información ",
+    "privacy": {
+      "title": "Política de privacidad"
+    },
+    "section1Title": "1. Información Que Recopilamos",
+    "contact": "Contacto: info@ventally.co",
+    "safety": {
+      "title": "Política de Seguridad"
+    },
+    "effectiveDate": "Fecha de vigencia: 11 de agosto de 2025",
+    "section2Body": "Utilizamos la información para proporcionar y mejorar nuestros servicios, mantener la seguridad y cumplir con las obligaciones legales.",
+    "section1Body": "Podemos recopilar los siguientes tipos de información:\n\n a. Información que proporciona\n\n b. Información recopilada automáticamente"
+  },
+  "UpdatePhone": {
+    "title": "Actualiza tu número de teléfono",
+    "currentPhone": "Teléfono actual",
+    "newPhone": "Teléfono nuevo",
+    "subtitle": "Cambiar su numero de teléfono",
+    "sendOTP": "Obtener código"
+  },
+  "Legal": {
+    "nda": "Acuerdo de no divulgación (NDA) de la Guía de soporte de Ventally",
+    "termsOfUse": "Términos de uso",
+    "listenerAgreement": "Acuerdo de guía de soporte de Ventally",
+    "codeOfConduct": "Código de conducta de la guía de soporte de Ventally",
+    "paymentTerms": "Reconocimiento de los términos de pago de Ventally",
+    "liabilityWaiver": "Exención de responsabilidad de Ventally Support Guide",
+    "privacyPolicy": "Política de privacidad",
+    "safetyPolicy": "Política de Seguridad",
+    "listenerGuidelines": "Pautas de la Guía de asistencia",
+    "title": "Legal y Políticas"
+  },
+  "NotificationsSettings": {
+    "moodLog": "Registro de estado de ánimo",
+    "activityStatus": "Estado de la Actividad",
+    "call": "Notificaciones de voz",
+    "title": "Notificaciones",
+    "reflectionLog": "Cuaderno de reflexiones",
+    "messages": "Notificaciones de mensajes",
+    "sound": "vibración acústica",
+    "reminderMeAt": "Recordarme",
+    "push": "Notificaciones push",
+    "quietHours": "Horas tranquilas",
+    "wellnessNudges": "Recordatorios de Bienestar",
+    "pauseAll": "Pausar todo",
+    "listenerReplied": "Respondemos a tu guía de asistencia",
+    "reminder": "Notificaciones de recordatorio",
+    "inAppAlert": "Alertas en la aplicación"
+  },
+  "Contact": {
+    "facebook": "Facebook",
+    "title": "Contáctanos",
+    "faq": "Preguntas frecuentes",
+    "twitter": "Twitter",
+    "appeal": "Apelación",
+    "website": "Visita la página web",
+    "tiktok": "TikTok",
+    "email": "Envíanos un correo electrónico",
+    "instagram": "Instagram"
+  },
+  "PlanFeatures": {
+    "secure_confidential": "SEGURO | PRIVADO",
+    "basic_calls": "Soporte básico de voz",
+    "unlimited_messages": "Mensajes de texto ilimitados",
+    "advanced_insights": "Información sobre el estado de ánimo",
+    "priority_matching": "Coincidencia de prioridad"
+  },
+  "VenterMoodMonthly": {
+    "sampleNote": "Salí a caminar hoy. Me siento renovado.",
+    "title": "Seguimiento mensual del estado de ánimo",
+    "viewHistory": "Ver historial",
+    "noMood": "-"
+  },
+  "Nickname": {
+    "placeholder": "¿Como quieres que te llamen?",
+    "nicknameRequired": "Alias es requerido.",
+    "title": "Su apodo",
+    "save": "Guardar"
+  },
+  "Appeal": {
+    "summary": "Resumen",
+    "subtitle": "Proporcione la siguiente información para enviar su \n solicitud de apelación.",
+    "uploadHint": "PDF o DOCX\no arrastrar y soltar archivos aquí",
+    "letterUpload": "Cargar documentos",
+    "reportId": "ID informe",
+    "title": "Apelación",
+    "emailOrPhone": "Correo electrónico",
+    "submit": "presentar un recurso",
+    "emailOrPhonePlaceholder": "",
+    "reportIdPlaceholder": "",
+    "summaryPlaceholder": ""
+  },
+  "Notifications": {
+    "title": "Notificaciones",
+    "noNotificationsDescription": "Cuando recibas notificaciones, aparecerán aquí.",
+    "noNotifications": "Aún no hay notificaciones",
+    "notificationTitle": "La notificación de actividades",
+    "incomingChat": "Sesión de texto Incomig",
+    "incomingCall": "Sesión de voz entrante",
+    "notificationMessage": "Tienes una nueva actividad en tu cuenta"
+  },
+  "CredentialChangeOTP": {
+    "successTitle": "¡Listo!",
+    "didntReceive": "¿No has recibido el código?",
+    "subtitle": "Hemos enviado un código de 4 dígitos a tu nuevo {{type}}. Por favor, introdúzcalo a continuación para verificar.",
+    "resend": "Reenviar Código",
+    "subtitleEmail": "Hemos enviado un código de 4 dígitos a tu nuevo correo electrónico. Por favor, introdúzcalo a continuación para verificar.",
+    "title": "Verificación requerida",
+    "subtitlePhone": "Hemos enviado un código de 4 dígitos a tu nuevo número de teléfono. Por favor, introdúzcalo a continuación para verificar.",
+    "verify": "Verificar",
+    "successMessage": "Tu {{type}} se ha actualizado correctamente."
+  },
+  "Crisis": {
+    "message": "Si el venter menciona pensamientos de autolesión o suicidio, por favor, intensifique esta sesión para los servicios de crisis.\n\nSi el ventilador está en crisis y no escala esta sesión, se le prohibirá permanentemente esta plataforma.",
+    "no": "No",
+    "sessionEndedTitle": "Sesión Terminada",
+    "redirectMessage": "Se requiere una redirección inmediata al soporte de crisis adecuado",
+    "okay": "Regular",
+    "exit": "Salir",
+    "escalatedTitle": "La crisis escaló.",
+    "prompt988Message": "Solicite al Venter que se comunique con 988\n\nLos servicios de crisis están disponibles en 988",
+    "title": "¿Está el Venter en crisis?",
+    "redirectTitle": "Redirección requerida",
+    "escalatedMessage": "Se ha activado el protocolo de crisis.",
+    "prompt988Title": "Línea de crisis 988",
+    "yes": "Sí",
+    "sessionEndedMessage": "Gracias por escalar y mantener el respiradero a salvo."
+  },
+  "PasswordChangeOTP": {
+    "resend": "Volver a enviar",
+    "subtitle": "Se ha enviado un código de verificación a tu correo electrónico/teléfono registrado para confirmar tu identidad.",
+    "didntReceive": "¿No ha recibido el código?",
+    "title": "Verificar cambio de contraseña",
+    "verify": "Verificar y cambiar contraseña"
+  },
+  "ChangeAccount": {
+    "switchAccountDescription": "Algunos días necesitas ayuda. Otros días lo das. Cambia de rol cuando estés listo.",
+    "title": "Cambiar cuenta",
+    "becomeNode": "Conviértete en un {{role}}",
+    "selectDescription": "Seleccione el rol al que desea cambiar o convertirse. Algunos roles pueden requerir una configuración adicional.",
+    "switchAccountTitle": "Cambiar de cuenta",
+    "currentlyActive": "Actualmente activo",
+    "roleSwitchedSuccess": " se ha cambiado correctamente.",
+    "needsOnboarding": "Requiere configuración",
+    "failedToSwitch": "Fallo al cambiar de rol",
+    "failedToFetch": "No se han podido recuperar los roles",
+    "roles": "Funciones",
+    "switchNode": "Cambiar a {{role}}"
+  },
+  "VenterMoodHistory": {
+    "errors": {
+      "selectMood": "Por favor seleccione un"
+    },
+    "deleteSuccess": "Borrado con éxito",
+    "viewHistory": "Ver historial",
+    "noMoods": "Aún no se ha registrado ningún estado de ánimo",
+    "noMoodsDescription": "Aún no has registrado ningún estado de ánimo. Comienza registrando tu primer estado de ánimo para que aparezca aquí.",
+    "title": "Historial del estado de ánimo"
+  },
+  "BiometricSettings": {
+    "disableErrorTitle": "Error de Desactivación",
+    "disabledSuccess": "Autenticación biométrica desactivada",
+    "enableErrorTitle": "Habilitar error",
+    "enabledSuccess": "Autenticación biométrica habilitada",
+    "somethingWentWrong": "Algo salió mal",
+    "unavailable": "Sensor biométrico no disponible",
+    "enabledError": "Error al habilitar la autenticación biométrica",
+    "disabledError": "Error al deshabilitar la autenticación biométrica"
+  },
+  "QuietHours": {
+    "description": "Las horas de silencio te permiten silenciar las notificaciones no urgentes de Ventally durante las horas que elijas. Las sesiones de voz, las sesiones de texto y la actividad de la plataforma continuarán con normalidad, pero las notificaciones automáticas, los sonidos y las alertas se silenciarán hasta que finalicen las horas de silencio.\n\nEs posible que se envíen alertas relacionadas con crisis y seguridad cuando sea necesario para mantener los estándares de protección de la plataforma.\n\nPuedes ajustar o desactivar las horas de silencio en cualquier momento en tu configuración.",
+    "addButton": "Guardar",
+    "addedTitle": "Horas de silencio ahorradas",
+    "placeholder": "hh  mm",
+    "addedDescription": "Se han actualizado tus horas de silencio",
+    "startTime": "Hora de inicio",
+    "title": "Horas tranquilas",
+    "endTime": "Hora de fin"
+  },
+  "ListenerFeedback": {
+    "ratingHelpful": "Útil",
+    "subtitle": "¿Qué tal la sesión?",
+    "rating": "Valoración",
+    "title": "SESIÓN 4 - Retroalimentación"
+  },
+  "ChangePassword": {
+    "resetSuccessMessage": "Su contraseña ha sido canjeada",
+    "update": "Actualiza",
+    "title": "Restablecer contraseña",
+    "confirmPassword": "Confirmar nueva contraseña",
+    "newPassword": "Nueva contraseña",
+    "oldPassword": "Antigua contraseña",
+    "resetSuccessTitle": "Restablecimiento de contraseña"
+  },
+  "NotificationDetail": {
+    "body": "Ventally (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger su privacidad y mantener su información personal segura. Esta política explica lo que recopilamos, por qué lo recopilamos y cómo lo usamos y protegemos. Al utilizar nuestro sitio web, aplicación o servicios, aceptas esta Política de privacidad.\n\nVentally (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger su privacidad y mantener su información personal segura. Esta política explica lo que recopilamos, por qué lo recopilamos y cómo lo usamos y protegemos. Al usar nuestro"
+  },
+  "DeleteAccount": {
+    "description": "Al eliminar tu cuenta, se eliminarán permanentemente tu perfil, mensajes, historial de sesiones y todos los datos asociados de Ventally. Esta acción no se puede deshacer. Las suscripciones activas, los créditos o los saldos pendientes del monedero se perderán al eliminarlos.\n\nSi tienes una suscripción activa, debes cancelarla antes de eliminar tu cuenta. Si eliminas tu cuenta, la facturación no se detendrá automáticamente y es posible que el proveedor de tu tienda de aplicaciones siga cobrándote.\n\nIntroduzca su contraseña a continuación para confirmar y",
+    "warning": "La eliminación de la cuenta es permanente y no se puede deshacer.",
+    "title": "Eliminar su cuenta",
+    "passwordRequired": "La contraseña es obligatoria",
+    "button": "Eliminar cuenta",
+    "confirmDelete": "¿Desea eliminar esta cuenta?",
+    "password": "Contraseña",
+    "deleted": "Cuenta eliminada"
+  },
+  "UpdateEmail": {
+    "title": "Actualiza tu correo electrónico",
+    "subtitle": "Cambia tu correo electrónico de inicio de sesión",
+    "currentEmail": "Correo electrónico actual",
+    "sendOTP": "Obtener código",
+    "newEmail": "Nuevo correo electrónico"
+  },
+  "VenterMoodDetails": {
+    "note": "Nota:",
+    "time": "Hora",
+    "editEntry": "Editar Entrada",
+    "title": "Detalles del estado de ánimo",
+    "mood": "Humor:"
+  },
+  "Errors": {
+    "adminUnavailableOnMobile": "El acceso de administrador no está disponible en esta aplicación. Utilice el panel de control web."
+  },
+  "VenterNotificationDetail": {
+    "body": "Ventally (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger su privacidad y mantener su información personal segura. Esta política explica lo que recopilamos, por qué lo recopilamos y cómo lo usamos y protegemos. Al utilizar nuestro sitio web, aplicación o servicios, aceptas esta Política de privacidad.\n\nVentally (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger su privacidad y mantener su información personal segura. Esta política explica lo que recopilamos, por qué lo recopilamos y cómo lo usamos y protegemos. Al usar nuestro"
+  },
+  "FAQ": {
+    "subtitle": "No dude en ponerse en contacto con nosotros si tiene alguna sugerencia sobre nuestra mejora, una queja que debatir o un problema que resolver.",
+    "items": [
+      {
+        "title": "¿Qué es Ventally?",
+        "description": "Ventally es un espacio seguro y anónimo donde puedes hablar o enviar mensajes de texto con guías de soporte capacitados cada vez que necesites dejar salir algo, sin juicios ni presiones.\n\nP. ¿Es esto una terapia\n\nR. No. Ventally no es un sustituto de la terapia. Somos una sesión de apoyo de personas reales capacitadas en escucha activa, no de médicos con licencia.\n\nP. ¿Qué pasa si necesito ayuda urgente?\n\nR. Si está en crisis, comuníquese con un profesional de salud mental con licencia o con los servicios de emergencia. Estamos aquí para ayudarte, pero no somos un cris"
+      },
+      {
+        "title": "¿Qué es una guía de soporte y cómo me convierto en una?",
+        "description": "Nuestras Guías de soporte son personas comunes que han sido capacitadas para brindar sesiones de soporte, aliento y validación. No son terapeutas, solo excelentes guías de apoyo que se preocupan.\n\nVisita nuestra página Conviértete en una guía de soporte, postúlate, completa nuestra capacitación y comienza a generar ganancias mientras generas un impacto.\n\nP: ¿Necesito experiencia?\n\nR: No se requiere experiencia formal, solo empatía, confiabilidad y la voluntad de completar nuestra capacitación.\n\nP: ¿Es de pago?\n\nR: Sí. Las guías de soporte ganan dinero por llamada o mensaje de texto"
+      },
+      {
+        "title": "¿Qué es un Venter y preguntas sobre la ventilación?",
+        "description": "Un Venter es cualquier persona que usa la aplicación Ventally para liberar lo que tiene en mente (estrés, frustración, soledad o incluso alegría) en un espacio seguro y anónimo. No son pacientes ni clientes. Son personas que buscan apoyo confidencial entre pares y validación emocional.\n\nP: ¿Puedo permanecer en el anonimato?\n\nR: Sí. No tienes que compartir tu nombre real, foto ni ninguna información de identificación. Ventally está diseñado para la privacidad emocional y la seguridad digital.\n\nP: ¿Cuándo puedo desahogarme?\n\nR: 24/7. Si las Guías de soporte están en línea, obtendrás ma"
+      },
+      {
+        "title": "Preguntas generales",
+        "description": "P: ¿Ventally está disponible en todo el mundo?\n\nR: Actualmente estamos lanzando en los EE. UU., con planes de expandirse a Canadá, el Reino Unido, la UE, Australia y el Caribe. Los usuarios internacionales pueden unirse a la lista de espera.\n\nP: ¿Puedo comprar acceso prepago para otra persona?\n\nR: Sí. Puedes comprar una sesión de prepago o una suscripción para otra persona a través de nuestras opciones de acceso de prepago en la aplicación.\n\nP: ¿Cómo mantienes las conversaciones seguras?\n\nR: Cada sesión es monitoreada por comportamiento abusivo. Tenemos pautas comunitarias, informes"
+      }
+    ]
+  },
+  "ChatStatusBar": {
+    "messaging": "Sesión en curso"
+  },
+  "VenterReflectionDetail": {
+    "title": "Detalle de reflexión"
+  },
+  "Time": {
+    "am": "AM",
+    "pm": "PM"
+  },
+  "Home": {
+    "title": "Inicio"
+  },
+  "Settings": {
+    "legal": "PÓLIZAS JUDICIALES"
+  },
+  "FindingListener": {
+    "supportersOnlineWait": "Buscando tu guía de apoyo...",
+    "noListenersMessage": "Todas nuestras Guías de Apoyo están ocupadas. Inténtalo de nuevo en 5-10 minutos, o escribe una reflexión mientras esperas.",
+    "noListenersOnline": "No hay supporters en línea",
+    "supportersOnline": "seguidores en línea"
+  },
+  "ListenerHome": {
+    "verificationPendingTitle": "Verificación pendiente",
+    "verificationPendingDesc": "Le notificaremos por correo electrónico dentro de 24-48 horas una vez aprobado.",
+    "availabilityTip": "💡 Active la disponibilidad para recibir sesiones",
+    "availabilityTipDesc": "Manténgalo ACTIVADO cuando esté listo para escuchar. Las sesiones aparecerán aquí cuando los venters se emparejen con usted.",
+    "profileCompleteTitle": "⚡ Complete su perfil",
+    "profileCompleteDesc": "Complete su perfil para que los venters puedan encontrarle.",
+    "approvedTitle": "¡Está aprobado! Así es como obtener su primera sesión:",
+    "approvedStep1": "① Asegúrese de que la disponibilidad esté ACTIVADA arriba",
+    "approvedStep2": "② Complete su perfil para que los venters puedan encontrarle",
+    "approvedStep3": "③ Las sesiones aparecerán aquí cuando los venters se emparejen con usted",
+    "firstSessionTip": "La mayoría de los oyentes reciben su primera sesión dentro de las 48h de activación"
+  },
+  "ListenerWallet": {
+    "firstSessionTip": "La mayoría de los oyentes reciben su primera sesión dentro de las 48h de activación.",
+    "availabilityReminder": "Asegúrese de que su disponibilidad esté ACTIVADA para comenzar a recibir sesiones",
+    "firstSessionEarnings": "💰 Las ganancias de tu primera sesión aparecerán aquí"
+  },
+  "ListenerActiveCall": {
+    "connecting": "Conectando..."
+  }
+}

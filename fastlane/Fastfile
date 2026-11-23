@@ -1,0 +1,81 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    # --- App Store Connect API key ---
+    api_key = app_store_connect_api_key(
+      key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+      issuer_id: ENV["APP_STORE_CONNECT_ISSUER_ID"],
+      key_content: ENV["APP_STORE_CONNECT_API_KEY_CONTENT"],
+      is_key_content_base64: false,
+    )
+
+    # --- Code signing: install cert + provisioning profile from secrets ---
+    # SIGNING_CERTIFICATE_P12_BASE64 = base64 of the .p12 distribution cert
+    # SIGNING_CERTIFICATE_PASSWORD     = p12 password
+    # PROVISIONING_PROFILE_BASE64      = base64 of the .mobileprovision file
+    cert_path = "/tmp/dist_cert.p12"
+    profile_path = "/tmp/Ventally_AppStore.mobileprovision"
+
+    # Write cert to disk
+    File.binwrite(cert_path, Base64.decode64(ENV["SIGNING_CERTIFICATE_P12_BASE64"]))
+    # Write provisioning profile to disk
+    File.binwrite(profile_path, Base64.decode64(ENV["PROVISIONING_PROFILE_BASE64"]))
+
+    # Create a temporary keychain and import the cert into it
+    create_keychain(
+      name: "build.keychain",
+      password: "ci_password",
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      lock_when_sleeps: false,
+    )
+
+    import_certificate(
+      certificate_path: cert_path,
+      certificate_password: ENV["SIGNING_CERTIFICATE_PASSWORD"],
+      keychain_name: "build.keychain",
+      keychain_password: "ci_password",
+    )
+
+    install_provisioning_profile(path: profile_path)
+
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "ios/Ventally.xcodeproj",
+      team_id: ENV["APPLE_TEAM_ID"] || "2337L9F2XY",
+      bundle_identifier: "com.ventally",
+      code_sign_identity: "iPhone Distribution",
+      profile_name: "Ventally App Store",
+    )
+
+    # --- Bump build number ---
+    increment_build_number(
+      build_number: ENV["GITHUB_RUN_NUMBER"] || Time.now.strftime("%Y%m%d%H%M"),
+      xcodeproj: "ios/Ventally.xcodeproj",
+    )
+
+    # --- Build ---
+    build_app(
+      workspace: "ios/Ventally.xcworkspace",
+      scheme: "Ventally",
+      configuration: "Release",
+      export_method: "app-store",
+      output_directory: "ios/build",
+      output_name: "Ventally.ipa",
+      export_options: {
+        provisioningProfiles: {
+          "com.ventally" => "Ventally App Store",
+        },
+      },
+    )
+
+    # --- Upload to TestFlight ---
+    upload_to_testflight(
+      api_key: api_key,
+      skip_waiting_for_build_processing: true,
+    )
+  end
+end

@@ -1,0 +1,5 @@
+# Inherit .gitignore exclusions but allow the React Native Gradle plugin
+# which must be present before npm install runs during the EAS build.
+# EAS copies this file's rules on top of .gitignore.
+
+!node_modules/@react-native/gradle-plugin

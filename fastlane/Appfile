@@ -1,0 +1,3 @@
+app_identifier("com.ventally")
+apple_id("") # Leave blank - using API key
+itc_team_id("") # Leave blank - using API key
