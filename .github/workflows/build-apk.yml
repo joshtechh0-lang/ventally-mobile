@@ -1,59 +1,45 @@
 name: Build Android APK
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-
       - name: Setup Java 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
-
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-
       - name: Set Android SDK path
         run: echo "sdk.dir=$ANDROID_HOME" > android/local.properties
-
       - name: Accept Android licenses
         run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
-
       - name: Make gradlew executable
         run: chmod +x android/gradlew
-
       - name: Build Release APK
         run: cd android && ./gradlew assembleRelease --no-daemon
-
-      - name: Upload APK
+      - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
           name: ventally-release-apk
           path: android/app/build/outputs/apk/release/app-release.apk
           retention-days: 7
-          - name: Build Debug APK
-            run: cd android && ./gradlew assembleDebug --no-daemon
-          - name: Upload Debug APK
-            uses: actions/upload-artifact@v4
-            with:
-              name: ventally-debug-apk
-              path: android/app/build/outputs/apk/debug/app-debug.apk
-              retention-days: 7
-
-
-
-
+      - name: Build Debug APK
+        run: cd android && ./gradlew assembleDebug --no-daemon
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ventally-debug-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 7
