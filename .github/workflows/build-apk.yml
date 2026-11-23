@@ -45,3 +45,15 @@ jobs:
           name: ventally-release-apk
           path: android/app/build/outputs/apk/release/app-release.apk
           retention-days: 7
+          - name: Build Debug APK
+            run: cd android && ./gradlew assembleDebug --no-daemon
+          - name: Upload Debug APK
+            uses: actions/upload-artifact@v4
+            with:
+              name: ventally-debug-apk
+              path: android/app/build/outputs/apk/debug/app-debug.apk
+              retention-days: 7
+
+
+
+
