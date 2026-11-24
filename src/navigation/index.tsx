@@ -32,7 +32,7 @@ import useNotifications from "../hooks/UseNotifications";
 import LanguageSelectionScreen from '../screens/AuthScreens/LanguageSelectionScreen';
 import i18n from '../locales/i18n';
 import { OfflineBanner } from '../components/OfflineBanner';
-import * as Clarity from '@microsoft/react-native-clarity';
+// import * as Clarity from '@microsoft/react-native-clarity';
 import { useGlobalSessionEvents } from "../hooks/useGlobalSessionEvents";
 import SubscriptionDetailsScreen from '../screens/AuthScreens/SubscriptionDetailsScreen';
 import PaymentMethodsScreen from "../screens/AuthScreens/PaymentMethodsScreen";
@@ -93,7 +93,7 @@ export const MainNavigator = () => {
 
   // Initialize Microsoft Clarity analytics
   React.useEffect(() => {
-    Clarity.initialize('xfn3np7ej2');
+    // Clarity.initialize('xfn3np7ej2');
   }, []);
   useGlobalSessionEvents();
   const isAuthenticated = useSelector((state: RootState) => state.user.isAuthenticated);
