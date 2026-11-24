@@ -27,6 +27,8 @@ jobs:
         run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
       - name: Make gradlew executable
         run: chmod +x android/gradlew
+      - name: Run React Native Codegen
+        run: cd android && ./gradlew generateCodegenArtifactsFromSchema --no-daemon
       - name: Build Release APK
         run: cd android && ./gradlew assembleRelease --no-daemon
       - name: Upload Release APK
