@@ -43,3 +43,66 @@ jobs:
           name: ventally-debug-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 7
+
+  crash-log:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Download debug APK
+        uses: actions/download-artifact@v4
+        with:
+          name: ventally-debug-apk
+          path: ./apk
+      - name: Install emulator system image
+        run: |
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
+          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "emulator" "platform-tools" "system-images;android-34;google_apis;x86_64"
+      - name: Create AVD
+        run: |
+          echo "no" | $ANDROID_HOME/cmdline-tools/latest/bin/avdmanager create avd \
+            --name test_avd \
+            --package "system-images;android-34;google_apis;x86_64" \
+            --device "pixel_6" \
+            --force
+      - name: Start emulator
+        run: |
+          $ANDROID_HOME/emulator/emulator -avd test_avd -no-window -no-audio -no-snapshot -gpu swiftshader_indirect &
+          echo "Waiting for emulator to boot..."
+          $ANDROID_HOME/platform-tools/adb wait-for-device
+          until $ANDROID_HOME/platform-tools/adb shell getprop sys.boot_completed 2>/dev/null | grep -q "1"; do
+            sleep 3
+          done
+          echo "Emulator ready"
+      - name: Install and run debug APK, capture crash log
+        run: |
+          ADB=$ANDROID_HOME/platform-tools/adb
+          APK=$(find ./apk -name "*.apk" | head -1)
+          echo "Installing: $APK"
+          $ADB install "$APK"
+          $ADB logcat -c
+          $ADB shell am start -n com.ventally/.MainActivity
+          timeout 15 $ADB logcat -d > logcat.txt 2>&1 || true
+          echo "=== CRASH / FATAL LINES ==="
+          grep -E "FATAL|AndroidRuntime|CRASH|beginning of crash|signal|backtrace|libc|abort|Fatal signal" logcat.txt | head -60
+          echo ""
+          echo "=== FULL LOGCAT (last 200 lines) ==="
+          tail -200 logcat.txt
+      - name: Upload logcat
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crash-logcat
+          path: logcat.txt
+          retention-days: 7
