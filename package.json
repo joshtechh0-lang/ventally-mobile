@@ -84,5 +84,27 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "react-native": {
+    "dependencies": {
+      "@microsoft/react-native-clarity": {
+        "platforms": {
+          "android": null,
+          "ios": null
+        }
+      },
+      "react-native-nitro-modules": {
+        "platforms": {
+          "android": null,
+          "ios": null
+        }
+      },
+      "react-native-worklets": {
+        "platforms": {
+          "android": null,
+          "ios": null
+        }
+      }
+    }
   }
 }
