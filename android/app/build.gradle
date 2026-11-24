@@ -120,7 +120,7 @@ dependencies {
      implementation(platform("com.google.firebase:firebase-bom:34.8.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation('com.google.firebase:firebase-messaging')
-      implementation ('com.twilio:voice-android:5.7.2')
+      // Twilio Voice SDK removed - not used in JS code, was crashing on startup
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
