@@ -1,14 +1,19 @@
 module.exports = {
-    project: {
-      ios: {},
-      android: {},
-    },
-    assets: ['./src/assets/fonts'], // adjust according to your path
-    dependencies: {
-      'react-native-iap': {
-        platforms: {
-          android: null, // disable on Android
-        },
+  dependencies: {
+    '@microsoft/react-native-clarity': {
+      platforms: {
+        android: null,
       },
     },
-  };
+    '@react-native-community/blur': {
+      platforms: {
+        android: null,
+      },
+    },
+    'react-native-nitro-modules': {
+      platforms: {
+        android: null,
+      },
+    },
+  },
+};
