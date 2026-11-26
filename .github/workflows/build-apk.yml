@@ -45,7 +45,7 @@ jobs:
           retention-days: 7
 
   crash-log:
-    runs-on: macos-latest
+    runs-on: macos-13
     needs: build
     steps:
       - name: Checkout
