@@ -53,8 +53,8 @@ jobs:
           path: ./apk
       - uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 29
-          arch: x86_64
+          api-level: 34
+          arch: arm64-v8a
           target: default
           emulator-options: -no-window -no-audio -no-snapshot -gpu swiftshader_indirect
           script: |
