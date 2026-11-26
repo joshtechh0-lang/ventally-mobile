@@ -1,18 +1,22 @@
 package com.ventally
-import expo.modules.ReactActivityDelegateWrapper
+
 import android.content.Intent
 import android.os.Bundle
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
+
 class MainActivity : ReactActivity() {
   override fun getMainComponentName(): String = "Ventally"
+
   override fun createReactActivityDelegate(): ReactActivityDelegate =
-      ReactActivityDelegateWrapper(this, BuildConfig.IS_NEW_ARCHITECTURE_ENABLED, DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled))
+      DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
   }
+
   override fun onNewIntent(intent: Intent) {
     super.onNewIntent(intent)
   }
