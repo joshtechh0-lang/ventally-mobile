@@ -1,19 +1,16 @@
 module.exports = {
   dependencies: {
     '@microsoft/react-native-clarity': {
-      platforms: {
-        android: null,
-      },
+      platforms: { android: null },
     },
     '@react-native-community/blur': {
-      platforms: {
-        android: null,
-      },
+      platforms: { android: null },
     },
     'react-native-nitro-modules': {
-      platforms: {
-        android: null,
-      },
+      platforms: { android: null },
+    },
+    'react-native-iap': {
+      platforms: { android: null },
     },
   },
 };
