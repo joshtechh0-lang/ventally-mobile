@@ -58,8 +58,7 @@ jobs:
           target: default
           emulator-options: -no-window -no-audio -no-snapshot -gpu swiftshader_indirect
           script: |
-            APK=$(find ./apk -name "*.apk" | head -1)
-            adb install "$APK"
+            adb install $(find ./apk -name "*.apk" | head -1)
             adb logcat -c
             adb shell am start -n com.ventally/.MainActivity
             sleep 15
