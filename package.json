@@ -106,5 +106,12 @@
         }
       }
     }
+  },
+  "reactNativeModulesConfig": {
+    "androidExcludes": [
+      "@microsoft/react-native-clarity",
+      "@react-native-community/blur",
+      "react-native-nitro-modules"
+    ]
   }
 }
