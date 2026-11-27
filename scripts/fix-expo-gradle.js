@@ -16,7 +16,13 @@ for (const file of files) {
   if (!fs.existsSync(file)) { console.log('SKIP:', file); continue; }
   let content = fs.readFileSync(file, 'utf8');
   const original = content;
+  // Remove "apply plugin:" style
   content = content.replace(/^apply plugin: 'expo-module-gradle-plugin'\r?\n/m, '');
+  // Remove "id 'expo-module-gradle-plugin'" line inside plugins {} block
+  content = content.replace(/^[ \t]*id ['"]expo-module-gradle-plugin['"]\r?\n/m, '');
+  // Remove empty plugins {} block left behind
+  content = content.replace(/^plugins \{\s*\}\r?\n/m, '');
+  // Remove expoModule { ... } block
   content = content.replace(/^expoModule \{[^}]*\}\r?\n/ms, '');
   if (content !== original) {
     fs.writeFileSync(file, content);
