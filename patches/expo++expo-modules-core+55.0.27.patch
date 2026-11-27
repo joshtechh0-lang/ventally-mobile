@@ -1,0 +1,40 @@
+diff --git a/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewComponentDescriptor.cpp b/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewComponentDescriptor.cpp
+index 1752b22..f231675 100644
+--- a/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewComponentDescriptor.cpp
++++ b/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewComponentDescriptor.cpp
+@@ -56,12 +56,12 @@ void ExpoViewComponentDescriptor::adopt(facebook::react::ShadowNode &shadowNode)
+     bool changedStyle = false;
+     
+     if (!isnan(styleWidth)) {
+-      style.setDimension(facebook::yoga::Dimension::Width, facebook::yoga::StyleSizeLength::points(styleWidth));
++      style.setDimension(facebook::yoga::Dimension::Width, facebook::yoga::StyleLength::points(styleWidth));
+       changedStyle = true;
+     }
+     
+     if (!isnan(styleHeight)) {
+-      style.setDimension(facebook::yoga::Dimension::Height, facebook::yoga::StyleSizeLength::points(styleHeight));
++      style.setDimension(facebook::yoga::Dimension::Height, facebook::yoga::StyleLength::points(styleHeight));
+       changedStyle = true;
+     }
+     
+diff --git a/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewShadowNode.cpp b/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewShadowNode.cpp
+index a7656cb..ccd0cea 100644
+--- a/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewShadowNode.cpp
++++ b/node_modules/expo/node_modules/expo-modules-core/common/cpp/fabric/ExpoViewShadowNode.cpp
+@@ -31,15 +31,7 @@ void ExpoViewShadowNode::initialize() noexcept {
+   } else {
+     traits_.unset(react::ShadowNodeTraits::Trait::ChildrenFormStackingContext);
+   }
+-
+-  if (YGNodeStyleGetDisplay(&yogaNode_) == YGDisplayContents) {
+-    auto it = viewProps.propsMap.find("disableForceFlatten");
+-    bool disableForceFlatten = (it != viewProps.propsMap.end()) ? it->second.getBool() : false;
+-    
+-    if (disableForceFlatten) {
+-      traits_.unset(react::ShadowNodeTraits::Trait::ForceFlattenView);
+-    }
+-  }
++}
+ }
+ 
+ } // namespace expo
