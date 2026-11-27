@@ -52,40 +52,35 @@ if (fs.existsSync(expoGradle)) {
   }
 }
 
-// Patch expo-modules-core CMakeLists.txt for RN 0.76 compatibility
+// === Patch expo-modules-core CMakeLists.txt for RN 0.76 compat ===
 const cmakeFile = 'node_modules/expo-modules-core/android/CMakeLists.txt';
 if (fs.existsSync(cmakeFile)) {
   let content = fs.readFileSync(cmakeFile, 'utf8');
   const original = content;
 
-  // Remove get_target_property block that uses non-existent ReactAndroid::reactnativejni
+  // 1. Remove get_target_property block for non-existent ReactAndroid::reactnativejni
   content = content.replace(
-    /get_target_property\(INCLUDE_reactnativejni\s*\n\s*ReactAndroid::reactnativejni\s*\n\s*INTERFACE_INCLUDE_DIRECTORIES\)\n/,
+    /\nget_target_property\(INCLUDE_reactnativejni\s*\n\s*ReactAndroid::reactnativejni\s*\n\s*INTERFACE_INCLUDE_DIRECTORIES\)\n/,
+    '\n'
+  );
+
+  // 2. Remove the ${INCLUDE_reactnativejni}/react include line entirely
+  //    (ReactAndroid::reactnative prefab already provides these headers)
+  content = content.replace(
+    /[ \t]*\$\{INCLUDE_reactnativejni\}\/react\s*\n/,
     ''
   );
 
-  // Replace the include path using the removed variable with direct path
+  // 3. Replace non-existent link targets with ReactAndroid::reactnative
   content = content.replace(
-    /\$\{INCLUDE_reactnativejni\}\/react\s*\n\s*\n\s*# header only imports from turbomodule.*\n/,
-    '"${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"\n        '
-  );
-
-  // Fix target_include_directories to use SYSTEM PRIVATE
-  content = content.replace(
-    /target_include_directories\(\s*\n(\s*\$\{PACKAGE_NAME\}\s*\n\s*)PRIVATE/,
-    'target_include_directories(\n$1SYSTEM PRIVATE'
-  );
-
-  // Replace non-existent link targets with ReactAndroid::reactnative
-  content = content.replace(
-    /ReactAndroid::jsi\s*\n\s*ReactAndroid::reactnativejni\s*\n\s*ReactAndroid::folly_runtime\s*\n\s*ReactAndroid::react_nativemodule_core/,
-    'ReactAndroid::jsi\n        ReactAndroid::reactnative'
+    /ReactAndroid::reactnativejni\s*\n\s*ReactAndroid::folly_runtime\s*\n\s*ReactAndroid::react_nativemodule_core/,
+    'ReactAndroid::reactnative'
   );
 
   if (content !== original) {
     fs.writeFileSync(cmakeFile, content);
     console.log('Patched:', cmakeFile);
   } else {
-    console.log('No change needed:', cmakeFile);
+    console.log('No change needed (CMakeLists):', cmakeFile);
   }
 }
