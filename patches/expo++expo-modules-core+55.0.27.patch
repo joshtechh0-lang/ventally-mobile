@@ -39,11 +39,19 @@ index a7656cb..ccd0cea 100644
  
  } // namespace expo
 diff --git a/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts b/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
-index ce67cc8..dad11c4 100644
+index ce67cc8..55b02ea 100644
 --- a/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
 +++ b/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
-@@ -29,7 +29,7 @@ val isExpoAutolinkingSettingsPluginAvailable = expoAutolinkingSettingsPlugin ==
+@@ -27,9 +27,15 @@ val expoAutolinkingSettingsPlugin = if (gradleProperties?.has("expoAutolinkingSe
  
+ val isExpoAutolinkingSettingsPluginAvailable = expoAutolinkingSettingsPlugin == true
+ 
++configurations.all {
++  resolutionStrategy {
++    force("com.android.tools.build:gradle:8.9.1")
++  }
++}
++
  dependencies {
    implementation(gradleApi())
 -  compileOnly("com.android.tools.build:gradle:8.5.0")
