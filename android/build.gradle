@@ -17,7 +17,13 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
         classpath("com.google.gms:google-services:4.4.3")
     }
+    configurations.classpath {
+        resolutionStrategy {
+            force("com.android.tools.build:gradle:8.9.1")
+        }
+    }
 }
 
 apply plugin: "com.facebook.react.rootproject"
 apply plugin: "expo-root-project"
+
