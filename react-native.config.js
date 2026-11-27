@@ -15,5 +15,11 @@ module.exports = {
     'react-native-google-mobile-ads': {
       platforms: { android: null },
     },
+    'react-native-biometrics': {
+      platforms: { android: null },
+    },
+    'react-native-fs': {
+      platforms: { android: null },
+    },
   },
 };
