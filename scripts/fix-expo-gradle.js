@@ -106,9 +106,9 @@ if (fs.existsSync(reanimatedCmake)) {
   const original = content;
 
   // Replace non-existent RN 0.76 targets
-  content = content.replace(/ReactAndroid::folly_runtime/g, 'ReactAndroid::reactnative');
-  content = content.replace(/ReactAndroid::glog/g, 'ReactAndroid::reactnative');
-  content = content.replace(/ReactAndroid::reactnativejni/g, 'ReactAndroid::reactnative');
+  content = content.replace(/\s*ReactAndroid::folly_runtime/g, '');
+  content = content.replace(/\s*ReactAndroid::glog/g, '');
+  content = content.replace(/\s*ReactAndroid::reactnativejni/g, '');
 
   // Suppress C++20 deprecation warnings that reanimated triggers as errors
   if (!content.includes('Wno-deprecated-this-capture')) {
