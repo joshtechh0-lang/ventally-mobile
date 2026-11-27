@@ -83,18 +83,12 @@ if (fs.existsSync(cmakeFile)) {
   let content = fs.readFileSync(cmakeFile, 'utf8');
   const original = content;
   content = content.replace(
-    'get_target_property(INCLUDE_reactnativejni
-        ReactAndroid::reactnativejni
-        INTERFACE_INCLUDE_DIRECTORIES)
-',
+    'get_target_property(INCLUDE_reactnativejni\n        ReactAndroid::reactnativejni\n        INTERFACE_INCLUDE_DIRECTORIES)\n',
     ''
   );
-  content = content.replace('        ${INCLUDE_reactnativejni}/react
-', '');
+  content = content.replace('        ${INCLUDE_reactnativejni}/react\n', '');
   content = content.replace(
-    /ReactAndroid::reactnativejnis*
-s*ReactAndroid::folly_runtimes*
-s*ReactAndroid::react_nativemodule_core/,
+    /ReactAndroid::reactnativejni[\s\S]*?ReactAndroid::folly_runtime[\s\S]*?ReactAndroid::react_nativemodule_core/,
     'ReactAndroid::reactnative'
   );
   if (content !== original) {
