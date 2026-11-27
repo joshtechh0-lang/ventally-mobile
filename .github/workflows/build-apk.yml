@@ -24,6 +24,13 @@ jobs:
           yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
       - run: chmod +x android/gradlew
       - run: cd android && ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a
+      - name: Inspect APK and AAR for .so files
+        run: |
+          echo "=== .so files in APK ==="
+          unzip -l android/app/build/outputs/apk/release/app-release.apk | grep "\.so" || echo "NO .so FILES FOUND"
+          echo "=== react-android AAR .so files ==="
+          AAR=$(find $HOME/.gradle/caches -name "react-android-*.aar" 2>/dev/null | head -1)
+          if [ -n "$AAR" ]; then echo "AAR: $AAR" && unzip -l "$AAR" | grep "\.so"; else echo "AAR not found in cache"; fi
       - uses: actions/upload-artifact@v4
         with:
           name: ventally-release-apk
