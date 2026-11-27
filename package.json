@@ -35,7 +35,7 @@
     "jwt-decode": "^4.0.0",
     "react": "19.2.0",
     "react-i18next": "^16.5.3",
-    "react-native": "0.83.1",
+    "react-native": "^0.83.10",
     "react-native-biometrics": "^3.0.1",
     "react-native-confirmation-code-field": "^8.0.1",
     "react-native-fs": "^2.20.0",
