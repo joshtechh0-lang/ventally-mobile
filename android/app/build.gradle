@@ -79,6 +79,9 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.ventally"
+    aaptOptions {
+        noCompress "so"
+    }
     defaultConfig {
         missingDimensionStrategy "store", "play"
         applicationId "com.ventally"
