@@ -52,32 +52,45 @@ if (fs.existsSync(expoGradle)) {
   }
 }
 
-// === Patch expo-modules-core CMakeLists.txt for RN 0.76 compat ===
+// === Patch expo-modules-core for RN 0.76 compat ===
+
+// 1. Patch JavaScriptModuleObject.h — fix include path to use prefab-compatible path
+const jsModObjFile = 'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h';
+if (fs.existsSync(jsModObjFile)) {
+  let content = fs.readFileSync(jsModObjFile, 'utf8');
+  const original = content;
+  content = content.replace(
+    '#include <jni/JCallback.h>',
+    '#include <react/jni/JCallback.h>'
+  );
+  if (content !== original) {
+    fs.writeFileSync(jsModObjFile, content);
+    console.log('Patched:', jsModObjFile);
+  } else {
+    console.log('No change needed:', jsModObjFile);
+  }
+}
+
+// 2. Patch CMakeLists.txt — fix non-existent RN 0.76 targets
 const cmakeFile = 'node_modules/expo-modules-core/android/CMakeLists.txt';
 if (fs.existsSync(cmakeFile)) {
   let content = fs.readFileSync(cmakeFile, 'utf8');
   const original = content;
 
-  // 1. Remove get_target_property block for non-existent ReactAndroid::reactnativejni
+  // Remove get_target_property block for non-existent ReactAndroid::reactnativejni
   content = content.replace(
     /\nget_target_property\(INCLUDE_reactnativejni\s*\n\s*ReactAndroid::reactnativejni\s*\n\s*INTERFACE_INCLUDE_DIRECTORIES\)\n/,
     '\n'
   );
 
-  // 2. Replace ${INCLUDE_reactnativejni}/react with the actual RN 0.76 path
+  // Remove the ${INCLUDE_reactnativejni}/react include line entirely
+  // (no longer needed — JCallback.h now uses the prefab path directly)
   content = content.replace(
-    /\$\{INCLUDE_reactnativejni\}\/react/,
-    '"${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"'
+    /[ \t]*\$\{INCLUDE_reactnativejni\}\/react\s*\n/,
+    ''
   );
 
-  // 3. Change target_include_directories PRIVATE to BEFORE PRIVATE so manual path
-  //    takes precedence and prefab headers are only used as fallback for conflicts
-  content = content.replace(
-    /target_include_directories\(\s*\n(\s*\$\{PACKAGE_NAME\}\s*\n\s*)PRIVATE/,
-    'target_include_directories(\n$1BEFORE PRIVATE'
-  );
-
-  // 4. Replace non-existent link targets with ReactAndroid::reactnative
+  // Replace non-existent link targets with ReactAndroid::reactnative
   content = content.replace(
     /ReactAndroid::reactnativejni\s*\n\s*ReactAndroid::folly_runtime\s*\n\s*ReactAndroid::react_nativemodule_core/,
     'ReactAndroid::reactnative'
