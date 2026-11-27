@@ -15,7 +15,7 @@ index 0d6425ee1396b3c3e10f4120b42142dbc9708b6c..1cceee731cf90bd441984e5832a16662
 -        ${INCLUDE_reactnativejni}/react
 -
 -        # header only imports from turbomodule, e.g. CallInvokerHolder.h
-+        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni"
++        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"
          "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react/turbomodule"
          "${COMMON_DIR}"
          "${SRC_DIR}/fabric"
