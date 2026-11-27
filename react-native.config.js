@@ -12,5 +12,11 @@ module.exports = {
     'react-native-iap': {
       platforms: { android: null },
     },
+    'react-native-google-mobile-ads': {
+      platforms: { android: null },
+    },
+    '@stripe/stripe-react-native': {
+      platforms: { android: null },
+    },
   },
 };
