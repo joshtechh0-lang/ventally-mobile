@@ -1,22 +1,32 @@
 diff --git a/node_modules/expo-modules-core/android/CMakeLists.txt b/node_modules/expo-modules-core/android/CMakeLists.txt
-index 0d6425ee1396b3c3e10f4120b42142dbc9708b6c..1408e6f0294191e267ea86701b5107d1f134f62b 100644
+index 0d6425ee1396b3c3e10f4120b42142dbc9708b6c..1cceee731cf90bd441984e5832a16662c6fad21f 100644
 --- a/node_modules/expo-modules-core/android/CMakeLists.txt
 +++ b/node_modules/expo-modules-core/android/CMakeLists.txt
-@@ -89,7 +89,7 @@
+@@ -88,15 +88,10 @@
+ 
  # includes
  
- get_target_property(INCLUDE_reactnativejni
+-get_target_property(INCLUDE_reactnativejni
 -        ReactAndroid::reactnativejni
-+        ReactAndroid::reactnative
-         INTERFACE_INCLUDE_DIRECTORIES)
+-        INTERFACE_INCLUDE_DIRECTORIES)
  target_include_directories(
          ${PACKAGE_NAME}
-@@ -118,7 +118,7 @@
+         PRIVATE
+-        ${INCLUDE_reactnativejni}/react
+-
+-        # header only imports from turbomodule, e.g. CallInvokerHolder.h
++        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni"
+         "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react/turbomodule"
+         "${COMMON_DIR}"
+         "${SRC_DIR}/fabric"
+@@ -118,9 +113,7 @@
          ${LOG_LIB}
          fbjni::fbjni
          ReactAndroid::jsi
 -        ReactAndroid::reactnativejni
+-        ReactAndroid::folly_runtime
+-        ReactAndroid::react_nativemodule_core
 +        ReactAndroid::reactnative
-         ReactAndroid::folly_runtime
-         ReactAndroid::react_nativemodule_core
          android
+         ${JSEXECUTOR_LIB}
+         ${NEW_ARCHITECTURE_DEPENDENCIES}
