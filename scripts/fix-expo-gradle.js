@@ -110,6 +110,11 @@ if (fs.existsSync(reanimatedCmake)) {
   content = content.replace(/ReactAndroid::glog/g, 'ReactAndroid::reactnative');
   content = content.replace(/ReactAndroid::reactnativejni/g, 'ReactAndroid::reactnative');
 
+  // Suppress C++20 deprecation warnings that reanimated triggers as errors
+  if (!content.includes('Wno-deprecated-this-capture')) {
+    content += '\ntarget_compile_options(reanimated PRIVATE -Wno-deprecated-this-capture -Wno-vla-cxx-extension)\n';
+  }
+
   if (content !== original) {
     fs.writeFileSync(reanimatedCmake, content);
     console.log('Patched:', reanimatedCmake);
