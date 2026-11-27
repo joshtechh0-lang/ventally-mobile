@@ -39,23 +39,24 @@ index a7656cb..ccd0cea 100644
  
  } // namespace expo
 diff --git a/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts b/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
-index ce67cc8..7349cd6 100644
+index ce67cc8..0b014f5 100644
 --- a/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
 +++ b/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
-@@ -27,10 +27,15 @@ val expoAutolinkingSettingsPlugin = if (gradleProperties?.has("expoAutolinkingSe
+@@ -27,10 +27,17 @@ val expoAutolinkingSettingsPlugin = if (gradleProperties?.has("expoAutolinkingSe
  
  val isExpoAutolinkingSettingsPluginAvailable = expoAutolinkingSettingsPlugin == true
  
 +configurations.all {
 +  resolutionStrategy {
 +    force("com.android.tools.build:gradle:8.9.1")
++    force("com.facebook.react:react-native-gradle-plugin:0.76.9")
 +  }
 +}
 +
  dependencies {
    implementation(gradleApi())
 -  compileOnly("com.android.tools.build:gradle:8.5.0")
--  implementation("com.facebook.react:react-native-gradle-plugin")
+   implementation("com.facebook.react:react-native-gradle-plugin")
 +  compileOnly("com.android.tools.build:gradle:8.9.1")
    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
  
