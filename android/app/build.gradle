@@ -79,9 +79,6 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.ventally"
-    aaptOptions {
-        noCompress "so"
-    }
     defaultConfig {
         missingDimensionStrategy "store", "play"
         applicationId "com.ventally"
@@ -114,11 +111,6 @@ android {
             signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-        }
-    }
-    packagingOptions {
-        jniLibs {
-            useLegacyPackaging = true
         }
     }
 }
