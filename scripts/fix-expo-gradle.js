@@ -64,14 +64,20 @@ if (fs.existsSync(cmakeFile)) {
     '\n'
   );
 
-  // 2. Remove the ${INCLUDE_reactnativejni}/react include line entirely
-  //    (ReactAndroid::reactnative prefab already provides these headers)
+  // 2. Replace ${INCLUDE_reactnativejni}/react with the actual RN 0.76 path
   content = content.replace(
-    /[ \t]*\$\{INCLUDE_reactnativejni\}\/react\s*\n/,
-    ''
+    /\$\{INCLUDE_reactnativejni\}\/react/,
+    '"${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"'
   );
 
-  // 3. Replace non-existent link targets with ReactAndroid::reactnative
+  // 3. Change target_include_directories PRIVATE to BEFORE PRIVATE so manual path
+  //    takes precedence and prefab headers are only used as fallback for conflicts
+  content = content.replace(
+    /target_include_directories\(\s*\n(\s*\$\{PACKAGE_NAME\}\s*\n\s*)PRIVATE/,
+    'target_include_directories(\n$1BEFORE PRIVATE'
+  );
+
+  // 4. Replace non-existent link targets with ReactAndroid::reactnative
   content = content.replace(
     /ReactAndroid::reactnativejni\s*\n\s*ReactAndroid::folly_runtime\s*\n\s*ReactAndroid::react_nativemodule_core/,
     'ReactAndroid::reactnative'
