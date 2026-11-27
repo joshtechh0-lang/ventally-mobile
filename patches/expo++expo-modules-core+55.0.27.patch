@@ -38,3 +38,16 @@ index a7656cb..ccd0cea 100644
  }
  
  } // namespace expo
+diff --git a/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts b/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
+index ce67cc8..dad11c4 100644
+--- a/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
++++ b/node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin/build.gradle.kts
+@@ -29,7 +29,7 @@ val isExpoAutolinkingSettingsPluginAvailable = expoAutolinkingSettingsPlugin ==
+ 
+ dependencies {
+   implementation(gradleApi())
+-  compileOnly("com.android.tools.build:gradle:8.5.0")
++  compileOnly("com.android.tools.build:gradle:8.9.1")
+   implementation("com.facebook.react:react-native-gradle-plugin")
+   implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+ 
