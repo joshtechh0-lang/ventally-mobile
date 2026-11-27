@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package && node scripts/fix-expo-gradle.js"
   },
   "dependencies": {
     "@invertase/react-native-apple-authentication": "^2.5.1",
@@ -28,7 +28,7 @@
     "@stripe/stripe-react-native": "^0.38.4",
     "axios": "^1.13.2",
     "expo": "^55.0.32",
-    "expo-modules-core": "^1.12.25",
+    "expo-modules-core": "^1.12.26",
     "expo-secure-store": "^13.0.0",
     "i18next": "^25.8.0",
     "i18next-browser-languagedetector": "^8.2.0",

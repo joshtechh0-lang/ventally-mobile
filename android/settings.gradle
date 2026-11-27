@@ -7,7 +7,6 @@ pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin")
     "../android/expo-gradle-plugin"
   ).absolutePath
   includeBuild(expoPluginsPath)
-  includeBuild("../node_modules/expo/node_modules/expo-modules-core/expo-module-gradle-plugin")
 }
 plugins { id("com.facebook.react.settings") 
 id("expo-autolinking-settings")
