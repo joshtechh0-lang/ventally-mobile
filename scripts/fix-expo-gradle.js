@@ -77,6 +77,34 @@ for (const jniFile of jniFiles) {
 }
 
 // 2. Patch CMakeLists.txt — fix non-existent RN 0.76 targets
+// 2. Patch expo-modules-core CMakeLists.txt for RN 0.76 compat
+const cmakeFile = 'node_modules/expo-modules-core/android/CMakeLists.txt';
+if (fs.existsSync(cmakeFile)) {
+  let content = fs.readFileSync(cmakeFile, 'utf8');
+  const original = content;
+  content = content.replace(
+    'get_target_property(INCLUDE_reactnativejni
+        ReactAndroid::reactnativejni
+        INTERFACE_INCLUDE_DIRECTORIES)
+',
+    ''
+  );
+  content = content.replace('        ${INCLUDE_reactnativejni}/react
+', '');
+  content = content.replace(
+    /ReactAndroid::reactnativejnis*
+s*ReactAndroid::folly_runtimes*
+s*ReactAndroid::react_nativemodule_core/,
+    'ReactAndroid::reactnative'
+  );
+  if (content !== original) {
+    fs.writeFileSync(cmakeFile, content);
+    console.log('Patched:', cmakeFile);
+  } else {
+    console.log('No change needed (CMakeLists):', cmakeFile);
+  }
+}
+
 // === Patch react-native-reanimated CMakeLists.txt for RN 0.76 compat ===
 const reanimatedCmake = 'node_modules/react-native-reanimated/android/CMakeLists.txt';
 if (fs.existsSync(reanimatedCmake)) {
