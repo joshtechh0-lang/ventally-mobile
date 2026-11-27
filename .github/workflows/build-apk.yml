@@ -17,8 +17,12 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - run: npm install --legacy-peer-deps
-      - run: echo "sdk.dir=$ANDROID_HOME" > android/local.properties
-      - run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
+      - name: Setup Android NDK
+        run: |
+          echo "sdk.dir=$ANDROID_HOME" > android/local.properties
+          echo "ndk.dir=$ANDROID_NDK_HOME" >> android/local.properties
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses 2>/dev/null || true
+          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "ndk;27.1.12297006" 2>/dev/null || true
       - run: chmod +x android/gradlew
       - run: cd android && ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a
       - uses: actions/upload-artifact@v4
