@@ -5,12 +5,8 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./src/store/store";
 import { MainNavigator } from "./src/navigation";
-import { LogBox } from "react-native";
+import { LogBox, Platform } from "react-native";
 import i18n from "./src/locales/i18n";
-import { StripeProvider } from '@stripe/stripe-react-native';
-import { Platform } from 'react-native';
-import iapService from './src/services/iapService';
-import mobileAds, { MaxAdContentRating } from 'react-native-google-mobile-ads';
 
 LogBox.ignoreAllLogs();
 
@@ -24,27 +20,36 @@ function onBeforeLift() {
 
 const STRIPE_PUBLISHABLE_KEY = "pk_live_51RbvtNBxyJXvp7xfj6OKeZIBbHgdX1v5UNyGTx7mpRKXCn2CxLjttoKStNzwM1Eu1704QnclvmUPvkWP4fxi2uPP00KiZhCAvV";
 
-// Inner component that re-renders when language changes
 function AppContent() {
   const [currentLang, setCurrentLang] = useState(i18n.language);
 
   useEffect(() => {
-    // Initialise Google Mobile Ads SDK
-    mobileAds()
-      .initialize()
-      .then(() => console.log('[AdMob] SDK initialised'))
-      .catch(e => console.warn('[AdMob] Init error', e));
+    // Initialise Google Mobile Ads SDK (Android native module excluded — skip on Android)
+    if (Platform.OS !== 'android') {
+      import('react-native-google-mobile-ads').then(({ default: mobileAds }) => {
+        mobileAds()
+          .initialize()
+          .then(() => console.log('[AdMob] SDK initialised'))
+          .catch((e: any) => console.warn('[AdMob] Init error', e));
+      }).catch((e: any) => console.warn('[AdMob] import error', e));
+    }
 
-    // Initialize IAP on iOS
+    // Initialize IAP on iOS only
     if (Platform.OS === 'ios') {
-      iapService.initialize();
-      iapService.setupListeners(
-        (purchase) => console.log('[IAP] Purchase success:', purchase.productId),
-        (error) => console.error('[IAP] Purchase error:', error.message)
-      );
+      import('./src/services/iapService').then(({ default: iapService }) => {
+        iapService.initialize();
+        iapService.setupListeners(
+          (purchase: any) => console.log('[IAP] Purchase success:', purchase.productId),
+          (error: any) => console.error('[IAP] Purchase error:', error.message)
+        );
+      });
     }
     return () => {
-      if (Platform.OS === 'ios') iapService.destroy();
+      if (Platform.OS === 'ios') {
+        import('./src/services/iapService').then(({ default: iapService }) => {
+          iapService.destroy();
+        });
+      }
     };
   }, []);
 
@@ -68,6 +73,17 @@ function AppContent() {
 }
 
 function App() {
+  if (Platform.OS === 'android') {
+    return (
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor} onBeforeLift={onBeforeLift}>
+          <AppContent />
+        </PersistGate>
+      </Provider>
+    );
+  }
+
+  const { StripeProvider } = require('@stripe/stripe-react-native');
   return (
     <StripeProvider publishableKey={STRIPE_PUBLISHABLE_KEY} merchantIdentifier="merchant.com.ventally">
       <Provider store={store}>
