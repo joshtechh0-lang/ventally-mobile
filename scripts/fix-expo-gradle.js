@@ -77,34 +77,21 @@ for (const jniFile of jniFiles) {
 }
 
 // 2. Patch CMakeLists.txt — fix non-existent RN 0.76 targets
-const cmakeFile = 'node_modules/expo-modules-core/android/CMakeLists.txt';
-if (fs.existsSync(cmakeFile)) {
-  let content = fs.readFileSync(cmakeFile, 'utf8');
+// === Patch react-native-reanimated CMakeLists.txt for RN 0.76 compat ===
+const reanimatedCmake = 'node_modules/react-native-reanimated/android/CMakeLists.txt';
+if (fs.existsSync(reanimatedCmake)) {
+  let content = fs.readFileSync(reanimatedCmake, 'utf8');
   const original = content;
 
-  // Remove get_target_property block for non-existent ReactAndroid::reactnativejni
-  content = content.replace(
-    /\nget_target_property\(INCLUDE_reactnativejni\s*\n\s*ReactAndroid::reactnativejni\s*\n\s*INTERFACE_INCLUDE_DIRECTORIES\)\n/,
-    '\n'
-  );
-
-  // Remove the ${INCLUDE_reactnativejni}/react include line entirely
-  // (no longer needed — JCallback.h now uses the prefab path directly)
-  content = content.replace(
-    /[ \t]*\$\{INCLUDE_reactnativejni\}\/react\s*\n/,
-    ''
-  );
-
-  // Replace non-existent link targets with ReactAndroid::reactnative
-  content = content.replace(
-    /ReactAndroid::reactnativejni\s*\n\s*ReactAndroid::folly_runtime\s*\n\s*ReactAndroid::react_nativemodule_core/,
-    'ReactAndroid::reactnative'
-  );
+  // Replace non-existent RN 0.76 targets
+  content = content.replace(/ReactAndroid::folly_runtime/g, 'ReactAndroid::reactnative');
+  content = content.replace(/ReactAndroid::glog/g, 'ReactAndroid::reactnative');
+  content = content.replace(/ReactAndroid::reactnativejni/g, 'ReactAndroid::reactnative');
 
   if (content !== original) {
-    fs.writeFileSync(cmakeFile, content);
-    console.log('Patched:', cmakeFile);
+    fs.writeFileSync(reanimatedCmake, content);
+    console.log('Patched:', reanimatedCmake);
   } else {
-    console.log('No change needed (CMakeLists):', cmakeFile);
+    console.log('No change needed:', reanimatedCmake);
   }
 }
