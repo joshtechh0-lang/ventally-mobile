@@ -1,0 +1,10 @@
+diff --git a/node_modules/expo/android/build.gradle b/node_modules/expo/android/build.gradle
+index 535b691..138f4c6 100644
+--- a/node_modules/expo/android/build.gradle
++++ b/node_modules/expo/android/build.gradle
+@@ -1,5 +1,4 @@
+ apply plugin: 'com.android.library'
+-apply plugin: 'expo-module-gradle-plugin'
+ apply plugin: "expo-autolinking"
+ 
+ buildscript {
