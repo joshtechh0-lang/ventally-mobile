@@ -104,8 +104,8 @@ if (fs.existsSync(cmakeFile)) {
     '        "${REACT_NATIVE_DIR}/third-party-ndk/fmt/include"',
   ].join('\n');
   content = content.replace(
-    /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE\n/,
-    'target_include_directories(\n        ${PACKAGE_NAME}\n        PRIVATE\n' + includeBlock + '\n'
+    /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE\n\n/,
+    'target_include_directories(\n        ${PACKAGE_NAME}\n        PRIVATE\n' + includeBlock + '\n\n'
   );
 
   if (content !== original) {
