@@ -96,6 +96,8 @@ if (fs.existsSync(cmakeFile)) {
     '        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni"',
     '        "${REACT_NATIVE_DIR}/ReactCommon"',
     '        "${REACT_NATIVE_DIR}/ReactCommon/callinvoker"',
+    '        "${REACT_NATIVE_DIR}/ReactCommon/folly"',
+    '        "${REACT_NATIVE_DIR}/third-party-ndk/double-conversion"',
   ].join('\n');
   content = content.replace(
     /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE/,
