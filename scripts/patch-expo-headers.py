@@ -148,8 +148,12 @@ for folly_dir in folly_dirs:
 
 patches = {
     "node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h": [
+        ("#include <react/jni/ReadableNativeMap.h>\n#include <react/jni/ReadableNativeArray.h>\n",
+         "// Stubbed for RN 0.76 compat\n#include <fbjni/fbjni.h>\n#include <jsi/jsi.h>\nnamespace facebook::react {\n  struct NativeMap : jni::JavaClass<NativeMap> {\n    static constexpr auto kJavaDescriptor = \"Lcom/facebook/react/bridge/NativeMap;\";\n  };\n  struct ReadableNativeMap : jni::JavaClass<ReadableNativeMap, NativeMap> {\n    static constexpr auto kJavaDescriptor = \"Lcom/facebook/react/bridge/ReadableNativeMap;\";\n  };\n  struct ReadableNativeArray : jni::JavaClass<ReadableNativeArray> {\n    static constexpr auto kJavaDescriptor = \"Lcom/facebook/react/bridge/ReadableNativeArray;\";\n  };\n}\n"),
         ("namespace facebook::react { class ReadableNativeArray; class ReadableNativeMap; class NativeMap; }\n",
-         "#include <react/jni/ReadableNativeMap.h>\n#include <react/jni/ReadableNativeArray.h>\n"),
+         "// Stubbed for RN 0.76 compat\n#include <fbjni/fbjni.h>\n#include <jsi/jsi.h>\nnamespace facebook::react {\n  struct NativeMap : jni::JavaClass<NativeMap> {\n    static constexpr auto kJavaDescriptor = \"Lcom/facebook/react/bridge/NativeMap;\";\n  };\n  struct ReadableNativeMap : jni::JavaClass<ReadableNativeMap, NativeMap> {\n    static constexpr auto kJavaDescriptor = \"Lcom/facebook/react/bridge/ReadableNativeMap;\";\n  };\n  struct ReadableNativeArray : jni::JavaClass<ReadableNativeArray> {\n    static constexpr auto kJavaDescriptor = \"Lcom/facebook/react/bridge/ReadableNativeArray;\";\n  };\n}\n"),
+        ("std::unordered_map<std::string, folly::dynamic> constan",
+         "std::unordered_map<std::string, std::string> constan"),
     ],
     "node_modules/expo-modules-core/android/src/main/cpp/JNIFunctionBody.h": [
         ("#include <react/jni/ReadableNativeArray.h>\n", "namespace facebook::react { class ReadableNativeArray; }\n"),
