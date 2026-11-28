@@ -54,28 +54,6 @@ if (fs.existsSync(expoGradle)) {
 
 // === Patch expo-modules-core for RN 0.76 compat ===
 
-// 1. Patch JavaScriptModuleObject.h — fix include path to use prefab-compatible path
-const jniFiles = [
-  'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h',
-  'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.cpp',
-];
-for (const jniFile of jniFiles) {
-  if (fs.existsSync(jniFile)) {
-    let content = fs.readFileSync(jniFile, 'utf8');
-    const original = content;
-    content = content.replace(
-      /#include <jni\/JCallback\.h>/g,
-      '#include <react/jni/JCallback.h>'
-    );
-    if (content !== original) {
-      fs.writeFileSync(jniFile, content);
-      console.log('Patched:', jniFile);
-    } else {
-      console.log('No change needed:', jniFile);
-    }
-  }
-}
-
 // 2. Patch CMakeLists.txt — fix non-existent RN 0.76 targets
 
   // Patch expo-modules-core C++ headers via external Python script
