@@ -103,8 +103,10 @@ if (fs.existsSync(cmakeFile)) {
     '        "${REACT_NATIVE_DIR}/third-party-ndk/boost/boost_1_76_0"',
     '        "${REACT_NATIVE_DIR}/third-party-ndk/fmt/include"',
   ].join('\n');
+  const cmakeIncludeRegex = /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE\n\n/;
+  console.log('CMake include regex matches:', cmakeIncludeRegex.test(content));
   content = content.replace(
-    /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE\n\n/,
+    cmakeIncludeRegex,
     'target_include_directories(\n        ${PACKAGE_NAME}\n        PRIVATE\n' + includeBlock + '\n\n'
   );
 
