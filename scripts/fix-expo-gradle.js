@@ -93,7 +93,7 @@ if (fs.existsSync(cmakeFile)) {
 
   // Add include paths that were provided by the removed link targets
   const includeBlock = [
-    '        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"',
+    '        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni"',
     '        "${REACT_NATIVE_DIR}/ReactCommon"',
     '        "${REACT_NATIVE_DIR}/ReactCommon/callinvoker"',
   ].join('\n');
