@@ -87,10 +87,9 @@ if (fs.existsSync(cmakeFile)) {
     ''
   );
   content = content.replace('        ${INCLUDE_reactnativejni}/react\n', '');
-  content = content.replace(
-    /ReactAndroid::reactnativejni[\s\S]*?ReactAndroid::folly_runtime[\s\S]*?ReactAndroid::react_nativemodule_core/,
-    'ReactAndroid::reactnative'
-  );
+  content = content.replace(/\s*ReactAndroid::reactnativejni\s*\n/g, '');
+  content = content.replace(/\s*ReactAndroid::folly_runtime\s*\n/g, '');
+  content = content.replace(/\s*ReactAndroid::react_nativemodule_core\s*\n/g, '');
   if (content !== original) {
     fs.writeFileSync(cmakeFile, content);
     console.log('Patched:', cmakeFile);
