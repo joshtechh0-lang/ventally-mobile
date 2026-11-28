@@ -1,5 +1,64 @@
 import os, sys
 
+import subprocess
+
+# Create stub folly/dynamic.h so expo-modules-core can compile against RN 0.76
+folly_dir = 'node_modules/react-native/ReactAndroid/src/main/jni/third-party/folly'
+os.makedirs(folly_dir, exist_ok=True)
+stub_path = folly_dir + '/dynamic.h'
+if not os.path.exists(stub_path):
+    stub = """#pragma once
+// Stub folly/dynamic.h for RN 0.76 + expo-modules-core 1.12 compat
+#include <string>
+#include <vector>
+#include <map>
+namespace folly {
+struct dynamic {
+  enum Type { NULLT, ARRAY, BOOL, DOUBLE, INT64, OBJECT, STRING };
+  dynamic() : type_(NULLT) {}
+  dynamic(std::nullptr_t) : type_(NULLT) {}
+  dynamic(bool b) : type_(BOOL), boolean_(b) {}
+  dynamic(int i) : type_(INT64), integer_(i) {}
+  dynamic(long i) : type_(INT64), integer_(i) {}
+  dynamic(long long i) : type_(INT64), integer_(i) {}
+  dynamic(double d) : type_(DOUBLE), dbl_(d) {}
+  dynamic(const char* s) : type_(STRING), string_(s) {}
+  dynamic(const std::string& s) : type_(STRING), string_(s) {}
+  dynamic(std::string&& s) : type_(STRING), string_(std::move(s)) {}
+  static dynamic object() { dynamic d; d.type_ = OBJECT; return d; }
+  static dynamic array() { dynamic d; d.type_ = ARRAY; return d; }
+  Type type() const { return type_; }
+  bool isNull() const { return type_ == NULLT; }
+  bool isBool() const { return type_ == BOOL; }
+  bool isDouble() const { return type_ == DOUBLE; }
+  bool isInt() const { return type_ == INT64; }
+  bool isString() const { return type_ == STRING; }
+  bool isArray() const { return type_ == ARRAY; }
+  bool isObject() const { return type_ == OBJECT; }
+  bool asBool() const { return boolean_; }
+  double asDouble() const { return dbl_; }
+  long long asInt() const { return integer_; }
+  const std::string& asString() const { return string_; }
+  std::string& getString() { return string_; }
+  void push_back(dynamic val) {}
+  dynamic& operator[](const std::string&) { static dynamic d; return d; }
+  const dynamic& operator[](const std::string&) const { static dynamic d; return d; }
+  dynamic& operator[](size_t) { static dynamic d; return d; }
+  size_t size() const { return 0; }
+  bool empty() const { return true; }
+private:
+  Type type_;
+  union { bool boolean_; double dbl_; long long integer_; };
+  std::string string_;
+};
+} // namespace folly
+"""
+    with open(stub_path, 'w') as f:
+        f.write(stub)
+    print('Created stub:', stub_path)
+else:
+    print('Stub already exists:', stub_path)
+
 patches = {
     'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h': [
         ('#include <react/jni/ReadableNativeArray.h>\n', ''),
