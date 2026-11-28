@@ -78,45 +78,14 @@ for (const jniFile of jniFiles) {
 
 // 2. Patch CMakeLists.txt — fix non-existent RN 0.76 targets
 
-  // Patch expo-modules-core C++ headers: replace folly-dependent includes with forward decls
-  const { execSync } = require('child_process');
-  const patchScript = `
-import sys
-
-patches = {
-    'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h': [
-        ('#include <react/jni/ReadableNativeArray.h>\n', ''),
-        ('#include <react/jni/ReadableNativeMap.h>\n', ''),
-        ('#include <jni/JCallback.h>\n', 'namespace facebook::react { class ReadableNativeArray; class ReadableNativeMap; class NativeMap; }\n'),
-    ],
-    'node_modules/expo-modules-core/android/src/main/cpp/JNIFunctionBody.h': [
-        ('#include <react/jni/ReadableNativeArray.h>\n', 'namespace facebook::react { class ReadableNativeArray; }\n'),
-    ],
-}
-
-import os
-for fpath, replacements in patches.items():
-    if not os.path.exists(fpath):
-        print('Skipping (not found):', fpath)
-        continue
-    with open(fpath, 'r') as f:
-        c = f.read()
-    orig = c
-    for old, new in replacements:
-        c = c.replace(old, new)
-    if c != orig:
-        with open(fpath, 'w') as f:
-            f.write(c)
-        print('Patched:', fpath)
-    else:
-        print('No change:', fpath)
-`;
-  require('fs').writeFileSync('/tmp/patch_expo_headers.py', patchScript);
+  // Patch expo-modules-core C++ headers via external Python script
   try {
-    const out = execSync('python3 /tmp/patch_expo_headers.py', { encoding: 'utf8' });
+    const { execSync } = require('child_process');
+    const scriptPath = require('path').join(__dirname, 'patch-expo-headers.py');
+    const out = execSync('python3 ' + scriptPath, { encoding: 'utf8' });
     console.log(out.trim());
   } catch (e) {
-    console.error('Python patch failed:', e.message);
+    console.error('Python header patch failed:', e.message);
   }
 
     // 2. Patch expo-modules-core CMakeLists.txt for RN 0.76 compat
