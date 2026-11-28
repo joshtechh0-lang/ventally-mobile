@@ -92,9 +92,14 @@ if (fs.existsSync(cmakeFile)) {
   content = content.replace(/\s*ReactAndroid::react_nativemodule_core\s*\n/g, '');
 
   // Add include paths that were provided by the removed link targets
+  const includeBlock = [
+    '        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"',
+    '        "${REACT_NATIVE_DIR}/ReactCommon"',
+    '        "${REACT_NATIVE_DIR}/ReactCommon/callinvoker"',
+  ].join('\n');
   content = content.replace(
-    'target_include_directories(\\n        ${PACKAGE_NAME}\\n        PRIVATE',
-    'target_include_directories(\\n        ${PACKAGE_NAME}\\n        PRIVATE\\n        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"\\n        "${REACT_NATIVE_DIR}/ReactCommon"\\n        "${REACT_NATIVE_DIR}/ReactCommon/callinvoker"'
+    /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE/,
+    'target_include_directories(\n        ${PACKAGE_NAME}\n        PRIVATE\n' + includeBlock
   );
 
   if (content !== original) {
