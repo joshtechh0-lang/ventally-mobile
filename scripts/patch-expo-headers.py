@@ -1,17 +1,11 @@
 import os, sys
 
-import subprocess
-
-# Create stub folly/dynamic.h so expo-modules-core can compile against RN 0.76
-folly_dir = 'node_modules/react-native/ReactAndroid/src/main/jni/third-party/folly'
-os.makedirs(folly_dir, exist_ok=True)
-stub_path = folly_dir + '/dynamic.h'
-if not os.path.exists(stub_path):
-    stub = """#pragma once
+FOLLY_STUB = """#pragma once
 // Stub folly/dynamic.h for RN 0.76 + expo-modules-core 1.12 compat
 #include <string>
 #include <vector>
 #include <map>
+#include <unordered_map>
 namespace folly {
 struct dynamic {
   enum Type { NULLT, ARRAY, BOOL, DOUBLE, INT64, OBJECT, STRING };
@@ -53,40 +47,46 @@ private:
 };
 } // namespace folly
 """
-    with open(stub_path, 'w') as f:
-        f.write(stub)
-    print('Created stub:', stub_path)
-else:
-    print('Stub already exists:', stub_path)
+
+# Create stub folly/dynamic.h in all relevant include dirs
+folly_dirs = [
+    "node_modules/react-native/ReactAndroid/src/main/jni/third-party/folly",
+    "node_modules/expo-modules-core/android/src/main/cpp/folly",
+]
+for folly_dir in folly_dirs:
+    os.makedirs(folly_dir, exist_ok=True)
+    stub_path = folly_dir + "/dynamic.h"
+    with open(stub_path, "w") as f:
+        f.write(FOLLY_STUB)
+    print("Written stub:", stub_path)
 
 patches = {
-    'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h': [
-        ('#include <react/jni/ReadableNativeArray.h>\n', ''),
-        ('#include <react/jni/ReadableNativeMap.h>\n', ''),
-        ('#include <jni/JCallback.h>\n', 'namespace facebook::react { class ReadableNativeArray; class ReadableNativeMap; class NativeMap; }\n'),
+    "node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h": [
+        ("namespace facebook::react { class ReadableNativeArray; class ReadableNativeMap; class NativeMap; }\n",
+         "#include <react/jni/ReadableNativeMap.h>\n#include <react/jni/ReadableNativeArray.h>\n"),
     ],
-    'node_modules/expo-modules-core/android/src/main/cpp/JNIFunctionBody.h': [
-        ('#include <react/jni/ReadableNativeArray.h>\n', 'namespace facebook::react { class ReadableNativeArray; }\n'),
+    "node_modules/expo-modules-core/android/src/main/cpp/JNIFunctionBody.h": [
+        ("#include <react/jni/ReadableNativeArray.h>\n", "namespace facebook::react { class ReadableNativeArray; }\n"),
     ],
-    'node_modules/expo-modules-core/android/src/main/cpp/MethodMetadata.h': [
-        ('#include <react/jni/ReadableNativeArray.h>\n', 'namespace facebook::react { class ReadableNativeArray; }\n'),
-        ('#include <folly/dynamic.h>\n', ''),
-        ('#include <jsi/JSIDynamic.h>\n', ''),
+    "node_modules/expo-modules-core/android/src/main/cpp/MethodMetadata.h": [
+        ("#include <react/jni/ReadableNativeArray.h>\n", "namespace facebook::react { class ReadableNativeArray; }\n"),
+        ("#include <folly/dynamic.h>\n", ""),
+        ("#include <jsi/JSIDynamic.h>\n", ""),
     ],
 }
 
 for fpath, replacements in patches.items():
     if not os.path.exists(fpath):
-        print('Skipping (not found):', fpath)
+        print("Skipping (not found):", fpath)
         continue
-    with open(fpath, 'r') as f:
+    with open(fpath, "r") as f:
         c = f.read()
     orig = c
     for old, new in replacements:
         c = c.replace(old, new)
     if c != orig:
-        with open(fpath, 'w') as f:
+        with open(fpath, "w") as f:
             f.write(c)
-        print('Patched:', fpath)
+        print("Patched:", fpath)
     else:
-        print('No change:', fpath)
+        print("No change:", fpath)
