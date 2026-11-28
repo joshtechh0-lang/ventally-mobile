@@ -51,6 +51,8 @@ private:
 # Create stub folly/dynamic.h in all relevant include dirs
 folly_dirs = [
     "node_modules/react-native/ReactAndroid/src/main/jni/third-party/folly",
+    "node_modules/react-native/ReactAndroid/src/main/jni/third-party/folly/folly",
+    "node_modules/react-native/ReactAndroid/src/main/jni/react/jni/folly",
     "node_modules/expo-modules-core/android/src/main/cpp/folly",
 ]
 for folly_dir in folly_dirs:
