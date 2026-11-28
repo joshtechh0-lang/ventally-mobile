@@ -103,9 +103,18 @@ if (fs.existsSync(cmakeFile)) {
     '        "${REACT_NATIVE_DIR}/third-party-ndk/boost/boost_1_76_0"',
     '        "${REACT_NATIVE_DIR}/third-party-ndk/fmt/include"',
   ].join('\n');
+  // Use get_target_property on folly_runtime (exists in RN 0.76) for its include dirs
+  // Insert before the target_include_directories block
+  const follyGetProp = `get_target_property(INCLUDE_folly_runtime ReactAndroid::folly_runtime INTERFACE_INCLUDE_DIRECTORIES)\n`;
+  if (!content.includes('INCLUDE_folly_runtime')) {
+    content = content.replace(
+      /target_include_directories\(\n/,
+      follyGetProp + 'target_include_directories(\n'
+    );
+  }
   content = content.replace(
     /target_include_directories\(\n        \$\{PACKAGE_NAME\}\n        PRIVATE/,
-    'target_include_directories(\n        ${PACKAGE_NAME}\n        PRIVATE\n' + includeBlock
+    'target_include_directories(\n        ${PACKAGE_NAME}\n        PRIVATE\n' + includeBlock + '\n        ${INCLUDE_folly_runtime}'
   );
 
   if (content !== original) {
