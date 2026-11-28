@@ -90,6 +90,13 @@ if (fs.existsSync(cmakeFile)) {
   content = content.replace(/\s*ReactAndroid::reactnativejni\s*\n/g, '');
   content = content.replace(/\s*ReactAndroid::folly_runtime\s*\n/g, '');
   content = content.replace(/\s*ReactAndroid::react_nativemodule_core\s*\n/g, '');
+
+  // Add include paths that were provided by the removed link targets
+  content = content.replace(
+    'target_include_directories(\\n        ${PACKAGE_NAME}\\n        PRIVATE',
+    'target_include_directories(\\n        ${PACKAGE_NAME}\\n        PRIVATE\\n        "${REACT_NATIVE_DIR}/ReactAndroid/src/main/jni/react"\\n        "${REACT_NATIVE_DIR}/ReactCommon"\\n        "${REACT_NATIVE_DIR}/ReactCommon/callinvoker"'
+  );
+
   if (content !== original) {
     fs.writeFileSync(cmakeFile, content);
     console.log('Patched:', cmakeFile);
