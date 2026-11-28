@@ -9,6 +9,11 @@ patches = {
     'node_modules/expo-modules-core/android/src/main/cpp/JNIFunctionBody.h': [
         ('#include <react/jni/ReadableNativeArray.h>\n', 'namespace facebook::react { class ReadableNativeArray; }\n'),
     ],
+    'node_modules/expo-modules-core/android/src/main/cpp/MethodMetadata.h': [
+        ('#include <react/jni/ReadableNativeArray.h>\n', 'namespace facebook::react { class ReadableNativeArray; }\n'),
+        ('#include <folly/dynamic.h>\n', ''),
+        ('#include <jsi/JSIDynamic.h>\n', ''),
+    ],
 }
 
 for fpath, replacements in patches.items():
