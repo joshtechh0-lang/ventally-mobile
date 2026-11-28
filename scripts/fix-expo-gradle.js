@@ -77,7 +77,20 @@ for (const jniFile of jniFiles) {
 }
 
 // 2. Patch CMakeLists.txt — fix non-existent RN 0.76 targets
-// 2. Patch expo-modules-core CMakeLists.txt for RN 0.76 compat
+
+  // Patch JavaScriptModuleObject.h: replace ReadableNativeArray/Map includes with forward decls
+  const jmoHeader = 'node_modules/expo-modules-core/android/src/main/cpp/JavaScriptModuleObject.h';
+  if (fs.existsSync(jmoHeader)) {
+    let content = fs.readFileSync(jmoHeader, 'utf8');
+    const original = content;
+    content = content
+      .replace('#include <react/jni/ReadableNativeArray.h>', '')
+      .replace('#include <react/jni/ReadableNativeMap.h>', 'namespace facebook::react { class ReadableNativeArray; class ReadableNativeMap; class NativeMap; }');
+    if (content !== original) { fs.writeFileSync(jmoHeader, content); console.log('Patched:', jmoHeader); }
+    else { console.log('No change needed (jmo header)'); }
+  }
+
+  // 2. Patch expo-modules-core CMakeLists.txt for RN 0.76 compat
 const cmakeFile = 'node_modules/expo-modules-core/android/CMakeLists.txt';
 if (fs.existsSync(cmakeFile)) {
   let content = fs.readFileSync(cmakeFile, 'utf8');
